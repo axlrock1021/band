@@ -1,0 +1,28 @@
+<resources>
+    <string name="welcome">歡迎</string>
+    <string name="home">主頁</string>
+    <string name="by">By 艾斯理</string>
+    <string name="home_menu">✩ 主頁選單 ✩</string>
+    <string name="introduction">✩ 介紹 ✩</string>
+    <string name="video_list">✩ 影片清單 ✩</string>
+    <string name="information">✩ 資訊 ✩</string>
+    <string name="experience">✩ 經歷 ✩</string>
+    <string name="coming_soon">✩ 敬請期待 ✩</string>
+    <string name="service_and_support">✩ 服務和支援 ✩</string>
+
+    <string name="gravity">✩ Gravity ✩</string>
+    <string name="astro_bunny">✩ Astro Bunny ✩</string>
+    <string name="chocolate_tiger">✩ Chocolate Tiger ✩</string>
+    <string name="men_envy_children">✩ Men Envy Children ✩</string>
+    <string name="morning_call">✩ Morning Call ✩</string>
+    <string name="my_skin_against_your_skin">✩ My Skin Against Your Skin ✩</string>
+    <string name="nekojam">✩ NekoJam ✩</string>
+    <string name="vast_hazy">✩ Vast ＆ Hazy ✩</string>
+    <string name="zani">✩ Zani ✩</string>
+
+    <string name="test">test</string>
+    <string name="雙向鍵">\u21C4</string>
+    <string name="右鍵">\u2192</string>
+    <string name="左鍵">\u2190</string>
+
+</resources>

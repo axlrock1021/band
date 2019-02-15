@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="welcome">w e l c o m e</string>
+    <string name="home">H o m e</string>
+    <string name="by">By 艾斯理</string>
+    <string name="home_menu">✩ Home Menu ✩</string>
+    <string name="introduction">✩ Introduction ✩</string>
+    <string name="video_list">✩ Video List ✩</string>
+    <string name="information">✩ Information ✩</string>
+    <string name="experience">✩ Experience ✩</string>
+    <string name="coming_soon">✩ Coming Soon ✩</string>
+    <string name="service_and_support">✩ Service and Support ✩</string>
+
+    <string name="gravity">✩ Gravity ✩</string>
+    <string name="astro_bunny">✩ Astro Bunny ✩</string>
+    <string name="chocolate_tiger">✩ Chocolate Tiger ✩</string>
+    <string name="men_envy_children">✩ Men Envy Children ✩</string>
+    <string name="morning_call">✩ Morning Call ✩</string>
+    <string name="my_skin_against_your_skin">✩ My Skin Against Your Skin ✩</string>
+    <string name="nekojam">✩ NekoJam ✩</string>
+    <string name="vast_hazy">✩ Vast ＆ Hazy ✩</string>
+    <string name="zani">✩ Zani ✩</string>
+
+    <string name="test">test</string>
+    <string name="雙向鍵">\u21C4</string>
+    <string name="右鍵">\u2192</string>
+    <string name="左鍵">\u2190</string>
+
+</resources>

@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/black1"
+    android:orientation="vertical"
+    tools:context=".Setting">
+
+    <TextView
+        android:id="@+id/textView12"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="5dp"
+        android:background="@color/colorPrimaryDark"
+        android:gravity="center_horizontal"
+        android:padding="2dp"
+        android:text="@string/service_and_support"
+        android:textColor="@color/cardview_light_background"
+        android:textSize="30sp"
+        android:textStyle="normal" />
+
+    <Button
+        android:id="@+id/button1"
+        style="@style/Widget.AppCompat.Button.Borderless.Colored"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp"
+        android:gravity="left"
+        android:onClick="goFacebook"
+        android:text="✵ 臉書粉絲團"
+        android:textAllCaps="false"
+        android:textColor="@color/cardview_light_background"
+        android:textColorLink="@color/cardview_light_background"
+        android:textSize="25sp"
+        android:textStyle="normal" />
+
+    <Button
+        android:id="@+id/button2"
+        style="@style/Widget.AppCompat.Button.Borderless.Colored"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="left"
+        android:onClick="goMail"
+        android:text="✵ 給予建議/與我聯絡"
+        android:textAllCaps="false"
+        android:textColor="@color/cardview_light_background"
+        android:textColorLink="@color/cardview_light_background"
+        android:textSize="25sp"
+        android:textStyle="normal" />
+
+    <Button
+        android:id="@+id/button3"
+        style="@style/Widget.AppCompat.Button.Borderless.Colored"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="left"
+        android:onClick="goGooglePlay"
+        android:text="✵ 商店評分"
+        android:textAllCaps="false"
+        android:textColor="@color/cardview_light_background"
+        android:textColorLink="@color/cardview_light_background"
+        android:textSize="25sp"
+        android:textStyle="normal" />
+
+    <Button
+        android:id="@+id/button4"
+        style="@style/Widget.AppCompat.Button.Borderless.Colored"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="left"
+        android:text="✵ 關於作者"
+        android:textAllCaps="false"
+        android:textColor="@color/cardview_light_background"
+        android:textColorLink="@color/cardview_light_background"
+        android:textSize="25sp"
+        android:textStyle="normal" />
+
+    <Button
+        android:id="@+id/button5"
+        style="@style/Widget.AppCompat.Button.Borderless.Colored"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="left"
+        android:text="✵ 版本資訊"
+        android:textAllCaps="false"
+        android:textColor="@color/cardview_light_background"
+        android:textColorLink="@color/cardview_light_background"
+        android:textSize="25sp"
+        android:textStyle="normal" />
+
+    <Button
+        android:id="@+id/button7"
+        style="@style/Widget.AppCompat.Button.Borderless.Colored"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="left"
+        android:onClick="languageSwitch"
+        android:text="✵ 語言切換"
+        android:textAllCaps="false"
+        android:textColor="@color/cardview_light_background"
+        android:textColorLink="@color/cardview_light_background"
+        android:textSize="25sp"
+        android:textStyle="normal" />
+
+</LinearLayout>

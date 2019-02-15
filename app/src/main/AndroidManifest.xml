@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="net.ddns.axlrock.bands">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+
+    <uses-feature
+        android:glEsVersion="0x00020000"
+        android:required="true" />
+
+    <application
+        android:allowBackup="true"
+        android:hardwareAccelerated="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="樂團介紹"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme"
+        tools:ignore="GoogleAppIndexingWarning">
+        <activity android:name="net.ddns.axlrock.bands.Live"></activity>
+        <activity android:name="net.ddns.axlrock.bands.Welcome_End.Welcome_End">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name="net.ddns.axlrock.bands.Home_Menu.Home" />
+        <activity android:name="net.ddns.axlrock.bands.Introduction.Introduction" />
+        <activity android:name="net.ddns.axlrock.bands.Introduction.Gravity.Gravitys1" />
+        <activity android:name="net.ddns.axlrock.bands.Introduction.Gravity.Gravitys2" />
+        <activity android:name="net.ddns.axlrock.bands.Introduction.Gravity.Gravitys3" />
+        <activity android:name="net.ddns.axlrock.bands.Introduction.Astro_Bunny.Astro_Bunny1" />
+        <activity android:name="net.ddns.axlrock.bands.Introduction.Astro_Bunny.Astro_Bunny2" />
+        <activity android:name="net.ddns.axlrock.bands.Introduction.Astro_Bunny.Astro_Bunny3" />
+        <activity android:name="net.ddns.axlrock.bands.Introduction.Mec_Band.Mec_Band1" />
+        <activity android:name="net.ddns.axlrock.bands.Introduction.Mec_Band.Mec_Band2" />
+        <activity android:name="net.ddns.axlrock.bands.Introduction.Mec_Band.Mec_Band3" />
+        <activity android:name="net.ddns.axlrock.bands.Introduction.Chocolate_Tiger.Chocolate_Tiger1" />
+        <activity android:name="net.ddns.axlrock.bands.Introduction.Chocolate_Tiger.Chocolate_Tiger2" />
+        <activity android:name="net.ddns.axlrock.bands.Introduction.Chocolate_Tiger.Chocolate_Tiger3" />
+        <activity android:name="net.ddns.axlrock.bands.Introduction.Morning_Call.Morning_Call1" />
+        <activity android:name="net.ddns.axlrock.bands.Introduction.Morning_Call.Morning_Call2" />
+        <activity android:name="net.ddns.axlrock.bands.Introduction.Morning_Call.Morning_Call3" />
+        <activity android:name="net.ddns.axlrock.bands.Introduction.My_Skin_Against_Your_Skin.My_Skin_Sgainst_Your_Skin1" />
+        <activity android:name="net.ddns.axlrock.bands.Introduction.My_Skin_Against_Your_Skin.My_Skin_Sgainst_Your_Skin2" />
+        <activity android:name="net.ddns.axlrock.bands.Introduction.My_Skin_Against_Your_Skin.My_Skin_Sgainst_Your_Skin3" />
+        <activity android:name="net.ddns.axlrock.bands.Introduction.NekoJam.Nekojam1" />
+        <activity android:name="net.ddns.axlrock.bands.Introduction.NekoJam.Nekojam2" />
+        <activity android:name="net.ddns.axlrock.bands.Introduction.NekoJam.Nekojam3" />
+        <activity android:name="net.ddns.axlrock.bands.Introduction.Vast_Hazy.Vast_Hazy1" />
+        <activity android:name="net.ddns.axlrock.bands.Introduction.Vast_Hazy.Vast_Hazy2" />
+        <activity android:name="net.ddns.axlrock.bands.Introduction.Vast_Hazy.Vast_Hazy3" />
+        <activity android:name="net.ddns.axlrock.bands.Introduction.Zani.Zani1" />
+        <activity android:name="net.ddns.axlrock.bands.Introduction.Zani.Zani2" />
+        <activity android:name="net.ddns.axlrock.bands.Introduction.Zani.Zani3" />
+        <activity android:name="net.ddns.axlrock.bands.Introduction.Coming_Soon.Coming_Soon" />
+        <activity android:name="net.ddns.axlrock.bands.Video.Video_Band_Introduction" />
+        <activity android:name="net.ddns.axlrock.bands.Video.Gravuty.Video_Gravity" />
+        <activity android:name="net.ddns.axlrock.bands.Video.Astro_Bunny.Video_Astro_Bunny" />
+        <activity android:name="net.ddns.axlrock.bands.Video.Chocolate_Tiger.Video_Chocolate_Tiger" />
+        <activity android:name="net.ddns.axlrock.bands.Video.Mec_Band.Video_Mec_Band" />
+        <activity android:name="net.ddns.axlrock.bands.Video.Morning_Call.Video_Morning_Call" />
+        <activity android:name="net.ddns.axlrock.bands.Video.My_Kkin_Against_Your_Skin.Video_My_Skin_Against_Your_Skin" />
+        <activity android:name="net.ddns.axlrock.bands.Video.NekoJam.Video_NekoJam" />
+        <activity android:name="net.ddns.axlrock.bands.Video.Vast_Hazy.Video_Vast_Hazy" />
+        <activity android:name="net.ddns.axlrock.bands.Video.Zani.Video_Zani" />
+        <activity android:name="net.ddns.axlrock.bands.Video.Coming_Soon.Video_Coming_Soon" />
+        <activity android:name="net.ddns.axlrock.bands.Setting" />
+    </application>
+
+</manifest>
