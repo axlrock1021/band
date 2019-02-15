@@ -17,6 +17,7 @@ import android.widget.ImageView;
 import android.widget.TextView;
 
 import net.ddns.axlrock.bands.Introduction.Introduction;
+import net.ddns.axlrock.bands.Stage.stage;
 import net.ddns.axlrock.bands.R;
 import net.ddns.axlrock.bands.Setting;
 import net.ddns.axlrock.bands.Video.Video_Band_Introduction;
@@ -118,11 +119,11 @@ public class Home extends AppCompatActivity {
                             soundPool.release();
                             break;
                         case 2: //音樂播放器
-                            startActivity(new Intent().setClass(Home.this,  Video_Band_Introduction.class));
+                            startActivity(new Intent().setClass(Home.this, Video_Band_Introduction.class));
                             soundPool.release();
                             break;
                         case 3: //表演舞台
-                            startActivity(new Intent().setClass(Home.this, Video_Band_Introduction.class));
+                            startActivity(new Intent().setClass(Home.this, stage.class));
                             soundPool.release();
                             break;
                         case 4: //專區

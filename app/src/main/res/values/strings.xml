@@ -8,6 +8,7 @@
     <string name="information">✩ 資訊 ✩</string>
     <string name="experience">✩ 經歷 ✩</string>
     <string name="coming_soon">✩ 敬請期待 ✩</string>
+    <string name="stage">✩ 舞台 ✩</string>
     <string name="service_and_support">✩ 服務和支援 ✩</string>
 
     <string name="gravity">✩ Gravity ✩</string>
@@ -19,6 +20,9 @@
     <string name="nekojam">✩ NekoJam ✩</string>
     <string name="vast_hazy">✩ Vast ＆ Hazy ✩</string>
     <string name="zani">✩ Zani ✩</string>
+
+    <string name="riverside_music_cafe">✩ Riverside Music Cafe ✩</string>
+
 
     <string name="test">test</string>
     <string name="雙向鍵">\u21C4</string>

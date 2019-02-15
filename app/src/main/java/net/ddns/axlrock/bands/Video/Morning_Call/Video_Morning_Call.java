@@ -36,7 +36,7 @@ public class Video_Morning_Call extends AppCompatActivity {
             R.drawable.morning_call10,R.drawable.morning_call11, R.drawable.morning_call12,};
     //宣告文字陣列(每個元件)
     //影片主題
-    String[] text1 = new String[]{"官方網站","2016台中好跨年","見證大團","我們背對著青春(Live)",
+    String[] text1 = new String[]{"官方網站","2016台中好跨年","見證大團","我們背對著青春(stage)",
     "金曲音樂節","我們背對著青春(MV)","法國片(MV)","Fine(MV)","漂浪之向(MV)","一切都沉睡了(MV)"};
     //影片長度標題
     String text2 = "長度";

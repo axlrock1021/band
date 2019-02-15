@@ -73,7 +73,7 @@ public class Vast_Hazy3 extends AppCompatActivity implements OnGestureListener {
 
         ArrayList<Content> contents3 = new ArrayList<>();
         contents3.add(new Content(
-                "1.Live in 享巷\n\n"));
+                "1.stage in 享巷\n\n"));
 
         Year year3 = new Year("2016 - 演出資訊", contents3);
         years.add(year3);

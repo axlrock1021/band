@@ -76,7 +76,7 @@ public class Setting extends AppCompatActivity {
                     if (intent.resolveActivity(getPackageManager()) != null) {
                         startActivity(intent);
                     } else {
-                        Toast.makeText(getApplicationContext(), "大爺~您沒有安裝應用市場或瀏覽器", Toast.LENGTH_SHORT).show();
+                        Toast.makeText(getApplicationContext(), "您沒有安裝應用市場或瀏覽器", Toast.LENGTH_SHORT).show();
                     }
                 }
             }

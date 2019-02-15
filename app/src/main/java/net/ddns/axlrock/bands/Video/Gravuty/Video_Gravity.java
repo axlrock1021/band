@@ -36,9 +36,9 @@ public class Video_Gravity extends AppCompatActivity {
             R.drawable.gravity11, R.drawable.gravity12};
     //宣告文字陣列(每個元件)
     //影片主題
-    String[] text1 = new String[]{"公館小河岸專場(全創作)","live at Revolver","牽心萬苦(Cover)",
+    String[] text1 = new String[]{"公館小河岸專場(全創作)","stage at Revolver","牽心萬苦(Cover)",
             "西門杰克(女主唱大笑?)","Bring Me To Life(Cover)", "萬里翡翠灣夏日樂園","喜劇之王(Cover)",
-            "live at 希望廣場","live at 台中迴響"};
+            "stage at 希望廣場","stage at 台中迴響"};
     //影片長度標題
     String text2 = "長度";
     //影片發佈日期標題
