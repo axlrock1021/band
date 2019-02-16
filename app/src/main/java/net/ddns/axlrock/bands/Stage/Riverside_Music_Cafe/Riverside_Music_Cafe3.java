@@ -5,82 +5,33 @@ import android.content.Intent;
 import android.content.pm.ActivityInfo;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
-import android.support.v7.widget.LinearLayoutManager;
-import android.support.v7.widget.RecyclerView;
 import android.view.GestureDetector;
 import android.view.GestureDetector.OnGestureListener;
 import android.view.Menu;
 import android.view.MotionEvent;
-
 import net.ddns.axlrock.bands.R;
 
-import java.util.ArrayList;
-
-public class Gravitys3 extends AppCompatActivity implements OnGestureListener {
+public class Riverside_Music_Cafe3 extends AppCompatActivity implements OnGestureListener {
 
     //定義手勢檢測器
     GestureDetector detector;
 
-    RecyclerView recyclerView;
-
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.gravity3);
+        setContentView(R.layout.riverside_music_cafe3);
 
         //初始化手勢檢測器
         detector = new GestureDetector(this, this);
 
         //禁止螢幕翻轉
         setRequestedOrientation(ActivityInfo.SCREEN_ORIENTATION_PORTRAIT);
-
-        //建立RecyclerView
-        recyclerView = findViewById(R.id.recyclerview);
-        recyclerView.setLayoutManager(new LinearLayoutManager(this));
-
-        //調用listText()
-        listText();
-    }
-
-    //顯示清單文字內容
-    public void listText(){
-
-        //初始化Year&Content物件
-        ArrayList<Year> years = new ArrayList<>();
-        ArrayList<Content> contents1 = new ArrayList<>();
-
-        contents1.add(new Content(
-                "04/18 stage at Revolver\n\n" +
-                        "02/22 stage at 台中迴響"));
-
-        Year year1 = new Year("2017 - 演出資訊", contents1);
-        years.add(year1);
-
-
-        ArrayList<Content> contents2 = new ArrayList<>();
-        contents2.add(new Content(
-                "12/24 stage at 桃園埔心農場\n\n"+
-                        "10/15 stage at 新竹Haven Bar\n\n"+
-                        "09/11 stage at 公館河岸(專場)\n\n"+
-                        "07/30 stage at 翡翠灣\n\n" +
-                        "07/24 stage at 台中中山堂\n\n" +
-                        "07/09 stage at 希望廣場\n\n" +
-                        "06/11 stage at 翡翠灣\n\n" +
-                        "03/17 stage at Revolver\n\n"+
-                        "01/10 stage at 西門杰克(首演)"));
-
-        Year year2 = new Year("2016 - 演出資訊", contents2);
-        years.add(year2);
-
-
-        ContentAdapter adapter = new ContentAdapter(years);
-        recyclerView.setAdapter(adapter);
     }
 
     @SuppressLint("ResourceType")
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
-        getMenuInflater().inflate(R.layout.gravity3, menu);
+        getMenuInflater().inflate(R.layout.riverside_music_cafe3, menu);
         return true;
     }
 
@@ -107,7 +58,7 @@ public class Gravitys3 extends AppCompatActivity implements OnGestureListener {
             overridePendingTransition(R.anim.right_in, R.anim.left_out);
         }
         else if(e2.getX() - e1.getX() > 50){
-            Intent intent2 = new Intent(this, Gravitys2.class);
+            Intent intent2 = new Intent(this, Riverside_Music_Cafe2.class);
             startActivity(intent2);
             finish();
             //設置切換方向，從左邊進入，右邊退出

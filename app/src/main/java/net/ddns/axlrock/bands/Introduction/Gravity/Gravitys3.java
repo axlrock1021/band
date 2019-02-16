@@ -48,8 +48,8 @@ public class Gravitys3 extends AppCompatActivity implements OnGestureListener {
         ArrayList<Content> contents1 = new ArrayList<>();
 
         contents1.add(new Content(
-                "04/18 stage at Revolver\n\n" +
-                        "02/22 stage at 台中迴響"));
+                "04/18 Live at Revolver\n\n" +
+                        "02/22 Live at 台中迴響"));
 
         Year year1 = new Year("2017 - 演出資訊", contents1);
         years.add(year1);
@@ -57,15 +57,15 @@ public class Gravitys3 extends AppCompatActivity implements OnGestureListener {
 
         ArrayList<Content> contents2 = new ArrayList<>();
         contents2.add(new Content(
-                "12/24 stage at 桃園埔心農場\n\n"+
-                        "10/15 stage at 新竹Haven Bar\n\n"+
-                        "09/11 stage at 公館河岸(專場)\n\n"+
-                        "07/30 stage at 翡翠灣\n\n" +
-                        "07/24 stage at 台中中山堂\n\n" +
-                        "07/09 stage at 希望廣場\n\n" +
-                        "06/11 stage at 翡翠灣\n\n" +
-                        "03/17 stage at Revolver\n\n"+
-                        "01/10 stage at 西門杰克(首演)"));
+                "12/24 Live at 桃園埔心農場\n\n"+
+                        "10/15 Live at 新竹Haven Bar\n\n"+
+                        "09/11 Live at 公館河岸(專場)\n\n"+
+                        "07/30 Live at 翡翠灣\n\n" +
+                        "07/24 Live at 台中中山堂\n\n" +
+                        "07/09 Live at 希望廣場\n\n" +
+                        "06/11 Live at 翡翠灣\n\n" +
+                        "03/17 Live at Revolver\n\n"+
+                        "01/10 Live at 西門杰克(首演)"));
 
         Year year2 = new Year("2016 - 演出資訊", contents2);
         years.add(year2);

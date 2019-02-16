@@ -6,7 +6,7 @@
     android:layout_height="match_parent"
     android:background="@drawable/black1"
     android:orientation="vertical"
-    tools:context=".Introduction.Introduction">
+    tools:context=".Introduction.My_Skin_Against_Your_Skin.My_Skin_Sgainst_Your_Skin1">
 
     <LinearLayout
         android:layout_width="match_parent"

@@ -8,6 +8,9 @@
     <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
     <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
     <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.CALL_PHONE" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+
 
     <uses-feature
         android:glEsVersion="0x00020000"
@@ -73,6 +76,16 @@
         <activity android:name=".Video.Coming_Soon.Video_Coming_Soon" />
         <activity android:name=".Music"/>
         <activity android:name=".Stage.stage" />
+        <activity android:name=".Stage.Riverside_Music_Cafe.Riverside_Music_Cafe1" />
+        <activity android:name=".Stage.Riverside_Music_Cafe.Riverside_Music_Cafe2" />
+        <activity android:name=".Stage.Riverside_Music_Cafe.Riverside_Music_Cafe3" />
+        <activity android:name=".Stage.Riverside_Live_House.Riverside_Live_House1" />
+        <activity android:name=".Stage.Riverside_Live_House.Riverside_Live_House2" />
+        <activity android:name=".Stage.Riverside_Live_House.Riverside_Live_House3" />
+        <activity android:name=".Stage.Jack_Studio.Jack_Studio_Live_House1" />
+        <activity android:name=".Stage.Jack_Studio.Jack_Studio_Live_House2" />
+        <activity android:name=".Stage.Jack_Studio.Jack_Studio_Live_House3" />
+
         <activity android:name=".Setting" />
     </application>
 

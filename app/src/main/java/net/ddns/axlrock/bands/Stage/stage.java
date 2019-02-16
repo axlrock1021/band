@@ -12,11 +12,9 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ImageView;
 import android.widget.TextView;
+
 import net.ddns.axlrock.bands.Home_Menu.Home_Item;
-import net.ddns.axlrock.bands.Introduction.Astro_Bunny.Astro_Bunny1;
-import net.ddns.axlrock.bands.Introduction.Chocolate_Tiger.Chocolate_Tiger1;
 import net.ddns.axlrock.bands.Introduction.Coming_Soon.Coming_Soon;
-import net.ddns.axlrock.bands.Introduction.Gravity.Gravitys1;
 import net.ddns.axlrock.bands.Introduction.Mec_Band.Mec_Band1;
 import net.ddns.axlrock.bands.Introduction.Morning_Call.Morning_Call1;
 import net.ddns.axlrock.bands.Introduction.My_Skin_Against_Your_Skin.My_Skin_Sgainst_Your_Skin1;
@@ -24,6 +22,9 @@ import net.ddns.axlrock.bands.Introduction.NekoJam.Nekojam1;
 import net.ddns.axlrock.bands.Introduction.Vast_Hazy.Vast_Hazy1;
 import net.ddns.axlrock.bands.Introduction.Zani.Zani1;
 import net.ddns.axlrock.bands.R;
+import net.ddns.axlrock.bands.Stage.Jack_Studio.Jack_Studio_Live_House1;
+import net.ddns.axlrock.bands.Stage.Riverside_Live_House.Riverside_Live_House1;
+import net.ddns.axlrock.bands.Stage.Riverside_Music_Cafe.Riverside_Music_Cafe1;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -46,15 +47,15 @@ public class stage extends AppCompatActivity {
     protected void itemListMethod() {
         List<Home_Item> itemList = new ArrayList<>();
         itemList.add(new Home_Item(1, R.drawable.riverside_music_cafe1, "河岸留言(公館)"));
-        itemList.add(new Home_Item(2, R.drawable.riverside_music_cafe1, "Astro Bunny"));
-        itemList.add(new Home_Item(3, R.drawable.riverside_music_cafe1, "Chocolate Tiger"));
+        itemList.add(new Home_Item(2, R.drawable.riverside_live_house1, "河岸留言(西門町)"));
+        itemList.add(new Home_Item(3, R.drawable.jack_studio_live_house1, "杰克音樂展演空間"));
         itemList.add(new Home_Item(4, R.drawable.riverside_music_cafe1, "MECBand"));
-        itemList.add(new Home_Item(5, R.drawable.gravity13, "Morning call"));
-        itemList.add(new Home_Item(6, R.drawable.gravity13, "My Skin Against Your Skin"));
-        itemList.add(new Home_Item(7, R.drawable.gravity13, "NekoJam"));
-        itemList.add(new Home_Item(8, R.drawable.gravity13, "Vast & Hazy"));
-        itemList.add(new Home_Item(9, R.drawable.gravity13, "Zani"));
-        itemList.add(new Home_Item(10, R.drawable.gravity13, "Coming Soon"));
+        itemList.add(new Home_Item(5, R.drawable.riverside_music_cafe1, "Morning call"));
+        itemList.add(new Home_Item(6, R.drawable.riverside_music_cafe1, "My Skin Against Your Skin"));
+        itemList.add(new Home_Item(7, R.drawable.riverside_music_cafe1, "NekoJam"));
+        itemList.add(new Home_Item(8, R.drawable.riverside_music_cafe1, "Vast & Hazy"));
+        itemList.add(new Home_Item(9, R.drawable.riverside_music_cafe1, "Zani"));
+        itemList.add(new Home_Item(10, R.drawable.riverside_music_cafe1, "Coming Soon"));
 
         //建立RecyclerView
         RecyclerView recyclerView = findViewById(R.id.recyclerView2);
@@ -94,13 +95,13 @@ public class stage extends AppCompatActivity {
                 public void onClick(View v) {
                     switch (position){
                         case 0:
-                            startActivity(new Intent().setClass(stage.this, Gravitys1.class));
+                            startActivity(new Intent().setClass(stage.this, Riverside_Music_Cafe1.class));
                             break;
                         case 1:
-                            startActivity(new Intent().setClass(stage.this, Astro_Bunny1.class));
+                            startActivity(new Intent().setClass(stage.this, Riverside_Live_House1.class));
                             break;
                         case 2:
-                            startActivity(new Intent().setClass(stage.this, Chocolate_Tiger1.class));
+                            startActivity(new Intent().setClass(stage.this, Jack_Studio_Live_House1.class));
                             break;
                         case 3:
                             startActivity(new Intent().setClass(stage.this, Mec_Band1.class));

@@ -9,6 +9,7 @@ import android.view.GestureDetector;
 import android.view.GestureDetector.OnGestureListener;
 import android.view.Menu;
 import android.view.MotionEvent;
+import android.widget.TextView;
 
 import net.ddns.axlrock.bands.R;
 
@@ -16,11 +17,16 @@ public class Riverside_Music_Cafe1 extends AppCompatActivity implements OnGestur
 
     //定義手勢檢測器
     GestureDetector detector;
+    //宣告物件
+    TextView phone;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.riverside_music_cafe1);
+
+        //建立關聯
+        phone = findViewById(R.id.phone);
 
         //初始化手勢檢測器
         detector = new GestureDetector(this, this);
@@ -28,6 +34,7 @@ public class Riverside_Music_Cafe1 extends AppCompatActivity implements OnGestur
         //禁止螢幕翻轉
         setRequestedOrientation(ActivityInfo.SCREEN_ORIENTATION_PORTRAIT);
     }
+
 
     @SuppressLint("ResourceType")
     @Override
@@ -51,7 +58,7 @@ public class Riverside_Music_Cafe1 extends AppCompatActivity implements OnGestur
     public boolean onFling(MotionEvent e1, MotionEvent e2, float velocityX, float velocityY) {
         //如果向右滑動的距離 > 50mm
         if (e1.getX() - e2.getX() > 50) {
-            Intent intent = new Intent(this, Gravitys2.class); //換頁
+            Intent intent = new Intent(this, Riverside_Music_Cafe2.class); //換頁
             startActivity(intent);
             finish();
             //設置切換方向，從右邊進入，左邊退出

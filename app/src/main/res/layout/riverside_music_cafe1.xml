@@ -6,7 +6,7 @@
     android:layout_height="match_parent"
     android:background="@drawable/black1"
     android:orientation="vertical"
-    tools:context=".Introduction.Introduction">
+    tools:context=".Stage.Riverside_Music_Cafe.Riverside_Music_Cafe1">
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -22,7 +22,7 @@
             android:background="@color/colorPrimaryDark"
             android:gravity="center_horizontal"
             android:padding="2dp"
-            android:text="✩ Riverside Music Cafe ✩"
+            android:text="@string/riverside_music_cafe"
             android:textColor="@color/cardview_light_background"
             android:textSize="25sp"
             android:textStyle="normal" />
@@ -40,7 +40,7 @@
             android:gravity="center"
             android:paddingTop="10dp"
             android:paddingBottom="5dp"
-            android:text="重 力 樂 團\nTaiwan"
+            android:text="河岸留言(公館)"
             android:textColor="@color/cardview_light_background"
             android:textSize="27sp"
             android:textStyle="normal" />
@@ -49,33 +49,45 @@
 
     <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="2dp"
         android:layout_weight="10"
-        android:orientation="horizontal">
+        android:orientation="vertical">
 
         <TextView
+            android:id="@+id/phone"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginTop="30dp"
-            android:layout_weight="1"
+            android:autoLink="phone|map"
+            android:linksClickable="true"
             android:padding="8dp"
-            android:text="簡介\n為音樂而「生」\n為表演而「活」\n這就是我們要的生活。\n\n我們是'重力樂團'！\n小名是'動'樂團！\n\n雖然我們每個人都很過「重力」(不是過重唷)，但是為了帶給觀眾最好的演出，我們還是願意繼續「重力」下去。"
+            android:text="✡聯絡方式\n℡ 02-2368-7310\n(營業時間 19:00 - 00:30)\n\n✡場地租借\n潘先生 0922-012-800\n周小姐 0958-601-621"
             android:textColor="@color/cardview_light_background"
-            android:textSize="22sp"
-            android:textStyle="normal" />
+            android:textColorLink="@color/colorAccent"
+            android:textSize="18sp" />
+
+        <TextView
+            android:id="@+id/textView13"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="8dp"
+            android:text="✡地址\n台北市羅斯福路三段244巷2號B1\n(台電大樓旁)\n\n✡大眾交通工具\n捷運\n公館站4號出口、台電大樓站1號出口\n公車\n台電大樓站 1、208、208(高架線)、208(基河二期國宅線)、236、251、252、278、530、606、606(區間車)、644、648、672、673、74、棕12、綠11、綠13、藍28"
+            android:textColor="@color/cardview_light_background"
+            android:textSize="18sp" />
+
     </LinearLayout>
 
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:layout_weight="1"
         android:orientation="horizontal">
 
         <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_weight="1"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="20dp"
             android:gravity="center_horizontal"
-            android:paddingBottom="5dp"
             android:text="@string/右鍵"
             android:textColor="@color/cardview_light_background"
             android:textSize="27sp" />

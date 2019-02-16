@@ -5,7 +5,7 @@
     android:layout_height="match_parent"
     android:background="@color/colorPrimaryDark"
     android:orientation="vertical"
-    tools:context=".Introduction.Introduction">
+    tools:context=".Video.Video_Band_Introduction">
 
     <LinearLayout
         android:layout_width="match_parent"
