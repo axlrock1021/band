@@ -71,7 +71,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:padding="8dp"
-            android:text="✡地址\n台北市萬華區昆明街76號B1\n\n✡大眾交通工具\n捷運\n捷運西門站6號出口\n\n✡走路\n直行成都路(往屈臣氏那條)，昆明街右轉(看到星巴克，就到昆明街囉!)，再直走就會走到"
+            android:text="✡地址\n台北市萬華區昆明街76號B1\n\n✡大眾交通工具\n捷運\n西門站6號出口\n走路\n直行成都路(往屈臣氏那條)，昆明街右轉(看到星巴克，就到昆明街囉!)，再直走就會走到"
             android:textColor="@color/cardview_light_background"
             android:textSize="18sp" />
 

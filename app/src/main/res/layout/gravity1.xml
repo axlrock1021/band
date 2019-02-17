@@ -59,7 +59,7 @@
             android:layout_marginTop="30dp"
             android:layout_weight="1"
             android:padding="8dp"
-            android:text="簡介\n為音樂而「生」\n為表演而「活」\n這就是我們要的生活。\n\n我們是'重力樂團'！\n小名是'動'樂團！\n\n雖然我們每個人都很過「重力」(不是過重唷)，但是為了帶給觀眾最好的演出，我們還是願意繼續「重力」下去。"
+            android:text="✺簡介\n為音樂而「生」\n為表演而「活」\n這就是我們要的生活。\n\n我們是'重力樂團'！\n小名是'動'樂團！\n\n雖然我們每個人都很過「重力」(不是過重唷)，但是為了帶給觀眾最好的演出，我們還是願意繼續「重力」下去。"
             android:textColor="@color/cardview_light_background"
             android:textSize="22sp"
             android:textStyle="normal" />

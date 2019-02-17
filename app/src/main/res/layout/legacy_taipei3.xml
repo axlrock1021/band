@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/black1"
+    android:orientation="vertical"
+    tools:context=".Stage.Legacy_Taipei.Legacy_Taipei3">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/textView15"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="5dp"
+            android:layout_weight="1"
+            android:background="@color/colorPrimaryDark"
+            android:gravity="center_horizontal"
+            android:padding="2dp"
+            android:text="@string/experience"
+            android:textColor="@color/cardview_light_background"
+            android:textSize="25sp"
+            android:textStyle="normal" />
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:gravity="center"
+            android:paddingTop="10dp"
+            android:paddingBottom="5dp"
+            android:text="店家介紹"
+            android:textColor="@color/cardview_light_background"
+            android:textSize="27sp"
+            android:textStyle="normal" />
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="2dp"
+        android:layout_weight="10"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/textView13"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="8dp"
+            android:text="✡簡介\n​Live House用持續的熱情帶動音樂的創新，以及音樂和生活的連結。而Legacy自2009年12月成立至今，成為音樂唱作人必訪的指標型舞台，也成功塑造音樂產業起點與生活空間結合的典範用心的節目規劃與空間特性，期許觀眾近距離的音樂體驗，也讓每位表演者都得到最好的設備與支持。\n\nLegacy從台北發聲，擴散至香港、星馬以及國際，持續創造區域影響力將傳承現場演出的熱情與力量，持續製造新的傳奇。\n\n用千分之一的距離感受舞台的光和熱，傳接現場魅惑人心的魔力，在每一個新的傳奇締造的夜晚裡，我們，在那裡~Live a Legacy"
+            android:textColor="@color/cardview_light_background"
+            android:textSize="18sp" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:paddingBottom="5dp"
+            android:text="@string/雙向鍵"
+            android:textColor="@color/cardview_light_background"
+            android:textSize="27sp" />
+    </LinearLayout>
+
+
+</LinearLayout>

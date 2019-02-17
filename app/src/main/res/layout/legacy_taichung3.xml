@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/black1"
+    android:orientation="vertical"
+    tools:context=".Stage.Legacy_Taichung.Legacy_Taichung3">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/textView15"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="5dp"
+            android:layout_weight="1"
+            android:background="@color/colorPrimaryDark"
+            android:gravity="center_horizontal"
+            android:padding="2dp"
+            android:text="@string/experience"
+            android:textColor="@color/cardview_light_background"
+            android:textSize="25sp"
+            android:textStyle="normal" />
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:gravity="center"
+            android:paddingTop="10dp"
+            android:paddingBottom="5dp"
+            android:text="店家介紹"
+            android:textColor="@color/cardview_light_background"
+            android:textSize="27sp"
+            android:textStyle="normal" />
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="2dp"
+        android:layout_weight="10"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/textView13"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="8dp"
+            android:text="✡簡介\n​台中，得天獨厚的樞紐位置，擁有豐厚的自然、人文資產，串聯著南來北往的交通，融合出中部特有既包容又富創意的文化風格。\n\nLegacy傳，華人現場音樂的領導品牌，善於發掘創意因子的品牌性格，始終被台中深深吸引，經過三年多的縝密規劃，一座為Live Music量身建造的全新音樂展演空間 - Legacy Taichung，在2014年夏天，帶著眾人的祝福與期待開幕了。\n\n以創作為主軸，搖滾為精神，打造一場場令人驚豔的現場演出；震撼的聲光效果，獨一無二的舞台魅力，讓理念被傳達、熱情被感染，直接體會音樂的本質，不只是LIVE也是LIFE。"
+            android:textColor="@color/cardview_light_background"
+            android:textSize="18sp" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:paddingBottom="5dp"
+            android:text="@string/雙向鍵"
+            android:textColor="@color/cardview_light_background"
+            android:textSize="27sp" />
+    </LinearLayout>
+
+
+</LinearLayout>

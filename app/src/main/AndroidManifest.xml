@@ -4,10 +4,9 @@
     package="net.ddns.axlrock.bands">
 
     <uses-permission android:name="android.permission.INTERNET" />
-    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
     <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
-    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
-    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
     <uses-permission android:name="android.permission.CALL_PHONE" />
     <uses-permission android:name="android.permission.READ_PHONE_STATE" />
 
@@ -74,7 +73,7 @@
         <activity android:name=".Video.Vast_Hazy.Video_Vast_Hazy" />
         <activity android:name=".Video.Zani.Video_Zani" />
         <activity android:name=".Video.Coming_Soon.Video_Coming_Soon" />
-        <activity android:name=".Music"/>
+        <activity android:name=".Music_Play.Music_Play"/>
         <activity android:name=".Stage.stage" />
         <activity android:name=".Stage.Riverside_Music_Cafe.Riverside_Music_Cafe1" />
         <activity android:name=".Stage.Riverside_Music_Cafe.Riverside_Music_Cafe2" />
@@ -85,7 +84,43 @@
         <activity android:name=".Stage.Jack_Studio.Jack_Studio_Live_House1" />
         <activity android:name=".Stage.Jack_Studio.Jack_Studio_Live_House2" />
         <activity android:name=".Stage.Jack_Studio.Jack_Studio_Live_House3" />
-
+        <activity android:name=".Stage.Revolver.Revolver1" />
+        <activity android:name=".Stage.Revolver.Revolver2" />
+        <activity android:name=".Stage.Revolver.Revolver3" />
+        <activity android:name=".Stage.Legacy_Taipei.Legacy_Taipei1" />
+        <activity android:name=".Stage.Legacy_Taipei.Legacy_Taipei2" />
+        <activity android:name=".Stage.Legacy_Taipei.Legacy_Taipei3" />
+        <activity android:name=".Stage.Legacy_Taichung.Legacy_Taichung1" />
+        <activity android:name=".Stage.Legacy_Taichung.Legacy_Taichung2" />
+        <activity android:name=".Stage.Legacy_Taichung.Legacy_Taichung3" />
+        <activity android:name=".Stage.Apamini.Apamini1" />
+        <activity android:name=".Stage.Apamini.Apamini2" />
+        <activity android:name=".Stage.Apamini.Apamini3" />
+        <activity android:name=".Stage.The_Wall_Live_House.The_Wall_Live_House1" />
+        <activity android:name=".Stage.The_Wall_Live_House.The_Wall_Live_House2" />
+        <activity android:name=".Stage.The_Wall_Live_House.The_Wall_Live_House3" />
+        <activity android:name=".Stage.Corner_House.Corner_House1" />
+        <activity android:name=".Stage.Corner_House.Corner_House2" />
+        <activity android:name=".Stage.Corner_House.Corner_House3" />
+        <activity android:name=".Stage.Music_Corner.Music_Corner1" />
+        <activity android:name=".Stage.Music_Corner.Music_Corner2" />
+        <activity android:name=".Stage.Music_Corner.Music_Corner3" />
+        <activity android:name=".Stage.Sound_Live_House.SOUND_Live_House1" />
+        <activity android:name=".Stage.Sound_Live_House.SOUND_Live_House2" />
+        <activity android:name=".Stage.Sound_Live_House.SOUND_Live_House3" />
+        <activity android:name=".Stage.Tiehua_Music_Village.Tiehua_Music_Village1" />
+        <activity android:name=".Stage.Tiehua_Music_Village.Tiehua_Music_Village2" />
+        <activity android:name=".Stage.Tiehua_Music_Village.Tiehua_Music_Village3" />
+        <activity android:name=".Stage.Banchiaofefe.Banchiaofefe1" />
+        <activity android:name=".Stage.Banchiaofefe.Banchiaofefe2" />
+        <activity android:name=".Stage.Banchiaofefe.Banchiaofefe3" />
+        <activity android:name=".Stage.EZ5_Live_House.EZ5_Live_House1" />
+        <activity android:name=".Stage.EZ5_Live_House.EZ5_Live_House2" />
+        <activity android:name=".Stage.EZ5_Live_House.EZ5_Live_House3" />
+        <activity android:name=".Stage.The_Witch_House.The_Witch_House1" />
+        <activity android:name=".Stage.The_Witch_House.The_Witch_House2" />
+        <activity android:name=".Stage.The_Witch_House.The_Witch_House3" />
+        <activity android:name=".Stage.Coming_Soon.Coming_Soon1" />
         <activity android:name=".Setting" />
     </application>
 

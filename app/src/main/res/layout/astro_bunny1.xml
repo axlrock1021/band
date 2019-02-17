@@ -59,7 +59,7 @@
             android:layout_marginTop="30dp"
             android:layout_weight="1"
             android:padding="8dp"
-            android:text="簡介\n由二位音樂製作人查查(前櫻桃幫主唱)與Nu(羽承)組成的雙人電子組合。\n\n擅長以歌曲說故事的他們，以極富時代性的電子聲響包裹內心裡的每一個聲音、每一段回憶，唱述著每個階段的人生體驗和經歷，並以一首「被你遺忘的森林」在許多樂迷心中留下深刻的印象。"
+            android:text="✡簡介\n由二位音樂製作人查查(前櫻桃幫主唱)與Nu(羽承)組成的雙人電子組合。\n\n擅長以歌曲說故事的他們，以極富時代性的電子聲響包裹內心裡的每一個聲音、每一段回憶，唱述著每個階段的人生體驗和經歷，並以一首「被你遺忘的森林」在許多樂迷心中留下深刻的印象。"
             android:textColor="@color/cardview_light_background"
             android:textSize="22sp"
             android:textStyle="normal" />

@@ -58,10 +58,10 @@
             android:id="@+id/phone"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:autoLink="phone|map"
+            android:autoLink="phone|email"
             android:linksClickable="true"
             android:padding="8dp"
-            android:text="✡聯絡方式\n℡ 02-2368-7310\n(營業時間 19:00 - 00:30)\n\n✡場地租借\n潘先生 0922-012-800\n周小姐 0958-601-621"
+            android:text="✡聯絡方式\n℡ 02-2368-7310\n(營業時間 19:00 - 00:30)\n\n✡演出接洽\n潘先生 0922-012-800\n周小姐 0958-601-621"
             android:textColor="@color/cardview_light_background"
             android:textColorLink="@color/colorAccent"
             android:textSize="18sp" />

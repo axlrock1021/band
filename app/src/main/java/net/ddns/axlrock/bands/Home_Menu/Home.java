@@ -3,10 +3,14 @@ package net.ddns.axlrock.bands.Home_Menu;
 import android.content.Context;
 import android.content.Intent;
 import android.content.pm.ActivityInfo;
+import android.content.pm.PackageManager;
 import android.media.AudioManager;
 import android.media.SoundPool;
 import android.os.Bundle;
 import android.os.Handler;
+import android.support.annotation.NonNull;
+import android.support.v4.app.ActivityCompat;
+import android.support.v7.app.AlertDialog;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
@@ -17,13 +21,16 @@ import android.widget.ImageView;
 import android.widget.TextView;
 
 import net.ddns.axlrock.bands.Introduction.Introduction;
-import net.ddns.axlrock.bands.Stage.stage;
+import net.ddns.axlrock.bands.Music_Play.Music_Play;
 import net.ddns.axlrock.bands.R;
 import net.ddns.axlrock.bands.Setting;
+import net.ddns.axlrock.bands.Stage.stage;
 import net.ddns.axlrock.bands.Video.Video_Band_Introduction;
 
 import java.util.ArrayList;
 import java.util.List;
+
+import static android.Manifest.permission.READ_EXTERNAL_STORAGE;
 
 public class Home extends AppCompatActivity {
     //宣告變數
@@ -31,10 +38,23 @@ public class Home extends AppCompatActivity {
     private SoundPool soundPool;
     private Handler aHandler;
 
+    private static final int REQUEST_CONTACTS = 1;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.home_menu);
+
+        //首先，在程式中若想存取屬於危險權限的資源之前，需先檢查是否已經取得使用者的授權，檢查權限語法：
+        int permission = ActivityCompat.checkSelfPermission(this, READ_EXTERNAL_STORAGE);
+
+        if(permission != PackageManager.PERMISSION_GRANTED){
+            //未取得權限，向使用者要求允許權限
+            ActivityCompat.requestPermissions(this,new String[]{READ_EXTERNAL_STORAGE},1);
+        }else{
+            //已有權限，可進行檔案存取
+
+        }
 
         //調用soundPool()
         soundPool();
@@ -45,6 +65,27 @@ public class Home extends AppCompatActivity {
         //禁止螢幕翻轉
         setRequestedOrientation(ActivityInfo.SCREEN_ORIENTATION_PORTRAIT);
     }
+
+    @Override
+    public void onRequestPermissionsResult(int requestCode, @NonNull String[] permissions, @NonNull int[] grantResults) {
+        super.onRequestPermissionsResult(requestCode, permissions, grantResults);
+
+        switch (requestCode){
+            case REQUEST_CONTACTS:
+                if(grantResults.length > 0 && grantResults[0] == PackageManager.PERMISSION_GRANTED){
+                    //取得權限，進行存取
+                }else{
+                    //使用者拒絕權限，顯示對話框告知
+                    new AlertDialog.Builder(this)
+                            .setTitle("存取本機權限")
+                            .setMessage("允許 才能聽音樂呀 ! ")
+                            .setPositiveButton("OK",null)
+                            .show();
+                }
+                return;
+        }
+    }
+
 
     //建立soundPool背景音效&延遲緩衝
     protected void soundPool(){ //建立soundPool
@@ -119,7 +160,7 @@ public class Home extends AppCompatActivity {
                             soundPool.release();
                             break;
                         case 2: //音樂播放器
-                            startActivity(new Intent().setClass(Home.this, Video_Band_Introduction.class));
+                            startActivity(new Intent().setClass(Home.this, Music_Play.class));
                             soundPool.release();
                             break;
                         case 3: //表演舞台
