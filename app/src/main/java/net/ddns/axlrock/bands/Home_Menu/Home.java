@@ -10,7 +10,6 @@ import android.os.Bundle;
 import android.os.Handler;
 import android.support.annotation.NonNull;
 import android.support.v4.app.ActivityCompat;
-import android.support.v7.app.AlertDialog;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
@@ -30,30 +29,32 @@ import net.ddns.axlrock.bands.Video.Video_Band_Introduction;
 import java.util.ArrayList;
 import java.util.List;
 
+import pub.devrel.easypermissions.AppSettingsDialog;
+import pub.devrel.easypermissions.EasyPermissions;
+
 import static android.Manifest.permission.READ_EXTERNAL_STORAGE;
 
-public class Home extends AppCompatActivity {
+public class Home extends AppCompatActivity implements EasyPermissions.PermissionCallbacks {
     //宣告變數
     private int soundID; //SoundPool_ID
     private SoundPool soundPool;
     private Handler aHandler;
 
-    private static final int REQUEST_CONTACTS = 1;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.home_menu);
 
-        //首先，在程式中若想存取屬於危險權限的資源之前，需先檢查是否已經取得使用者的授權，檢查權限語法：
+        //危險權限
+        //需先檢查是否已經取得使用者的授權
         int permission = ActivityCompat.checkSelfPermission(this, READ_EXTERNAL_STORAGE);
 
         if(permission != PackageManager.PERMISSION_GRANTED){
             //未取得權限，向使用者要求允許權限
             ActivityCompat.requestPermissions(this,new String[]{READ_EXTERNAL_STORAGE},1);
         }else{
-            //已有權限，可進行檔案存取
-
+            //已有權限，可進行音樂檔案存取
         }
 
         //調用soundPool()
@@ -66,23 +67,69 @@ public class Home extends AppCompatActivity {
         setRequestedOrientation(ActivityInfo.SCREEN_ORIENTATION_PORTRAIT);
     }
 
+
     @Override
     public void onRequestPermissionsResult(int requestCode, @NonNull String[] permissions, @NonNull int[] grantResults) {
         super.onRequestPermissionsResult(requestCode, permissions, grantResults);
 
-        switch (requestCode){
-            case REQUEST_CONTACTS:
-                if(grantResults.length > 0 && grantResults[0] == PackageManager.PERMISSION_GRANTED){
-                    //取得權限，進行存取
-                }else{
-                    //使用者拒絕權限，顯示對話框告知
-                    new AlertDialog.Builder(this)
-                            .setTitle("存取本機權限")
-                            .setMessage("允許 才能聽音樂呀 ! ")
-                            .setPositiveButton("OK",null)
-                            .show();
-                }
-                return;
+        //Android 6.0以後執行階段需取得使用者授權
+        //在此將授權回應交由EasyPermissions類別處理
+        EasyPermissions.onRequestPermissionsResult(requestCode, permissions, grantResults, this);
+
+//        switch (requestCode){
+//            case REQUEST_CONTACTS:
+//                if(grantResults.length > 0 && grantResults[0] == PackageManager.PERMISSION_GRANTED){
+//                    //取得權限，進行存取
+//                }else{
+//                    //使用者拒絕權限，顯示對話框告知
+//                    //建立AlertDialog
+//                    AlertDialog.Builder ad = new AlertDialog.Builder(Home.this); //宣告物件實例化
+//
+//                    ad.setIcon(R.drawable.cry);  //設定標題圖片
+//                    ad.setTitle("存取本機音樂權限"); //設定標題內容
+//                    ad.setMessage("\n不允許 ?!\n\n掰掰啦 ~ ~ ~"); //設定訊息內容
+//
+//                    ad.setNegativeButton("OK", new DialogInterface.OnClickListener() {
+//
+//                        public void onClick(DialogInterface dialog, int i) {
+////                            //選"OK"，退出程式
+////                            Intent home = new Intent(Intent.ACTION_MAIN);
+////                            home.addCategory(Intent.CATEGORY_HOME);
+////                            startActivity(home);
+////                            finish();
+//                        }
+//                    });
+//                    AlertDialog dialog = ad.create();
+//                    //按下空白地方時不消失
+//                    dialog.setCanceledOnTouchOutside(false);
+//                    //顯示對話框
+//                    dialog.show();
+//                }
+//                return;
+//        }
+    }
+
+    //實作EasyPermissions.PermissionCallbacks兩個方法
+    //允許授權
+    @Override
+    public void onPermissionsGranted(int requestCode, List<String> perms) {
+    }
+    //拒絕授權
+    @Override
+    public void onPermissionsDenied(int requestCode, List<String> list) {
+
+        //判斷使用者是否勾選(不要再顯示】)
+        if (EasyPermissions.somePermissionPermanentlyDenied(this, list)){
+            //開啟應用程式設定畫面，讓使用者手動允許權限
+            new AppSettingsDialog.Builder(this).build().show();
+        }
+    }
+
+    //使用者手動允許授權
+    @Override
+    protected void onActivityResult(int requestCode, int resultCode, Intent data) {
+        super.onActivityResult(requestCode, resultCode, data);
+        if (requestCode == AppSettingsDialog.DEFAULT_SETTINGS_REQ_CODE){
         }
     }
 
@@ -122,6 +169,7 @@ public class Home extends AppCompatActivity {
         recyclerView.setLayoutManager(layoutManager);
         recyclerView.setAdapter(new itemListAdapter(this, itemList));
     }
+
 
     //建立Adapter
     private class itemListAdapter extends RecyclerView.Adapter<itemListAdapter.ViewHolder> {

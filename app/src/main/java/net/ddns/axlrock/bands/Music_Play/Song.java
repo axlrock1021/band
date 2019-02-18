@@ -1,7 +1,7 @@
 package net.ddns.axlrock.bands.Music_Play;
 
 
-//用来装载扫描到的音频文件
+//用来封裝尋到的音檔文件
 public class Song {
 
     /**
@@ -9,7 +9,7 @@ public class Song {
      */
     public String singer;
     /**
-     * 歌曲名
+     * 歌曲
      */
     public String song;
     /**
@@ -17,13 +17,12 @@ public class Song {
      */
     public String path;
     /**
-     * 歌曲长度
+     * 歌曲長度
      */
     public int duration;
     /**
      * 歌曲的大小
      */
     public long size;
-
 
 }

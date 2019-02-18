@@ -1,20 +1,19 @@
 package net.ddns.axlrock.bands.Music_Play;
 
-//创建一个用来扫描本地音频的工具类
+//用來掃描本地音檔的工具類
 
 import android.content.Context;
 import android.database.Cursor;
 import android.provider.MediaStore;
-
 import java.util.ArrayList;
 import java.util.List;
 
 /**
- * 音乐工具类,
+ * 音樂工具類別,
  */
 public class MusicUtils {
     /**
-     * 掃描系統裡面的音頻文件，返回一個列表集合
+     * 掃描系統裡面的音檔文件，返回一個列表集合
      */
     public static List<Song> getMusicData(Context context) {
         List<Song> list = new ArrayList<Song>();
@@ -47,7 +46,7 @@ public class MusicUtils {
     }
 
     /**
-     * 定义一个方法用来格式化获取到的时间
+     * 定義一個方法用來格式化獲取到的時間
      */
     public static String formatTime(int time) {
         if (time / 1000 % 60 < 10) {

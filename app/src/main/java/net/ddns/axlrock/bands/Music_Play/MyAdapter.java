@@ -5,9 +5,7 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.BaseAdapter;
 import android.widget.TextView;
-
 import net.ddns.axlrock.bands.R;
-
 import java.util.List;
 
 public class MyAdapter extends BaseAdapter {
@@ -39,21 +37,21 @@ public class MyAdapter extends BaseAdapter {
         ViewHolder holder = null;
         if (view == null) {
             holder = new ViewHolder();
-            //引入布局
+            //導入布局
             view = View.inflate(context, R.layout.music_play_item, null);
-            //实例化对象
-            holder.song = (TextView) view.findViewById(R.id.item_mymusic_song);
-            holder.singer = (TextView) view.findViewById(R.id.item_mymusic_singer);
-            holder.duration = (TextView) view.findViewById(R.id.item_mymusic_duration);
-            holder.position = (TextView) view.findViewById(R.id.item_mymusic_postion);
+            //實例化物件
+            holder.song = view.findViewById(R.id.item_mymusic_song);
+            holder.singer = view.findViewById(R.id.item_mymusic_singer);
+            holder.duration =  view.findViewById(R.id.item_mymusic_duration);
+            holder.position = view.findViewById(R.id.item_mymusic_postion);
             view.setTag(holder);
         } else {
             holder = (ViewHolder) view.getTag();
         }
-        //给控件赋值
+        //给元件賦值
         holder.song.setText(list.get(i).song.toString());
         holder.singer.setText(list.get(i).singer.toString());
-        //时间需要转换一下
+        //时间需要轉換
         int duration = list.get(i).duration;
         String time = MusicUtils.formatTime(duration);
         holder.duration.setText(time);
@@ -62,10 +60,10 @@ public class MyAdapter extends BaseAdapter {
         return view;
     }
     class ViewHolder{
-        TextView song;//歌曲名
+        TextView song;//歌曲
         TextView singer;//歌手
-        TextView duration;//时长
-        TextView position;//序号
+        TextView duration;//時間長度
+        TextView position;//索引值
 
     }
 
