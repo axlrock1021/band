@@ -17,6 +17,8 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.Toast;
 
+import net.ddns.axlrock.bands.Welcome_End.Welcome_End;
+
 import java.util.Locale;
 
 public class Setting extends AppCompatActivity {
@@ -29,7 +31,7 @@ public class Setting extends AppCompatActivity {
     //初始化網址
     String youtubeURL1 = "https://www.facebook.com/andyrock1021/";
 
-    @RequiresApi(api = Build.VERSION_CODES.JELLY_BEAN_MR1)
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -93,6 +95,7 @@ public class Setting extends AppCompatActivity {
                 builder.setSingleChoiceItems(new String[]{"中文", "English"},
                         getSharedPreferences("Language", Context.MODE_PRIVATE).getInt("Language", 0),
                         new DialogInterface.OnClickListener() {
+
                             public void onClick(DialogInterface dialogInterface, int i) {
                                 SharedPreferences preferences = getSharedPreferences("Language", Context.MODE_PRIVATE);
                                 SharedPreferences.Editor editor = preferences.edit();
@@ -111,7 +114,7 @@ public class Setting extends AppCompatActivity {
         });
     }
 
-
+    //語言切換
     private void setLanguage() {
 
         SharedPreferences preferences = getSharedPreferences("Language", Context.MODE_PRIVATE);

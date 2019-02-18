@@ -18,28 +18,24 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ImageView;
 import android.widget.TextView;
-
 import net.ddns.axlrock.bands.Introduction.Introduction;
 import net.ddns.axlrock.bands.Music_Play.Music_Play;
 import net.ddns.axlrock.bands.R;
 import net.ddns.axlrock.bands.Setting;
 import net.ddns.axlrock.bands.Stage.stage;
 import net.ddns.axlrock.bands.Video.Video_Band_Introduction;
-
 import java.util.ArrayList;
 import java.util.List;
-
 import pub.devrel.easypermissions.AppSettingsDialog;
 import pub.devrel.easypermissions.EasyPermissions;
-
 import static android.Manifest.permission.READ_EXTERNAL_STORAGE;
 
 public class Home extends AppCompatActivity implements EasyPermissions.PermissionCallbacks {
+
     //宣告變數
     private int soundID; //SoundPool_ID
     private SoundPool soundPool;
     private Handler aHandler;
-
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -67,7 +63,6 @@ public class Home extends AppCompatActivity implements EasyPermissions.Permissio
         setRequestedOrientation(ActivityInfo.SCREEN_ORIENTATION_PORTRAIT);
     }
 
-
     @Override
     public void onRequestPermissionsResult(int requestCode, @NonNull String[] permissions, @NonNull int[] grantResults) {
         super.onRequestPermissionsResult(requestCode, permissions, grantResults);
@@ -75,7 +70,6 @@ public class Home extends AppCompatActivity implements EasyPermissions.Permissio
         //Android 6.0以後執行階段需取得使用者授權
         //在此將授權回應交由EasyPermissions類別處理
         EasyPermissions.onRequestPermissionsResult(requestCode, permissions, grantResults, this);
-
 //        switch (requestCode){
 //            case REQUEST_CONTACTS:
 //                if(grantResults.length > 0 && grantResults[0] == PackageManager.PERMISSION_GRANTED){
@@ -113,12 +107,14 @@ public class Home extends AppCompatActivity implements EasyPermissions.Permissio
     //允許授權
     @Override
     public void onPermissionsGranted(int requestCode, List<String> perms) {
+        //已有權限，可進行音樂檔案存取
     }
+
     //拒絕授權
     @Override
     public void onPermissionsDenied(int requestCode, List<String> list) {
 
-        //判斷使用者是否勾選(不要再顯示】)
+        //判斷使用者是否勾選(不要再顯示)
         if (EasyPermissions.somePermissionPermanentlyDenied(this, list)){
             //開啟應用程式設定畫面，讓使用者手動允許權限
             new AppSettingsDialog.Builder(this).build().show();

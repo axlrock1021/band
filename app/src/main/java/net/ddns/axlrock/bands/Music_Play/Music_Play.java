@@ -149,7 +149,6 @@ public class Music_Play extends AppCompatActivity {
                     IsPlay = true;//是否在播放赋值為true
                     //animation.start();
                     Toast.makeText(Music_Play.this, "播放" + list.get(playPosition).song, Toast.LENGTH_SHORT).show();
-
                 } else {
                     //播放暫停按鈕圖片變成暫停狀態
                     //playPause.setBackgroundResource(R.drawable.play_press);
