@@ -23,4 +23,5 @@
         </shape>
     </item>
 
+    <item android:drawable="@android:color/black" />
 </selector>

@@ -74,14 +74,14 @@ public class Music_Play extends AppCompatActivity {
 
         mListView.setOnItemClickListener(new AdapterView.OnItemClickListener() {
             @Override
-            public void onItemClick(AdapterView<?> adapterView, View view, int i, long l) {
+            public void onItemClick(AdapterView<?> adapterView, View view, int position, long l) {
                 //創建一個播放音檔的方法，把點擊到的地址傳過去
-                list.get(i); //path這個就是歌曲的地址。
-                play(list.get(i).path);
+                list.get(position); //path這個就是歌曲的地址。
+                play(list.get(position).path);
                 //播放暫停按鈕圖片變成播放狀態
                 //playPause.setBackgroundResource(R.drawable.);
                 //把當前點擊的項目的位置拿到，知道當前播放歌曲的序號
-                playPosition = i;
+                playPosition = position;
                 //播放音樂的時候把是否在播放賦值為真
                 IsPlay = true;
                 //點擊項目讓控制台顯示出來
@@ -173,6 +173,11 @@ public class Music_Play extends AppCompatActivity {
                 mediaPlayer.seekTo(0);
                 //播放暫停按鈕圖片變成播放狀態
                 //playPause.setBackgroundResource(R.drawable.pause_press);
+                break;
+
+            case R.id.playing_btn_shuffle://隨機播放
+
+
                 break;
         }
     }

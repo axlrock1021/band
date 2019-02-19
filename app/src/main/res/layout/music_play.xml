@@ -9,11 +9,16 @@
     <TextView
         android:id="@+id/main_textview"
         android:layout_width="match_parent"
-        android:layout_height="40dp"
-        android:gravity="center"
-        android:text="我的音樂"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="5dp"
+        android:layout_weight="1"
+        android:background="@color/colorPrimaryDark"
+        android:gravity="center_horizontal"
+        android:padding="2dp"
+        android:text="@string/my_music"
         android:textColor="@color/cardview_light_background"
-        android:textColorLink="@color/cardview_light_background" />
+        android:textSize="25sp"
+        android:textStyle="normal" />
 
     <ListView
         android:id="@+id/main_listview"
@@ -21,82 +26,95 @@
         android:layout_height="match_parent"
         android:layout_below="@+id/main_textview" />
 
-    <RelativeLayout
+    <LinearLayout
         android:id="@+id/main_control_rl"
         android:layout_width="match_parent"
-        android:layout_height="90dp"
+        android:layout_height="wrap_content"
         android:layout_alignParentBottom="true"
 
-        android:visibility="invisible">
+        android:background="@color/red"
+        android:visibility="visible">
 
 
-        <TextView
-            android:id="@+id/control_singer"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginLeft="40dp"
-            android:layout_marginTop="5dp"
-
-            android:text="歌手名"
-            android:textColor="@color/cardview_light_background"
-            android:textSize="15sp" />
-
-
-        <TextView
-            android:id="@+id/control_song"
-            android:layout_width="150dp"
-            android:layout_height="wrap_content"
-            android:layout_marginLeft="15dp"
-            android:layout_marginTop="5dp"
-            android:layout_toRightOf="@+id/control_singer"
-            android:ellipsize="marquee"
-            android:marqueeRepeatLimit="marquee_forever"
-            android:singleLine="true"
-            android:text="歌曲"
-            android:textColor="@color/common_google_signin_btn_text_dark_default"
-            android:textSize="16sp" />
-
-        <RelativeLayout
+        <LinearLayout
             android:layout_width="match_parent"
-            android:layout_height="50dp"
-            android:layout_alignParentBottom="true"
-            android:layout_marginLeft="10dp"
-            android:layout_marginBottom="10dp">
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
 
-            <Button
-                android:id="@+id/playing_btn_previous"
-                android:layout_width="50dp"
-                android:layout_height="50dp"
-                android:layout_marginLeft="30dp"
+            <SeekBar
+                android:id="@+id/sbSize"
+                style="@android:style/Widget.DeviceDefault.Light.SeekBar"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:max="100"
+                android:padding="1dp"
+                android:progress="0" />
 
-                android:onClick="control" />
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
 
-            <Button
-                android:id="@+id/playing_btn_pause"
-                android:layout_width="55dp"
-                android:layout_height="55dp"
-                android:layout_centerHorizontal="true"
-                android:background="@drawable/play_press"
-                android:onClick="control"
-                android:textColor="@color/colorPrimary" />
+                <TextView
+                    android:id="@+id/control_song"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="3dp"
+                    android:layout_toRightOf="@+id/control_singer"
+                    android:layout_weight="20"
+                    android:ellipsize="marquee"
+                    android:marqueeRepeatLimit="marquee_forever"
+                    android:padding="3dp"
+                    android:singleLine="true"
+                    android:text="歌曲跑馬燈"
+                    android:textColor="@color/colorPrimaryDark"
+                    android:textSize="20sp" />
 
-            <Button
-                android:id="@+id/playing_btn_next"
-                android:layout_width="50dp"
-                android:layout_height="50dp"
-                android:layout_alignParentRight="true"
-                android:layout_marginRight="30dp"
+                <Button
+                    android:id="@+id/playing_btn_previous"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
 
-                android:onClick="control" />
+                    android:layout_weight="1"
+                    android:background="@drawable/play_skip_previous_left"
+                    android:onClick="control" />
 
-        </RelativeLayout>
-    </RelativeLayout>
+                <Button
+                    android:id="@+id/playing_btn_pause"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:layout_centerHorizontal="true"
+                    android:layout_weight="1"
+                    android:background="@drawable/music_play_selector"
+                    android:onClick="control"
+                    android:textColor="@color/colorPrimary" />
 
-    <SeekBar
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:id="@+id/sbSize"
-        android:max="50"
-        android:progress="16" />
+                <Button
+                    android:id="@+id/playing_btn_next"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:layout_alignParentRight="true"
+
+                    android:layout_marginRight="30dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/play_skip_next_right"
+                    android:onClick="control" />
+
+                <Button
+                    android:id="@+id/playing_btn_shuffle"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:layout_alignParentRight="true"
+
+                    android:layout_marginRight="30dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/play_shuffle"
+                    android:onClick="control" />
+            </LinearLayout>
+
+        </LinearLayout>
+
+
+    </LinearLayout>
 
 </RelativeLayout>

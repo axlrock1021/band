@@ -1,5 +1,6 @@
 package net.ddns.axlrock.bands;
 
+import android.app.Dialog;
 import android.content.Context;
 import android.content.DialogInterface;
 import android.content.Intent;
@@ -13,7 +14,10 @@ import android.support.annotation.RequiresApi;
 import android.support.v7.app.AlertDialog;
 import android.support.v7.app.AppCompatActivity;
 import android.util.DisplayMetrics;
+import android.view.Gravity;
 import android.view.View;
+import android.view.Window;
+import android.view.WindowManager;
 import android.widget.Button;
 import android.widget.Toast;
 
@@ -27,6 +31,8 @@ public class Setting extends AppCompatActivity {
     Button button1;
     Button button2;
     Button button3;
+    Button button4;
+    Button button5;
     Button button7;
     //初始化網址
     String youtubeURL1 = "https://www.facebook.com/andyrock1021/";
@@ -40,6 +46,8 @@ public class Setting extends AppCompatActivity {
         button1 = findViewById(R.id.button1); //粉絲團
         button2 = findViewById(R.id.button2); //發送mail
         button3 = findViewById(R.id.button3); //商店評分
+        button4 = findViewById(R.id.button4); //關於作者
+        button5 = findViewById(R.id.button5); //版本資訊
         button7 = findViewById(R.id.button7); //語言切換
 
         //調用setLanguage();
@@ -81,6 +89,71 @@ public class Setting extends AppCompatActivity {
                         Toast.makeText(getApplicationContext(), "您沒有安裝應用市場或瀏覽器", Toast.LENGTH_SHORT).show();
                     }
                 }
+            }
+        });
+    }
+
+    //關於作者
+    public void about_the_author(View view) {
+
+        button4.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+
+                //建立AlertDialog
+                AlertDialog.Builder ad = new AlertDialog.Builder(Setting.this); //宣告物件實例化
+
+                ad.setIcon(R.drawable.cry);  //設定標題圖片
+                ad.setTitle("關 於 作 者"); //設定標題內容
+                ad.setMessage("\n我叫ANDY\n\n我叫ANDY\n\n我叫ANDY\n\n我叫ANDY\n\n我叫ANDY\n" +
+                        "\n我叫ANDY\n\n我叫ANDY\n\n我叫ANDY\n\n我叫ANDY\n\n我叫ANDY\n\n我叫ANDY\n" +
+                        "\n我叫ANDY\n\n我叫ANDY\n\n我叫ANDY\n\n我叫ANDY\n\n我叫ANDY\n\n我叫ANDY\n"); //設定訊息內容
+
+                ad.setPositiveButton("OK", new DialogInterface.OnClickListener() { //設定按鍵(右邊)
+
+                    public void onClick(DialogInterface dialog, int i) {
+
+                    }
+                });
+                AlertDialog dialog = ad.create();
+                //按下空白地方時不消失
+                dialog.setCanceledOnTouchOutside(false);
+                //顯示對話框
+                dialog.show();
+                //自訂長寬
+                dialog.getWindow().setLayout(WindowManager.LayoutParams.MATCH_PARENT, WindowManager.LayoutParams.WRAP_CONTENT);
+            }
+        });
+    }
+
+
+    //版本資訊
+    public void version(View view) {
+
+        button5.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+
+                //建立AlertDialog
+                AlertDialog.Builder ad = new AlertDialog.Builder(Setting.this); //宣告物件實例化
+
+                ad.setIcon(R.drawable.cry);  //設定標題圖片
+                ad.setTitle("版 本 資 訊"); //設定標題內容
+                ad.setMessage("\n第一版"); //設定訊息內容
+
+                ad.setPositiveButton("OK", new DialogInterface.OnClickListener() { //設定按鍵(右邊)
+
+                    public void onClick(DialogInterface dialog, int i) {
+
+                    }
+                });
+                AlertDialog dialog = ad.create();
+                //按下空白地方時不消失
+                dialog.setCanceledOnTouchOutside(false);
+                //顯示對話框
+                dialog.show();
+                //自訂長寬
+                dialog.getWindow().setLayout(WindowManager.LayoutParams.MATCH_PARENT, WindowManager.LayoutParams.WRAP_CONTENT);
             }
         });
     }

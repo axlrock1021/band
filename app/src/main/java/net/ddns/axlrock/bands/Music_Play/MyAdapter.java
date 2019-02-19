@@ -9,12 +9,13 @@ import net.ddns.axlrock.bands.R;
 import java.util.List;
 
 public class MyAdapter extends BaseAdapter {
+
     private Context context;
     private List<Song> list;
+
     public MyAdapter(Music_Play mainActivity, List<Song> list) {
         this.context = mainActivity;
         this.list = list;
-
     }
 
     @Override
@@ -33,7 +34,7 @@ public class MyAdapter extends BaseAdapter {
     }
 
     @Override
-    public View getView(int i, View view, ViewGroup viewGroup) {
+    public View getView(int position, View view, ViewGroup viewGroup) {
         ViewHolder holder = null;
         if (view == null) {
             holder = new ViewHolder();
@@ -49,16 +50,17 @@ public class MyAdapter extends BaseAdapter {
             holder = (ViewHolder) view.getTag();
         }
         //给元件賦值
-        holder.song.setText(list.get(i).song.toString());
-        holder.singer.setText(list.get(i).singer.toString());
+        holder.song.setText(list.get(position).song.toString());
+        holder.singer.setText(list.get(position).singer.toString());
         //时间需要轉換
-        int duration = list.get(i).duration;
+        int duration = list.get(position).duration;
         String time = MusicUtils.formatTime(duration);
         holder.duration.setText(time);
-        holder.position.setText(i+1+"");
+        holder.position.setText(position+1+"");
 
         return view;
     }
+
     class ViewHolder{
         TextView song;//歌曲
         TextView singer;//歌手
