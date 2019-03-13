@@ -22,7 +22,7 @@
             android:background="@color/colorPrimaryDark"
             android:gravity="center_horizontal"
             android:padding="2dp"
-            android:text="@string/information"
+            android:text="@string/experience"
             android:textColor="@color/cardview_light_background"
             android:textSize="25sp"
             android:textStyle="normal" />
@@ -40,9 +40,9 @@
             android:gravity="center"
             android:paddingTop="10dp"
             android:paddingBottom="5dp"
-            android:text="活動訊息"
+            android:text="店 家 介 紹"
             android:textColor="@color/cardview_light_background"
-            android:textSize="27sp"
+            android:textSize="25sp"
             android:textStyle="normal" />
 
     </RelativeLayout>
@@ -55,16 +55,13 @@
         android:orientation="vertical">
 
         <TextView
-            android:id="@+id/phone"
+            android:id="@+id/textView13"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:autoLink="web"
-            android:linksClickable="true"
             android:padding="8dp"
-            android:text="✡官方網站\nhttp://www.tiehua.com.tw/?fbclid=IwAR3Bb-Prj7DgR_dz86w95ErZ78QGMWRStkzAJ53jx8kuUdF_GuZ5AHqwCJk\n\n✡官方臉書\nhttps://www.facebook.com/tiehua\n\n✡官方IG\nhttps://insta-stalker.com/tag/%E9%90%B5%E8%8A%B1%E6%9D%91%E9%9F%B3%E6%A8%82%E8%81%9A%E8%90%BD/"
+            android:text="✡簡介\n\n鐵花村音樂聚落慢市集﹐是由「台灣好基金會」結合台東音樂人和藝術家共同打造的地方﹐成立於2010年7月\n\n音樂聚落的呈現像是海洋﹐連接了不同的島嶼和國度﹐讓人們在此相遇﹐從素人到專業演出﹐人人都有機會在這裡分享﹐音符就像地上的草一般﹐自然地冒出芽﹐再慢慢地擴展開來﹐戶外的大草地上﹐希望旅人們可以放下自己原本的生活步調﹐深刻感受這兒源源不絕的生命力"
             android:textColor="@color/cardview_light_background"
-            android:textColorLink="@color/colorAccent"
-            android:textSize="18sp" />
+            android:textSize="20sp" />
 
     </LinearLayout>
 
@@ -78,9 +75,10 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:gravity="center_horizontal"
+            android:paddingBottom="5dp"
             android:text="@string/雙向鍵"
             android:textColor="@color/cardview_light_background"
-            android:textSize="27sp" />
+            android:textSize="25sp" />
     </LinearLayout>
 
 

@@ -24,7 +24,9 @@
         android:id="@+id/main_listview"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:layout_below="@+id/main_textview" />
+        android:layout_below="@+id/main_textview"
+        android:layout_margin="1dp"
+        android:layout_marginTop="5dp" />
 
     <LinearLayout
         android:id="@+id/main_control_rl"
@@ -32,71 +34,88 @@
         android:layout_height="wrap_content"
         android:layout_alignParentBottom="true"
 
-        android:background="@color/red"
-        android:visibility="visible">
+        android:layout_marginStart="1dp"
+        android:layout_marginLeft="1dp"
+        android:layout_marginTop="1dp"
+        android:layout_marginEnd="1dp"
+        android:layout_marginRight="1dp"
+        android:layout_marginBottom="1dp"
+        android:background="@drawable/yellow_background"
+        android:visibility="invisible">
 
 
         <LinearLayout
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:orientation="vertical">
-
-            <SeekBar
-                android:id="@+id/sbSize"
-                style="@android:style/Widget.DeviceDefault.Light.SeekBar"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:max="100"
-                android:padding="1dp"
-                android:progress="0" />
+            android:layout_height="match_parent"
+            android:layout_margin="1dp"
+            android:orientation="horizontal"
+            android:padding="1dp"
+            android:visibility="visible">
 
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
+                android:layout_weight="1"
                 android:orientation="horizontal">
 
                 <TextView
                     android:id="@+id/control_song"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_margin="3dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_margin="1dp"
                     android:layout_toRightOf="@+id/control_singer"
-                    android:layout_weight="20"
                     android:ellipsize="marquee"
-                    android:marqueeRepeatLimit="marquee_forever"
-                    android:padding="3dp"
+                    android:focusable="true"
+                    android:focusableInTouchMode="true"
+                    android:gravity="center"
+                    android:marqueeRepeatLimit="-1"
+                    android:padding="7dp"
                     android:singleLine="true"
-                    android:text="歌曲跑馬燈"
+                    android:text=""
                     android:textColor="@color/colorPrimaryDark"
                     android:textSize="20sp" />
+            </LinearLayout>
 
-                <Button
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:orientation="horizontal">
+
+                <ImageButton
                     android:id="@+id/playing_btn_previous"
                     android:layout_width="40dp"
                     android:layout_height="40dp"
 
-                    android:layout_weight="1"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="2dp"
+                    android:layout_marginRight="12dp"
+                    android:layout_weight="2"
                     android:background="@drawable/play_skip_previous_left"
                     android:onClick="control" />
 
-                <Button
+                <ImageButton
                     android:id="@+id/playing_btn_pause"
                     android:layout_width="40dp"
                     android:layout_height="40dp"
-                    android:layout_centerHorizontal="true"
-                    android:layout_weight="1"
+                    android:layout_centerHorizontal="false"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="2dp"
+                    android:layout_marginRight="12dp"
+                    android:layout_weight="2"
                     android:background="@drawable/music_play_selector"
-                    android:onClick="control"
-                    android:textColor="@color/colorPrimary" />
+                    android:onClick="control" />
 
-                <Button
+                <ImageButton
                     android:id="@+id/playing_btn_next"
                     android:layout_width="40dp"
                     android:layout_height="40dp"
-                    android:layout_alignParentRight="true"
+                    android:layout_alignParentRight="false"
 
-                    android:layout_marginRight="30dp"
-                    android:layout_weight="1"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="2dp"
+                    android:layout_marginRight="12dp"
+                    android:layout_weight="2"
                     android:background="@drawable/play_skip_next_right"
                     android:onClick="control" />
 
@@ -104,12 +123,15 @@
                     android:id="@+id/playing_btn_shuffle"
                     android:layout_width="40dp"
                     android:layout_height="40dp"
-                    android:layout_alignParentRight="true"
+                    android:layout_alignParentRight="false"
 
-                    android:layout_marginRight="30dp"
-                    android:layout_weight="1"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="2dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_weight="2"
                     android:background="@drawable/play_shuffle"
                     android:onClick="control" />
+
             </LinearLayout>
 
         </LinearLayout>

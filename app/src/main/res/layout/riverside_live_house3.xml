@@ -22,7 +22,7 @@
             android:background="@color/colorPrimaryDark"
             android:gravity="center_horizontal"
             android:padding="2dp"
-            android:text="@string/experience"
+            android:text="@string/information"
             android:textColor="@color/cardview_light_background"
             android:textSize="25sp"
             android:textStyle="normal" />
@@ -40,9 +40,9 @@
             android:gravity="center"
             android:paddingTop="10dp"
             android:paddingBottom="5dp"
-            android:text="店家介紹"
+            android:text="活 動 訊 息"
             android:textColor="@color/cardview_light_background"
-            android:textSize="27sp"
+            android:textSize="25sp"
             android:textStyle="normal" />
 
     </RelativeLayout>
@@ -54,15 +54,54 @@
         android:layout_weight="10"
         android:orientation="vertical">
 
-        <TextView
-            android:id="@+id/textView13"
+        <Button
+            android:id="@+id/official"
+            style="@style/Widget.AppCompat.Button.Borderless.Colored"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:padding="8dp"
-            android:text="✡簡介\n如果展演文化可以被比喻成一條河，那河岸留言已經渡過了這條河上游的湍急與顛簸，而正式進入開展及匯流的平原期，我們將可以稍有自信的帶領這群與河岸共同成長的樂團，走向更大的舞台。\n\n同時也希望與國際接軌，將引進一些高品質高水準的中型Size的演出，藉此與國內樂團相互切磋，共同提升整體展演文化的水平。"
-            android:textColor="@color/cardview_light_background"
-            android:textSize="18sp" />
+            android:layout_marginTop="30dp"
+            android:layout_marginBottom="10dp"
+            android:gravity="center_horizontal"
+            android:onClick="goOfficial"
+            android:padding="10dp"
+            android:text="✡ 官方 Website"
+            android:textAllCaps="false"
+            android:textColor="@drawable/textcolorchange"
+            android:textColorLink="@color/cardview_light_background"
+            android:textSize="20sp"
+            android:textStyle="normal" />
 
+        <Button
+            android:id="@+id/fb"
+            style="@style/Widget.AppCompat.Button.Borderless.Colored"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="5dp"
+            android:gravity="center_horizontal"
+            android:onClick="goFacebook"
+            android:padding="10dp"
+            android:text="✡ 官方 Facebook"
+            android:textAllCaps="false"
+            android:textColor="@drawable/textcolorchange"
+            android:textColorLink="@color/cardview_light_background"
+            android:textSize="20sp"
+            android:textStyle="normal" />
+
+        <Button
+            android:id="@+id/ig"
+            style="@style/Widget.AppCompat.Button.Borderless.Colored"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="5dp"
+            android:gravity="center_horizontal"
+            android:onClick="goInstagram"
+            android:padding="10dp"
+            android:text="✡ 官方 Instagram"
+            android:textAllCaps="false"
+            android:textColor="@drawable/textcolorchange"
+            android:textColorLink="@color/cardview_light_background"
+            android:textSize="20sp"
+            android:textStyle="normal" />
     </LinearLayout>
 
     <LinearLayout
@@ -75,10 +114,9 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:gravity="center_horizontal"
-            android:paddingBottom="5dp"
             android:text="@string/雙向鍵"
             android:textColor="@color/cardview_light_background"
-            android:textSize="27sp" />
+            android:textSize="25sp" />
     </LinearLayout>
 
 

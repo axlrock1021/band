@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/black1"
+    android:orientation="vertical"
+    tools:context=".Introduction.Female.Cherry_Boom.Cherry_Boom1">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/textView15"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="5dp"
+            android:layout_weight="1"
+            android:background="@color/colorPrimaryDark"
+            android:gravity="center_horizontal"
+            android:padding="2dp"
+            android:text="@string/cherry_boom"
+            android:textColor="@color/cardview_light_background"
+            android:textSize="25sp"
+            android:textStyle="normal" />
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:gravity="center"
+            android:paddingTop="10dp"
+            android:paddingBottom="5dp"
+            android:text="櫻 桃 幫\nTaiwan"
+            android:textColor="@color/cardview_light_background"
+            android:textSize="25sp"
+            android:textStyle="normal" />
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="10"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/textView16"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="30dp"
+            android:layout_weight="1"
+            android:padding="10dp"
+            android:text="✡ 簡介\n\n團員皆為輔仁大學畢業﹐在出道前便受邀擔任線上遊戲亂Online代言人\n\n2006年6月24日於西門紅樓廣場舉辦首張專輯「親愛的王子」專輯預購首爆櫻樂會7月7日正式發行﹐2007年5月再推出第二張專輯「乖乖」﹐2008年參加墾丁春天吶喊音樂祭﹐並以「乖乖」專輯入圍第19屆金曲獎最佳樂團獎﹐2010年11月推出第三張專輯「Only」"
+            android:textColor="@color/cardview_light_background"
+            android:textSize="20sp"
+            android:textStyle="normal" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center_horizontal"
+            android:paddingBottom="5dp"
+            android:text="@string/右鍵"
+            android:textColor="@color/cardview_light_background"
+            android:textSize="25sp" />
+    </LinearLayout>
+
+
+</LinearLayout>

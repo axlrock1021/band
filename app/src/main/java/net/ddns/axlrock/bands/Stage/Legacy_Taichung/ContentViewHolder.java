@@ -12,7 +12,7 @@ public class ContentViewHolder extends ChildViewHolder {
 
     public ContentViewHolder(View itemView) {
         super(itemView);
-        mTextView = itemView.findViewById(R.id.textView);
+        mTextView = itemView.findViewById(R.id.andy);
     }
 
     public void bind(Content content) {

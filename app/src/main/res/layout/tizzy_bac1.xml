@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/black1"
+    android:orientation="vertical"
+    tools:context=".Introduction.Female.Tizzy_Bac.Tizzy_Bac1">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/textView15"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="5dp"
+            android:layout_weight="1"
+            android:background="@color/colorPrimaryDark"
+            android:gravity="center_horizontal"
+            android:padding="2dp"
+            android:text="@string/tizzy_bac"
+            android:textColor="@color/cardview_light_background"
+            android:textSize="25sp"
+            android:textStyle="normal" />
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:gravity="center"
+            android:paddingTop="10dp"
+            android:paddingBottom="5dp"
+            android:text="鐵 之 貝 克\nTaiwan"
+            android:textColor="@color/cardview_light_background"
+            android:textSize="25sp"
+            android:textStyle="normal" />
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="10"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/textView17"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="30dp"
+            android:layout_weight="1"
+            android:padding="10dp"
+            android:text="✡ 簡介\n\nTizzy Bac是一支活躍於台灣的樂團﹐成立於1999年﹐主要活動區域為台北地區﹐常在台北市各大表演場地演出\n\nTizzy Bac的詞曲創作主要由惠婷負責﹐歌詞的內容以探討現代人生活與愛情的問題與困境為主﹐因此他們自稱為牢騷系樂團﹐也因為歌詞主題的關係﹐Tizzy Bac的曲子較能引起人生經歷較豐富的聽眾的共鳴﹐所以也有人將他們的音樂歸納為「成人另類（Adult Alternative）」"
+            android:textColor="@color/cardview_light_background"
+            android:textSize="20sp"
+            android:textStyle="normal" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center_horizontal"
+            android:paddingBottom="5dp"
+            android:text="@string/右鍵"
+            android:textColor="@color/cardview_light_background"
+            android:textSize="25sp" />
+    </LinearLayout>
+
+
+</LinearLayout>

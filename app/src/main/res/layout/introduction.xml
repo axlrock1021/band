@@ -5,9 +5,9 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    tools:context=".Introduction.Introduction">
+    tools:context=".Introduction.Female.Introduction_Female">
 
-    <RelativeLayout
+    <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:orientation="horizontal">
@@ -15,17 +15,67 @@
         <TextView
             android:id="@+id/textView3"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
+            android:layout_height="match_parent"
             android:layout_marginBottom="5dp"
             android:layout_weight="1"
             android:background="@color/colorPrimaryDark"
-            android:gravity="center_horizontal"
+            android:gravity="center"
             android:padding="2dp"
             android:text="@string/introduction"
             android:textColor="@color/cardview_light_background"
             android:textSize="30sp"
             android:textStyle="normal" />
-    </RelativeLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="2dp"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/button1"
+            style="@android:style/Widget.DeviceDefault.Button.Borderless"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="3dp"
+            android:layout_weight="1"
+            android:background="@drawable/buttonsytle"
+            android:onClick="switchPage1"
+            android:text="女 主 唱"
+            android:textColor="@color/cardview_light_background"
+            android:textSize="22sp"
+            android:textStyle="normal" />
+
+        <Button
+            android:id="@+id/button2"
+            style="@android:style/Widget.DeviceDefault.Button.Borderless"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="3dp"
+            android:layout_weight="1"
+            android:background="@drawable/buttonsytle"
+            android:onClick="switchPage2"
+            android:text="男 主 唱"
+            android:textColor="@color/cardview_light_background"
+            android:textSize="22sp"
+            android:textStyle="normal" />
+
+        <Button
+            android:id="@+id/button3"
+            style="@android:style/Widget.DeviceDefault.Button.Borderless"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="3dp"
+            android:layout_weight="1"
+            android:background="@drawable/buttonsytle"
+            android:onClick="switchPage3"
+            android:text="素 人"
+            android:textColor="@color/cardview_light_background"
+            android:textSize="22sp"
+            android:textStyle="normal" />
+    </LinearLayout>
 
     <android.support.v7.widget.RecyclerView
         android:id="@+id/recyclerView2"

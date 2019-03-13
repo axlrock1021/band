@@ -22,7 +22,7 @@
             android:background="@color/colorPrimaryDark"
             android:gravity="center_horizontal"
             android:padding="2dp"
-            android:text="@string/experience"
+            android:text="@string/information"
             android:textColor="@color/cardview_light_background"
             android:textSize="25sp"
             android:textStyle="normal" />
@@ -40,9 +40,9 @@
             android:gravity="center"
             android:paddingTop="10dp"
             android:paddingBottom="5dp"
-            android:text="店家介紹"
+            android:text="活 動 訊 息"
             android:textColor="@color/cardview_light_background"
-            android:textSize="27sp"
+            android:textSize="25sp"
             android:textStyle="normal" />
 
     </RelativeLayout>
@@ -54,15 +54,54 @@
         android:layout_weight="10"
         android:orientation="vertical">
 
-        <TextView
-            android:id="@+id/textView13"
+        <Button
+            android:id="@+id/official"
+            style="@style/Widget.AppCompat.Button.Borderless.Colored"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:padding="8dp"
-            android:text="✡簡介\n完成了8000場團次以上的演出,每日開幹的河岸留言，象徵的已經不只一種意志，更是展現台灣底層搖滾生命力最旺盛的地方，因此，河岸留言不僅是個「夢想」而已，更是夢想的起跑點,它一直存在許多樂團種子於音樂生成的初始階段。\n\n我們對於茁壯成長的樂團施以微笑的祝福，對於起步初期的樂團更加用心配合，河岸留言的定位，我們一直都很清楚「一個熱情者的夢想起跑點或者一個專業人的夢想守護地」是的，我們一直在音樂的底層文化中扮演著認真的園丁角色。"
-            android:textColor="@color/cardview_light_background"
-            android:textSize="18sp" />
+            android:layout_marginTop="30dp"
+            android:layout_marginBottom="10dp"
+            android:gravity="center_horizontal"
+            android:onClick="goOfficial"
+            android:padding="10dp"
+            android:text="✡ 官方 Website"
+            android:textAllCaps="false"
+            android:textColor="@drawable/textcolorchange"
+            android:textColorLink="@color/cardview_light_background"
+            android:textSize="20sp"
+            android:textStyle="normal" />
 
+        <Button
+            android:id="@+id/fb"
+            style="@style/Widget.AppCompat.Button.Borderless.Colored"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="5dp"
+            android:gravity="center_horizontal"
+            android:onClick="goFacebook"
+            android:padding="10dp"
+            android:text="✡ 官方 Facebook"
+            android:textAllCaps="false"
+            android:textColor="@drawable/textcolorchange"
+            android:textColorLink="@color/cardview_light_background"
+            android:textSize="20sp"
+            android:textStyle="normal" />
+
+        <Button
+            android:id="@+id/ig"
+            style="@style/Widget.AppCompat.Button.Borderless.Colored"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="5dp"
+            android:gravity="center_horizontal"
+            android:onClick="goInstagram"
+            android:padding="10dp"
+            android:text="✡ 官方 Instagram"
+            android:textAllCaps="false"
+            android:textColor="@drawable/textcolorchange"
+            android:textColorLink="@color/cardview_light_background"
+            android:textSize="20sp"
+            android:textStyle="normal" />
     </LinearLayout>
 
     <LinearLayout
@@ -75,10 +114,9 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:gravity="center_horizontal"
-            android:paddingBottom="5dp"
             android:text="@string/雙向鍵"
             android:textColor="@color/cardview_light_background"
-            android:textSize="27sp" />
+            android:textSize="25sp" />
     </LinearLayout>
 
 

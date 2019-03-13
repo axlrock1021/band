@@ -6,7 +6,7 @@
     android:layout_height="match_parent"
     android:background="@drawable/black1"
     android:orientation="vertical"
-    tools:context=".Introduction.Astro_Bunny.Astro_Bunny1">
+    tools:context=".Introduction.Female.Astro_Bunny.Astro_Bunny1">
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -14,7 +14,7 @@
         android:orientation="horizontal">
 
         <TextView
-            android:id="@+id/textView15"
+            android:id="@+id/astro_bunny"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginBottom="5dp"
@@ -42,7 +42,7 @@
             android:paddingBottom="5dp"
             android:text="原 子 邦 妮\nTaiwan"
             android:textColor="@color/cardview_light_background"
-            android:textSize="27sp"
+            android:textSize="25sp"
             android:textStyle="normal" />
 
     </RelativeLayout>
@@ -55,13 +55,13 @@
 
         <TextView
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
+            android:layout_height="match_parent"
             android:layout_marginTop="30dp"
             android:layout_weight="1"
-            android:padding="8dp"
-            android:text="✡簡介\n由二位音樂製作人查查(前櫻桃幫主唱)與Nu(羽承)組成的雙人電子組合。\n\n擅長以歌曲說故事的他們，以極富時代性的電子聲響包裹內心裡的每一個聲音、每一段回憶，唱述著每個階段的人生體驗和經歷，並以一首「被你遺忘的森林」在許多樂迷心中留下深刻的印象。"
+            android:padding="10dp"
+            android:text="✡ 簡介\n\n由二位音樂製作人查查「前櫻桃幫主唱」與羽承「前展翼吉他手」所組成的雙人電子組合\n\n擅長利用歌曲述說故事的他們﹐以極富時代性的電子聲響包裹內心裡的每一個聲音﹐每一段回憶﹐唱述著每個階段的人生體驗和經歷﹐並以一首「被你遺忘的森林」在許多樂迷心中留下深刻的印象"
             android:textColor="@color/cardview_light_background"
-            android:textSize="22sp"
+            android:textSize="20sp"
             android:textStyle="normal" />
     </LinearLayout>
 
@@ -72,13 +72,13 @@
 
         <TextView
             android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
+            android:layout_height="match_parent"
             android:layout_weight="1"
             android:gravity="center_horizontal"
             android:paddingBottom="5dp"
             android:text="@string/右鍵"
             android:textColor="@color/cardview_light_background"
-            android:textSize="27sp" />
+            android:textSize="25sp" />
     </LinearLayout>
 
 

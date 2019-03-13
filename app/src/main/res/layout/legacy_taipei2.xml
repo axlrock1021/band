@@ -6,7 +6,7 @@
     android:layout_height="match_parent"
     android:background="@drawable/black1"
     android:orientation="vertical"
-    tools:context=".Stage.Legacy_Taipei.Legacy_Taipei2">
+    tools:context=".Stage.Legacy_Taipei.Legacy_Taipei3">
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -22,7 +22,7 @@
             android:background="@color/colorPrimaryDark"
             android:gravity="center_horizontal"
             android:padding="2dp"
-            android:text="@string/information"
+            android:text="@string/experience"
             android:textColor="@color/cardview_light_background"
             android:textSize="25sp"
             android:textStyle="normal" />
@@ -40,9 +40,9 @@
             android:gravity="center"
             android:paddingTop="10dp"
             android:paddingBottom="5dp"
-            android:text="活動訊息"
+            android:text="店 家 介 紹"
             android:textColor="@color/cardview_light_background"
-            android:textSize="27sp"
+            android:textSize="25sp"
             android:textStyle="normal" />
 
     </RelativeLayout>
@@ -55,16 +55,13 @@
         android:orientation="vertical">
 
         <TextView
-            android:id="@+id/phone"
+            android:id="@+id/textView13"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:autoLink="web"
-            android:linksClickable="true"
             android:padding="8dp"
-            android:text="✡官方網站\nhttp://www.legacy.com.tw/page/topic\n\n✡官方臉書\nhttps://www.facebook.com/LegacyHomePage\n\n✡官方iNDIEVOX\nhttps://www.indievox.com/legacy"
+            android:text="✡簡介\n\n​Live House用持續的熱情帶動音樂的創新﹐以及音樂和生活的連結﹐而Legacy自2009年12月成立至今﹐成為音樂唱作人必訪的指標型舞台﹐也成功塑造音樂產業起點與生活空間結合的典範用心的節目規劃與空間特性﹐讓每位表演者都得到最好的設備與支持\n\nLegacy從台北發聲﹐擴散至香港﹐星馬以及國際﹐持續創造區域影響力將傳承現場演出的熱情與力量﹐持續製造新的傳奇\n\n我們﹐在那裡~Live a Legacy"
             android:textColor="@color/cardview_light_background"
-            android:textColorLink="@color/colorAccent"
-            android:textSize="18sp" />
+            android:textSize="20sp" />
 
     </LinearLayout>
 
@@ -78,9 +75,10 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:gravity="center_horizontal"
+            android:paddingBottom="5dp"
             android:text="@string/雙向鍵"
             android:textColor="@color/cardview_light_background"
-            android:textSize="27sp" />
+            android:textSize="25sp" />
     </LinearLayout>
 
 

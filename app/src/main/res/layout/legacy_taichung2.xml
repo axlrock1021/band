@@ -22,7 +22,7 @@
             android:background="@color/colorPrimaryDark"
             android:gravity="center_horizontal"
             android:padding="2dp"
-            android:text="@string/information"
+            android:text="@string/experience"
             android:textColor="@color/cardview_light_background"
             android:textSize="25sp"
             android:textStyle="normal" />
@@ -40,9 +40,9 @@
             android:gravity="center"
             android:paddingTop="10dp"
             android:paddingBottom="5dp"
-            android:text="活動訊息"
+            android:text="店 家 介 紹"
             android:textColor="@color/cardview_light_background"
-            android:textSize="27sp"
+            android:textSize="25sp"
             android:textStyle="normal" />
 
     </RelativeLayout>
@@ -55,15 +55,12 @@
         android:orientation="vertical">
 
         <TextView
-            android:id="@+id/phone"
+            android:id="@+id/textView13"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:autoLink="web"
-            android:linksClickable="true"
             android:padding="8dp"
-            android:text="✡官方網站\nhttp://www.legacy.com.tw/page/topic\n\n✡官方臉書\nhttps://www.facebook.com/LegacyTaichung\n\n✡官方iNDIEVOX\nhttps://www.indievox.com/legacytc"
+            android:text="✡簡介\n\n​台中﹐得天獨厚的樞紐位置﹐擁有豐厚的自然﹐串聯著南來北往的交通﹐融合出中部特有既包容又富創意的文化風格\n\nLegacy傳﹐華人現場音樂的領導品牌﹐善於發掘創意因子的品牌性格﹐經過三年多的縝密規劃﹐一座為Live Music量身建造的全新音樂展演空間 - Legacy Taichung﹐在2014年夏天﹐帶著眾人的祝福與期待開幕了\n\n以創作為主軸﹐搖滾為精神﹐打造一場場令人驚豔的現場演出﹐震撼的聲光效果﹐獨一無二的舞台魅力﹐讓理念被傳達﹐不只是LIVE也是LIFE"
             android:textColor="@color/cardview_light_background"
-            android:textColorLink="@color/colorAccent"
             android:textSize="18sp" />
 
     </LinearLayout>
@@ -78,9 +75,10 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:gravity="center_horizontal"
+            android:paddingBottom="5dp"
             android:text="@string/雙向鍵"
             android:textColor="@color/cardview_light_background"
-            android:textSize="27sp" />
+            android:textSize="25sp" />
     </LinearLayout>
 
 

@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/black1"
+    android:orientation="vertical"
+    tools:context=".Introduction.Female.Bearbabes.Bearbabes1">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/astro_bunny"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="5dp"
+            android:layout_weight="1"
+            android:background="@color/colorPrimaryDark"
+            android:gravity="center_horizontal"
+            android:padding="2dp"
+            android:text="@string/bearbabes"
+            android:textColor="@color/cardview_light_background"
+            android:textSize="25sp"
+            android:textStyle="normal" />
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:gravity="center"
+            android:paddingTop="10dp"
+            android:paddingBottom="5dp"
+            android:text="熊 寶 貝\nTaiwan"
+            android:textColor="@color/cardview_light_background"
+            android:textSize="25sp"
+            android:textStyle="normal" />
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="10"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="30dp"
+            android:layout_weight="1"
+            android:padding="10dp"
+            android:text="✡ 簡介\n\n熊寶貝樂團2000年成軍至今﹐獨立製作發行三張專輯﹐征戰台灣各大Live House與音樂祭﹐並受邀赴紐約﹐日本﹐香港等地表演\n\n2012年11月﹐延續「年年」的成熟﹐熊寶貝再推出第三張全新創作專輯「Beautiful Chaos」\n\n除了主唱餅乾一貫溫柔而帶有靈魂的聲線以外﹐熊寶貝回到了最初的雙吉他編制﹐結合民謠﹐搖滾﹐電子聲響與古典﹐帶來了更豐富而飽滿的音樂層次"
+            android:textColor="@color/cardview_light_background"
+            android:textSize="20sp"
+            android:textStyle="normal" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center_horizontal"
+            android:paddingBottom="5dp"
+            android:text="@string/右鍵"
+            android:textColor="@color/cardview_light_background"
+            android:textSize="25sp" />
+    </LinearLayout>
+
+
+</LinearLayout>

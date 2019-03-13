@@ -2,6 +2,7 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="110dp"
+    android:layout_margin="1dp"
     android:gravity="center_vertical"
     android:orientation="horizontal"
     android:padding="5dp">
@@ -14,7 +15,7 @@
         android:gravity="center"
         android:text="1"
         android:textColor="@color/cardview_light_background"
-        android:textSize="18sp" />
+        android:textSize="20sp" />
 
     <RelativeLayout
         android:layout_width="wrap_content"
@@ -27,7 +28,7 @@
             android:layout_height="wrap_content"
             android:text="歌曲"
             android:textColor="@color/cardview_light_background"
-            android:textSize="20dp" />
+            android:textSize="20sp" />
 
 
         <TextView
@@ -37,18 +38,18 @@
             android:layout_below="@+id/item_mymusic_song"
             android:text="歌手"
             android:textColor="@color/cardview_light_background"
-            android:textSize="15sp" />
+            android:textSize="18sp" />
 
         <TextView
             android:id="@+id/item_mymusic_duration"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_below="@+id/item_mymusic_song"
-            android:layout_marginLeft="15dp"
+            android:layout_marginLeft="20dp"
             android:layout_toRightOf="@+id/item_mymusic_singer"
             android:text="時間"
             android:textColor="@color/cardview_light_background"
-            android:textSize="15sp" />
+            android:textSize="18sp" />
     </RelativeLayout>
 
 </LinearLayout>

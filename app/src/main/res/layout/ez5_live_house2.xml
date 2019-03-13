@@ -22,7 +22,7 @@
             android:background="@color/colorPrimaryDark"
             android:gravity="center_horizontal"
             android:padding="2dp"
-            android:text="@string/information"
+            android:text="@string/experience"
             android:textColor="@color/cardview_light_background"
             android:textSize="25sp"
             android:textStyle="normal" />
@@ -40,9 +40,9 @@
             android:gravity="center"
             android:paddingTop="10dp"
             android:paddingBottom="5dp"
-            android:text="活動訊息"
+            android:text="店 家 介 紹"
             android:textColor="@color/cardview_light_background"
-            android:textSize="27sp"
+            android:textSize="25sp"
             android:textStyle="normal" />
 
     </RelativeLayout>
@@ -55,16 +55,13 @@
         android:orientation="vertical">
 
         <TextView
-            android:id="@+id/phone"
+            android:id="@+id/textView13"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:autoLink="web"
-            android:linksClickable="true"
             android:padding="8dp"
-            android:text="✡官方網站\nhttp://www.ez5.com.tw/new/about.php\n\n✡官方臉書\nhttps://www.facebook.com/EZ5LiveHouse"
+            android:text="✡簡介\n\n​在英國利物浦有一家小小的PUB﹐因為Beatles的駐唱而聲名大噪﹐並成為著名的觀光景點\n\n而今日台北街頭也有這樣的一個地方﹐在安和路上EZ-5 PUB已經擁有十多年的歷史﹐每晚人潮無數﹐演唱者實力備受矚目\n\n民國80年元月1號﹐EZ-5正式於安和路上誕生﹐空間裝潢設計走向以歐式風格為主﹐11年來在老闆經營理念下﹐不斷推陳出新﹐堅持給消費者最佳的視覺與聽覺最佳享受"
             android:textColor="@color/cardview_light_background"
-            android:textColorLink="@color/colorAccent"
-            android:textSize="18sp" />
+            android:textSize="20sp" />
 
     </LinearLayout>
 
@@ -78,9 +75,10 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:gravity="center_horizontal"
+            android:paddingBottom="5dp"
             android:text="@string/雙向鍵"
             android:textColor="@color/cardview_light_background"
-            android:textSize="27sp" />
+            android:textSize="25sp" />
     </LinearLayout>
 
 

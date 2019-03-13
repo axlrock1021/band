@@ -6,10 +6,9 @@
     <uses-permission android:name="android.permission.INTERNET" />
     <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
     <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
-    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
     <uses-permission android:name="android.permission.CALL_PHONE" />
-    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
-
+    <uses-permission android:name="com.android.vending.BILLING" />
 
     <uses-feature
         android:glEsVersion="0x00020000"
@@ -24,7 +23,6 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme"
         tools:ignore="GoogleAppIndexingWarning">
-
         <activity android:name=".Welcome_End.Welcome_End">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -32,38 +30,104 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+        <activity android:name=".Introduction.B.Gravity.MainActivity" />
         <activity android:name=".Home_Menu.Home" />
-        <activity android:name=".Introduction.Introduction" />
-        <activity android:name=".Introduction.Gravity.Gravitys1" />
-        <activity android:name=".Introduction.Gravity.Gravitys2" />
-        <activity android:name=".Introduction.Gravity.Gravitys3" />
-        <activity android:name=".Introduction.Astro_Bunny.Astro_Bunny1" />
-        <activity android:name=".Introduction.Astro_Bunny.Astro_Bunny2" />
-        <activity android:name=".Introduction.Astro_Bunny.Astro_Bunny3" />
-        <activity android:name=".Introduction.Mec_Band.Mec_Band1" />
-        <activity android:name=".Introduction.Mec_Band.Mec_Band2" />
-        <activity android:name=".Introduction.Mec_Band.Mec_Band3" />
-        <activity android:name=".Introduction.Chocolate_Tiger.Chocolate_Tiger1" />
-        <activity android:name=".Introduction.Chocolate_Tiger.Chocolate_Tiger2" />
-        <activity android:name=".Introduction.Chocolate_Tiger.Chocolate_Tiger3" />
-        <activity android:name=".Introduction.Morning_Call.Morning_Call1" />
-        <activity android:name=".Introduction.Morning_Call.Morning_Call2" />
-        <activity android:name=".Introduction.Morning_Call.Morning_Call3" />
-        <activity android:name=".Introduction.My_Skin_Against_Your_Skin.My_Skin_Sgainst_Your_Skin1" />
-        <activity android:name=".Introduction.My_Skin_Against_Your_Skin.My_Skin_Sgainst_Your_Skin2" />
-        <activity android:name=".Introduction.My_Skin_Against_Your_Skin.My_Skin_Sgainst_Your_Skin3" />
-        <activity android:name=".Introduction.NekoJam.Nekojam1" />
-        <activity android:name=".Introduction.NekoJam.Nekojam2" />
-        <activity android:name=".Introduction.NekoJam.Nekojam3" />
-        <activity android:name=".Introduction.Vast_Hazy.Vast_Hazy1" />
-        <activity android:name=".Introduction.Vast_Hazy.Vast_Hazy2" />
-        <activity android:name=".Introduction.Vast_Hazy.Vast_Hazy3" />
-        <activity android:name=".Introduction.Zani.Zani1" />
-        <activity android:name=".Introduction.Zani.Zani2" />
-        <activity android:name=".Introduction.Zani.Zani3" />
-        <activity android:name=".Introduction.Coming_Soon.Coming_Soon" />
+        <activity android:name=".Introduction.Female.Introduction_Female" />
+        <activity android:name=".Introduction.Female.Astro_Bunny.Astro_Bunny1" />
+        <activity android:name=".Introduction.Female.Astro_Bunny.Astro_Bunny2" />
+        <activity android:name=".Introduction.Female.Astro_Bunny.Astro_Bunny3" />
+        <activity android:name=".Introduction.Female.Mec_Band.Mec_Band1" />
+        <activity android:name=".Introduction.Female.Mec_Band.Mec_Band2" />
+        <activity android:name=".Introduction.Female.Mec_Band.Mec_Band3" />
+        <activity android:name=".Introduction.Female.Chocolate_Tiger.Chocolate_Tiger1" />
+        <activity android:name=".Introduction.Female.Chocolate_Tiger.Chocolate_Tiger2" />
+        <activity android:name=".Introduction.Female.Chocolate_Tiger.Chocolate_Tiger3" />
+        <activity android:name=".Introduction.Female.Morning_Call.Morning_Call1" />
+        <activity android:name=".Introduction.Female.Morning_Call.Morning_Call2" />
+        <activity android:name=".Introduction.Female.Morning_Call.Morning_Call3" />
+        <activity android:name=".Introduction.Female.My_Skin_Against_Your_Skin.My_Skin_Sgainst_Your_Skin1" />
+        <activity android:name=".Introduction.Female.My_Skin_Against_Your_Skin.My_Skin_Sgainst_Your_Skin2" />
+        <activity android:name=".Introduction.Female.My_Skin_Against_Your_Skin.My_Skin_Sgainst_Your_Skin3" />
+        <activity android:name=".Introduction.Female.NekoJam.Nekojam1" />
+        <activity android:name=".Introduction.Female.NekoJam.Nekojam2" />
+        <activity android:name=".Introduction.Female.NekoJam.Nekojam3" />
+        <activity android:name=".Introduction.Female.Vast_Hazy.Vast_Hazy1" />
+        <activity android:name=".Introduction.Female.Vast_Hazy.Vast_Hazy2" />
+        <activity android:name=".Introduction.Female.Vast_Hazy.Vast_Hazy3" />
+        <activity android:name=".Introduction.Female.Zani.Zani1" />
+        <activity android:name=".Introduction.Female.Zani.Zani2" />
+        <activity android:name=".Introduction.Female.Zani.Zani3" />
+        <activity android:name=".Introduction.Female.Wonfu.Wonfu1" />
+        <activity android:name=".Introduction.Female.Wonfu.Wonfu2" />
+        <activity android:name=".Introduction.Female.Wonfu.Wonfu3" />
+        <activity android:name=".Introduction.Female.Cherry_Boom.Cherry_Boom1" />
+        <activity android:name=".Introduction.Female.Cherry_Boom.Cherry_Boom2" />
+        <activity android:name=".Introduction.Female.Cherry_Boom.Cherry_Boom3" />
+        <activity android:name=".Introduction.Female.Tizzy_Bac.Tizzy_Bac1" />
+        <activity android:name=".Introduction.Female.Tizzy_Bac.Tizzy_Bac2" />
+        <activity android:name=".Introduction.Female.Tizzy_Bac.Tizzy_Bac3" />
+        <activity android:name=".Introduction.Female.The_Girl_And_The_Robots.The_Girl_And_The_Robots1" />
+        <activity android:name=".Introduction.Female.The_Girl_And_The_Robots.The_Girl_And_The_Robots2" />
+        <activity android:name=".Introduction.Female.The_Girl_And_The_Robots.The_Girl_And_The_Robots3" />
+        <activity android:name=".Introduction.Female.Freckles.Freckles1" />
+        <activity android:name=".Introduction.Female.Freckles.Freckles2" />
+        <activity android:name=".Introduction.Female.Freckles.Freckles3" />
+        <activity android:name=".Introduction.Female.Frande.Frande1" />
+        <activity android:name=".Introduction.Female.Frande.Frande2" />
+        <activity android:name=".Introduction.Female.Frande.Frande3" />
+        <activity android:name=".Introduction.Female.Elephant_Gym.Elephant_Gym1" />
+        <activity android:name=".Introduction.Female.Elephant_Gym.Elephant_Gym2" />
+        <activity android:name=".Introduction.Female.Elephant_Gym.Elephant_Gym3" />
+        <activity android:name=".Introduction.Female.Fir.Fir1" />
+        <activity android:name=".Introduction.Female.Fir.Fir2" />
+        <activity android:name=".Introduction.Female.Fir.Fir3" />
+        <activity android:name=".Introduction.Female.Bearbabes.Bearbabes1" />
+        <activity android:name=".Introduction.Female.Bearbabes.Bearbabes2" />
+        <activity android:name=".Introduction.Female.Bearbabes.Bearbabes3" />
+        <activity android:name=".Introduction.Female.Relax_ONE.Relax_ONE1" />
+        <activity android:name=".Introduction.Female.Relax_ONE.Relax_ONE2" />
+        <activity android:name=".Introduction.Female.Relax_ONE.Relax_ONE3" />
+        <activity android:name=".Introduction.Female.Solemn.Solemn1" />
+        <activity android:name=".Introduction.Female.Solemn.Solemn2" />
+        <activity android:name=".Introduction.Female.Solemn.Solemn3" />
+        <activity android:name=".Introduction.Female.Soundboss.Soundboss1" />
+        <activity android:name=".Introduction.Female.Soundboss.Soundboss2" />
+        <activity android:name=".Introduction.Female.Soundboss.Soundboss3" />
+        <activity android:name=".Introduction.Female.QueenSuitcase.QueenSuitcase1" />
+        <activity android:name=".Introduction.Female.QueenSuitcase.QueenSuitcase2" />
+        <activity android:name=".Introduction.Female.QueenSuitcase.QueenSuitcase3" />
+        <activity android:name=".Introduction.Female.Super_Obvious.Super_Obvious1" />
+        <activity android:name=".Introduction.Female.Super_Obvious.Super_Obvious2" />
+        <activity android:name=".Introduction.Female.Super_Obvious.Super_Obvious3" />
+        <activity android:name=".Introduction.Female.Pisco.Pisco1" />
+        <activity android:name=".Introduction.Female.Pisco.Pisco2" />
+        <activity android:name=".Introduction.Female.Pisco.Pisco3" />
+        <activity android:name=".Introduction.Female.Coming_Soon.Coming_Soon" />
+        <activity android:name=".Introduction.Male.Introduction_Male" />
+        <activity android:name=".Introduction.Male.Mixer.Mixer1" />
+        <activity android:name=".Introduction.Male.Mixer.Mixer2" />
+        <activity android:name=".Introduction.Male.Mixer.Mixer3" />
+        <activity android:name=".Introduction.Male.Loh_Tsui_Kweh_Commune.Loh_Tsui_Kweh_Commune1" />
+        <activity android:name=".Introduction.Male.Loh_Tsui_Kweh_Commune.Loh_Tsui_Kweh_Commune2" />
+        <activity android:name=".Introduction.Male.Loh_Tsui_Kweh_Commune.Loh_Tsui_Kweh_Commune3" />
+        <activity android:name=".Introduction.Male.EggPlantEgg.EggPlantEgg1" />
+        <activity android:name=".Introduction.Male.EggPlantEgg.EggPlantEgg2" />
+        <activity android:name=".Introduction.Male.EggPlantEgg.EggPlantEgg3" />
+        <activity android:name=".Introduction.Male.No_Party_For_Cao_Dong.No_Party_For_Cao_Dong1" />
+        <activity android:name=".Introduction.Male.No_Party_For_Cao_Dong.No_Party_For_Cao_Dong2" />
+        <activity android:name=".Introduction.Male.No_Party_For_Cao_Dong.No_Party_For_Cao_Dong3" />
+
+        <activity android:name=".Introduction.B.Introduction_B" />
+        <activity android:name=".Introduction.B.Gravity.Gravity1" />
+        <activity android:name=".Introduction.B.Gravity.Gravity2" />
+        <activity android:name=".Introduction.B.Gravity.Gravity3" />
+        <activity android:name=".Introduction.B.Gravity.Gravity4" />
+        <activity android:name=".Introduction.B.Rangetsu.Rangetsu1" />
+        <activity android:name=".Introduction.B.Rangetsu.Rangetsu2" />
+        <activity android:name=".Introduction.B.Rangetsu.Rangetsu3" />
+        <activity android:name=".Introduction.B.Rangetsu.Rangetsu4" />
         <activity android:name=".Video.Video_Band_Introduction" />
-        <activity android:name=".Video.Gravuty.Video_Gravity" />
+        <activity android:name=".Video.Gravity.Video_Gravity" />
         <activity android:name=".Video.Astro_Bunny.Video_Astro_Bunny" />
         <activity android:name=".Video.Chocolate_Tiger.Video_Chocolate_Tiger" />
         <activity android:name=".Video.Mec_Band.Video_Mec_Band" />
@@ -72,9 +136,11 @@
         <activity android:name=".Video.NekoJam.Video_NekoJam" />
         <activity android:name=".Video.Vast_Hazy.Video_Vast_Hazy" />
         <activity android:name=".Video.Zani.Video_Zani" />
+        <activity android:name=".Video.Wonfu.Video_Wonfu" />
+        <activity android:name=".Video.Cherry_Boom.Video_Cherry_Boom" />
         <activity android:name=".Video.Coming_Soon.Video_Coming_Soon" />
-        <activity android:name=".Music_Play.Music_Play"/>
-        <activity android:name=".Stage.stage" />
+        <activity android:name=".Music_Play.Music_Play" />
+        <activity android:name=".Stage.Stage" />
         <activity android:name=".Stage.Riverside_Music_Cafe.Riverside_Music_Cafe1" />
         <activity android:name=".Stage.Riverside_Music_Cafe.Riverside_Music_Cafe2" />
         <activity android:name=".Stage.Riverside_Music_Cafe.Riverside_Music_Cafe3" />
@@ -120,8 +186,17 @@
         <activity android:name=".Stage.The_Witch_House.The_Witch_House1" />
         <activity android:name=".Stage.The_Witch_House.The_Witch_House2" />
         <activity android:name=".Stage.The_Witch_House.The_Witch_House3" />
-        <activity android:name=".Stage.Coming_Soon.Coming_Soon1" />
+        <activity android:name=".Stage.Coming_Soon1.Coming_Soon1" />
         <activity android:name=".Setting" />
+
+        <meta-data
+            android:name="com.google.android.gms.version"
+            android:value="@integer/google_play_services_version" />
+
+        <activity
+            android:name="com.google.android.gms.ads.AdActivity"
+            android:configChanges="keyboard|keyboardHidden|orientation|screenLayout|uiMode|screenSize|smallestScreenSize"
+            android:theme="@android:style/Theme.Translucent" />
     </application>
 
 </manifest>

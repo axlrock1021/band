@@ -3,12 +3,15 @@ package net.ddns.axlrock.bands.Stage.Corner_House;
 import android.annotation.SuppressLint;
 import android.content.Intent;
 import android.content.pm.ActivityInfo;
+import android.net.Uri;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.view.GestureDetector;
 import android.view.GestureDetector.OnGestureListener;
 import android.view.Menu;
 import android.view.MotionEvent;
+import android.view.View;
+import android.widget.Button;
 
 import net.ddns.axlrock.bands.R;
 
@@ -16,6 +19,12 @@ public class Corner_House3 extends AppCompatActivity implements OnGestureListene
 
     //定義手勢檢測器
     GestureDetector detector;
+    //宣告物件
+    Button Official;
+    Button fb;
+    //初始化網址
+    String youtubeURL1 = "https://www.corner-house.com.tw"; //Official
+    String youtubeURL2 = "https://www.facebook.com/cornerhousetw"; //fb
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -24,6 +33,10 @@ public class Corner_House3 extends AppCompatActivity implements OnGestureListene
 
         //初始化手勢檢測器
         detector = new GestureDetector(this, this);
+
+        //建立關聯
+        Official = findViewById(R.id.official); //官方臉書
+        fb = findViewById(R.id.fb); //官方IG
 
         //禁止螢幕翻轉
         setRequestedOrientation(ActivityInfo.SCREEN_ORIENTATION_PORTRAIT);
@@ -84,5 +97,17 @@ public class Corner_House3 extends AppCompatActivity implements OnGestureListene
     @Override
     public boolean onSingleTapUp(MotionEvent e) {
         return false;
+    }
+
+    //前往官網
+    public void goOfficial(View view){
+        Intent intent = new Intent(Intent.ACTION_VIEW, Uri.parse(youtubeURL1));
+        startActivity(intent);
+    }
+
+    //前往官方臉書
+    public void goFacebook(View view){
+        Intent intent = new Intent(Intent.ACTION_VIEW, Uri.parse(youtubeURL2));
+        startActivity(intent);
     }
 }

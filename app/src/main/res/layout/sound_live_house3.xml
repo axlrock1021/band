@@ -22,7 +22,7 @@
             android:background="@color/colorPrimaryDark"
             android:gravity="center_horizontal"
             android:padding="2dp"
-            android:text="@string/experience"
+            android:text="@string/information"
             android:textColor="@color/cardview_light_background"
             android:textSize="25sp"
             android:textStyle="normal" />
@@ -40,9 +40,9 @@
             android:gravity="center"
             android:paddingTop="10dp"
             android:paddingBottom="5dp"
-            android:text="店家介紹"
+            android:text="活 動 訊 息"
             android:textColor="@color/cardview_light_background"
-            android:textSize="27sp"
+            android:textSize="25sp"
             android:textStyle="normal" />
 
     </RelativeLayout>
@@ -54,15 +54,37 @@
         android:layout_weight="10"
         android:orientation="vertical">
 
-        <TextView
-            android:id="@+id/textView13"
+        <Button
+            android:id="@+id/fb"
+            style="@style/Widget.AppCompat.Button.Borderless.Colored"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:padding="8dp"
-            android:text="✡簡介\n迴響樂手空間是由三個玩團的好友共同成立，數年來他們不曾改變過信念，依然相信著搖滾精神，幾年來的慢慢累進，迴響樂手也獲得越來越多在地人的支持。現在除了樂器教學外，空間內也有販售樂器與相關配件，並提供練團室的服務。\n\n迴響樂手雖在地下一樓，但空間內的挑高設計，明亮、整潔的環境，讓人一點也感受不到地下室的壓迫感。而練團室則是和N9 Stidio共同打造的空間，大小舒適，音場飽和，刻意打造的昏暗燈光，練起團來相當有氣氛！"
-            android:textColor="@color/cardview_light_background"
-            android:textSize="18sp" />
+            android:layout_marginBottom="5dp"
+            android:gravity="center_horizontal"
+            android:onClick="goFacebook"
+            android:padding="10dp"
+            android:text="✡ 官方 Facebook"
+            android:textAllCaps="false"
+            android:textColor="@drawable/textcolorchange"
+            android:textColorLink="@color/cardview_light_background"
+            android:textSize="20sp"
+            android:textStyle="normal" />
 
+        <Button
+            android:id="@+id/ig"
+            style="@style/Widget.AppCompat.Button.Borderless.Colored"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="5dp"
+            android:gravity="center_horizontal"
+            android:onClick="goInstagram"
+            android:padding="10dp"
+            android:text="✡ 官方 Instagram"
+            android:textAllCaps="false"
+            android:textColor="@drawable/textcolorchange"
+            android:textColorLink="@color/cardview_light_background"
+            android:textSize="20sp"
+            android:textStyle="normal" />
     </LinearLayout>
 
     <LinearLayout
@@ -75,10 +97,9 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:gravity="center_horizontal"
-            android:paddingBottom="5dp"
             android:text="@string/雙向鍵"
             android:textColor="@color/cardview_light_background"
-            android:textSize="27sp" />
+            android:textSize="25sp" />
     </LinearLayout>
 
 

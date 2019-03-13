@@ -6,7 +6,7 @@
     android:layout_height="match_parent"
     android:background="@drawable/black1"
     android:orientation="vertical"
-    tools:context=".Stage.Tiehua_Music_Village.Tiehua_Music_Village1">
+    tools:context=".Stage.Tiehua_Music_Village.Tiehua_Music_Village3">
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -22,7 +22,7 @@
             android:background="@color/colorPrimaryDark"
             android:gravity="center_horizontal"
             android:padding="2dp"
-            android:text="@string/experience"
+            android:text="@string/information"
             android:textColor="@color/cardview_light_background"
             android:textSize="25sp"
             android:textStyle="normal" />
@@ -40,9 +40,9 @@
             android:gravity="center"
             android:paddingTop="10dp"
             android:paddingBottom="5dp"
-            android:text="店家介紹"
+            android:text="活 動 訊 息"
             android:textColor="@color/cardview_light_background"
-            android:textSize="27sp"
+            android:textSize="25sp"
             android:textStyle="normal" />
 
     </RelativeLayout>
@@ -54,15 +54,54 @@
         android:layout_weight="10"
         android:orientation="vertical">
 
-        <TextView
-            android:id="@+id/textView13"
+        <Button
+            android:id="@+id/official"
+            style="@style/Widget.AppCompat.Button.Borderless.Colored"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:padding="8dp"
-            android:text="✡簡介\n鐵花村音樂聚落．慢市集，是由「台灣好基金會」結合台東音樂人和藝術家共同打造的地方，從荒煙蔓草中慢慢地紮根、成長，在充滿音樂能量的東台灣誕生，成立於2010年7月。\n\n音樂聚落的呈現像是海洋，連接了不同的島嶼和國度，讓人們在此相遇，從素人到專業演出，人人都有機會在這裡分享，音符就像地上的草一般，自然地冒出芽，再慢慢地擴展開來；戶外的大草地上，來自台東各地手作達人和小農組成慢市集，以「慢」來命名市集，希望旅人們可以放下自己原本的生活步調，深刻感受這兒源源不絕的生命力。\n\n從在地扎根，整合當地人才與相關組織，協助在地文化的永續發展，走趟鐵花，感受生命存在的最美好，自我身心靈的全面透視。"
-            android:textColor="@color/cardview_light_background"
-            android:textSize="18sp" />
+            android:layout_marginTop="30dp"
+            android:layout_marginBottom="10dp"
+            android:gravity="center_horizontal"
+            android:onClick="goOfficial"
+            android:padding="10dp"
+            android:text="✡ 官方 Website"
+            android:textAllCaps="false"
+            android:textColor="@drawable/textcolorchange"
+            android:textColorLink="@color/cardview_light_background"
+            android:textSize="20sp"
+            android:textStyle="normal" />
 
+        <Button
+            android:id="@+id/fb"
+            style="@style/Widget.AppCompat.Button.Borderless.Colored"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="5dp"
+            android:gravity="center_horizontal"
+            android:onClick="goFacebook"
+            android:padding="10dp"
+            android:text="✡ 官方 Facebook"
+            android:textAllCaps="false"
+            android:textColor="@drawable/textcolorchange"
+            android:textColorLink="@color/cardview_light_background"
+            android:textSize="20sp"
+            android:textStyle="normal" />
+
+        <Button
+            android:id="@+id/ig"
+            style="@style/Widget.AppCompat.Button.Borderless.Colored"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="5dp"
+            android:gravity="center_horizontal"
+            android:onClick="goInstagram"
+            android:padding="10dp"
+            android:text="✡ 官方 Instagram"
+            android:textAllCaps="false"
+            android:textColor="@drawable/textcolorchange"
+            android:textColorLink="@color/cardview_light_background"
+            android:textSize="20sp"
+            android:textStyle="normal" />
     </LinearLayout>
 
     <LinearLayout
@@ -75,10 +114,9 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:gravity="center_horizontal"
-            android:paddingBottom="5dp"
             android:text="@string/雙向鍵"
             android:textColor="@color/cardview_light_background"
-            android:textSize="27sp" />
+            android:textSize="25sp" />
     </LinearLayout>
 
 

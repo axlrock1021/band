@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/black1"
+    android:orientation="vertical"
+    tools:context=".Introduction.Female.The_Girl_And_The_Robots.The_Girl_And_The_Robots1">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/astro_bunny"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="5dp"
+            android:layout_weight="1"
+            android:background="@color/colorPrimaryDark"
+            android:gravity="center_horizontal"
+            android:padding="2dp"
+            android:text="@string/the_girl_and_the_robots"
+            android:textColor="@color/cardview_light_background"
+            android:textSize="25sp"
+            android:textStyle="normal" />
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:gravity="center"
+            android:paddingTop="10dp"
+            android:paddingBottom="5dp"
+            android:text="女 孩 與 機 器 人\nTaiwan"
+            android:textColor="@color/cardview_light_background"
+            android:textSize="25sp"
+            android:textStyle="normal" />
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="10"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="30dp"
+            android:layout_weight="1"
+            android:padding="10dp"
+            android:text="✡ 簡介\n\n曲風融合電氣﹐搖滾精神與跳舞節拍﹐極具玩心與實驗精神﹐是台灣極少數的Electronic Pop樂團\n\n2009年10月發行首隻單曲「昨天 Lost In Yesterday」﹐特殊曲風以及奇幻MV﹐一出現即受到大眾注目﹐2010年3月發行第二張單曲「兩吋半舞曲」﹐2011年1月發行首張完整專輯「Miss November」﹐並舉行同名稱巡迴演唱會"
+            android:textColor="@color/cardview_light_background"
+            android:textSize="20sp"
+            android:textStyle="normal" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center_horizontal"
+            android:paddingBottom="5dp"
+            android:text="@string/右鍵"
+            android:textColor="@color/cardview_light_background"
+            android:textSize="25sp" />
+    </LinearLayout>
+
+
+</LinearLayout>

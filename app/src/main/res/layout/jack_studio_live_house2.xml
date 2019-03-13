@@ -22,7 +22,7 @@
             android:background="@color/colorPrimaryDark"
             android:gravity="center_horizontal"
             android:padding="2dp"
-            android:text="@string/information"
+            android:text="@string/experience"
             android:textColor="@color/cardview_light_background"
             android:textSize="25sp"
             android:textStyle="normal" />
@@ -40,9 +40,9 @@
             android:gravity="center"
             android:paddingTop="10dp"
             android:paddingBottom="5dp"
-            android:text="活動訊息"
+            android:text="店 家 介 紹"
             android:textColor="@color/cardview_light_background"
-            android:textSize="27sp"
+            android:textSize="25sp"
             android:textStyle="normal" />
 
     </RelativeLayout>
@@ -55,16 +55,13 @@
         android:orientation="vertical">
 
         <TextView
-            android:id="@+id/phone"
+            android:id="@+id/textView13"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:autoLink="web"
-            android:linksClickable="true"
             android:padding="8dp"
-            android:text="✡官方推特\nhttps://twitter.com/Jackartzone\n\n✡官方臉書\nhttps://www.facebook.com/jackstudio168\n\n✡官方iNDIEVOX\nhttp://www.indievox.com/jackstudio"
+            android:text="✡簡介\n\n​在西門這個歷史悠久的鬧區內﹐有一群人一直都在堅持著﹐無論時代變遷﹐無論環境改變\n\n我們還記得那晚上舞台上的吶喊﹐當然也記得你踩著Truss帥氣的solo﹐還記得台下的歡呼﹐還記得你們給在下賣力的衝撞​﹐每一場活動與表演揮灑著汗水與淚水﹐每一個表演者與觀眾都帶來新的氣息與生命\n\n杰克音樂在西門﹐我們用全力在堅持著"
             android:textColor="@color/cardview_light_background"
-            android:textColorLink="@color/colorAccent"
-            android:textSize="18sp" />
+            android:textSize="20sp" />
 
     </LinearLayout>
 
@@ -78,9 +75,10 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:gravity="center_horizontal"
+            android:paddingBottom="5dp"
             android:text="@string/雙向鍵"
             android:textColor="@color/cardview_light_background"
-            android:textSize="27sp" />
+            android:textSize="25sp" />
     </LinearLayout>
 
 

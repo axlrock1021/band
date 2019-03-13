@@ -22,7 +22,7 @@
             android:background="@color/colorPrimaryDark"
             android:gravity="center_horizontal"
             android:padding="2dp"
-            android:text="@string/information"
+            android:text="@string/experience"
             android:textColor="@color/cardview_light_background"
             android:textSize="25sp"
             android:textStyle="normal" />
@@ -40,9 +40,9 @@
             android:gravity="center"
             android:paddingTop="10dp"
             android:paddingBottom="5dp"
-            android:text="活動訊息"
+            android:text="店 家 介 紹"
             android:textColor="@color/cardview_light_background"
-            android:textSize="27sp"
+            android:textSize="25sp"
             android:textStyle="normal" />
 
     </RelativeLayout>
@@ -55,16 +55,13 @@
         android:orientation="vertical">
 
         <TextView
-            android:id="@+id/phone"
+            android:id="@+id/textView13"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:autoLink="web"
-            android:linksClickable="true"
             android:padding="8dp"
-            android:text="✡官方臉書\nhttps://www.facebook.com/apamini\n\n✡官方iNDIEVOX\nhttps://www.indievox.com/apamini\n\n✡官方IG\nhttps://www.instagram.com/explore/locations/645348203"
+            android:text="✡簡介\n\n​2015年3月開幕﹐空間以木質氛圍打造的小地方﹐主要以舉辦活動﹐樂團演出和講座研習為主﹐像是GreenEyes﹐拾參樂團﹐Random﹐馬克白等不少樂團都已來此插旗﹐舞台與整體空間都相當舒適﹐適合中小型樂團活動演出\n\n設計主題以大量的回收木材﹐板與板模﹐來營造出自然又舒適的音樂展演空間﹐音響燈光設備齊全﹐最大使用空間約有70坪寬廣﹐人數站立可容納230人﹐有獨立吧檯冰箱設備可加值付費使用﹐另設有獨立樓層的樂手休息室﹐更衣間與大梳妝台"
             android:textColor="@color/cardview_light_background"
-            android:textColorLink="@color/colorAccent"
-            android:textSize="18sp" />
+            android:textSize="20sp" />
 
     </LinearLayout>
 
@@ -78,9 +75,10 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:gravity="center_horizontal"
+            android:paddingBottom="5dp"
             android:text="@string/雙向鍵"
             android:textColor="@color/cardview_light_background"
-            android:textSize="27sp" />
+            android:textSize="25sp" />
     </LinearLayout>
 
 

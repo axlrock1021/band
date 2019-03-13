@@ -6,7 +6,7 @@
     android:layout_height="match_parent"
     android:background="@drawable/black1"
     android:orientation="vertical"
-    tools:context=".Introduction.Vast_Hazy.Vast_Hazy1">
+    tools:context=".Introduction.Female.Vast_Hazy.Vast_Hazy1">
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -42,7 +42,7 @@
             android:paddingBottom="5dp"
             android:text="茫 茫 朦 朧\nTaiwan"
             android:textColor="@color/cardview_light_background"
-            android:textSize="27sp"
+            android:textSize="25sp"
             android:textStyle="normal" />
 
     </RelativeLayout>
@@ -54,15 +54,17 @@
         android:orientation="horizontal">
 
         <TextView
+            android:id="@+id/textView27"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
+            android:layout_height="match_parent"
             android:layout_marginTop="30dp"
             android:layout_weight="1"
-            android:padding="8dp"
-            android:text="簡介 : \n當你滿溢，讓我推送你奔向大海匯流當你乾涸，讓我守候你直至再度盈豐。\n\n2016年夏天，褪去少時稚氣的吉他手易祺與主唱大咖，決定帶著這段時間所汲取的養份再次出發。\n\n歌曲的核心概念也由青春成長的記事逐漸放大到對生命的體悟。他們唱的不只是青春的煩惱及甜澀，而是這世代青年們的人生。"
+            android:padding="10dp"
+            android:text="✡ 簡介\n\n當你滿溢﹐讓我推送你奔向大海匯流當你乾涸﹐讓我守候你直至再度盈豐\n\n2016年夏天﹐褪去少時稚氣的吉他手易祺與主唱大咖﹐決定帶著這段時間所汲取的養份再次出發\n\n他們唱的不只是青春的煩惱及甜澀﹐而是這世代青年們的人生"
             android:textColor="@color/cardview_light_background"
-            android:textSize="22sp"
+            android:textSize="20sp"
             android:textStyle="normal" />
+
     </LinearLayout>
 
     <LinearLayout
@@ -78,7 +80,7 @@
             android:paddingBottom="5dp"
             android:text="@string/右鍵"
             android:textColor="@color/cardview_light_background"
-            android:textSize="27sp" />
+            android:textSize="25sp" />
     </LinearLayout>
 
 

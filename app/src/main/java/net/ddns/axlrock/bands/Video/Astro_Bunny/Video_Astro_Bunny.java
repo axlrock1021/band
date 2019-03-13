@@ -34,10 +34,10 @@ public class Video_Astro_Bunny extends AppCompatActivity {
     String youtubeURL12 = "https://youtu.be/P00D-zUm3bg";
 
     //宣告圖片陣列(影片圖示)
-    int[] image1 = new int[]{R.drawable.astro_bunny3,R.drawable.astro_bunny4,R.drawable.astro_bunny5,
-            R.drawable.astro_bunny6,R.drawable.astro_bunny7,R.drawable.astro_bunny8,R.drawable.astro_bunny9,
-            R.drawable.astro_bunny10,R.drawable.astro_bunny11, R.drawable.astro_bunny12,
-            R.drawable.astro_bunny13,R.drawable.astro_bunny14};
+    int[] image1 = new int[]{R.drawable.astro_bunny3, R.drawable.astro_bunny4, R.drawable.astro_bunny5,
+            R.drawable.astro_bunny6, R.drawable.astro_bunny7, R.drawable.astro_bunny8, R.drawable.astro_bunny9,
+            R.drawable.astro_bunny10, R.drawable.astro_bunny11, R.drawable.astro_bunny12,
+            R.drawable.astro_bunny13, R.drawable.astro_bunny14};
     //宣告文字陣列(每個元件)
     //影片主題
     String[] text1 = new String[]{"官方網站","樂人Session","咪咕音樂現場","這樣我就能忘記你了(MV)",

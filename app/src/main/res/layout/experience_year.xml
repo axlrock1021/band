@@ -13,7 +13,7 @@
         android:id="@+id/arrow"/>
 
     <TextView
-        android:id="@+id/textView"
+        android:id="@+id/andy"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:padding="?android:listPreferredItemPaddingLeft"

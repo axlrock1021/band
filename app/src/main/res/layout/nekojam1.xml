@@ -6,7 +6,7 @@
     android:layout_height="match_parent"
     android:background="@drawable/black1"
     android:orientation="vertical"
-    tools:context=".Introduction.NekoJam.Nekojam1">
+    tools:context=".Introduction.Female.NekoJam.Nekojam1">
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -42,7 +42,7 @@
             android:paddingBottom="5dp"
             android:text="妮 可 醬\nTaiwan"
             android:textColor="@color/cardview_light_background"
-            android:textSize="27sp"
+            android:textSize="25sp"
             android:textStyle="normal" />
 
     </RelativeLayout>
@@ -54,15 +54,17 @@
         android:orientation="horizontal">
 
         <TextView
+            android:id="@+id/textView25"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
+            android:layout_height="match_parent"
             android:layout_marginTop="30dp"
             android:layout_weight="1"
-            android:padding="8dp"
-            android:text="簡介 : \n女孩們拿著樂器隨性即興(Jam)彈奏音符散發出那樣難以捉摸的迷人魅力，就彷彿貓這種優雅又充滿衝突的生物讓人喜愛。\n\n由小斯、Molly、Kim、Ching這四位情誼深厚的女孩們所組成的妮可醬，在經歷四年活動休止後重組以EP作品(看花)投石問路，重生的妮可醬要在討喜流暢的曲調下揉合更多House、Electro、Dubstep乃至DrumBass等全面舞池化電氣元素的強烈企圖心！"
+            android:padding="10dp"
+            android:text="✡ 簡介\n\n女孩們拿著樂器隨性即興彈奏音符散發出那樣難以捉摸的迷人魅力﹐就彷彿貓這種優雅又充滿衝突的生物讓人喜愛\n\n在經歷四年活動休止後重組以EP作品(看花)投石問路﹐重生的妮可醬要在討喜流暢的曲調下揉合更多House﹐Electro﹐Dubstep乃至DrumBass等全面舞池化電氣元素的強烈企圖心"
             android:textColor="@color/cardview_light_background"
-            android:textSize="22sp"
+            android:textSize="20sp"
             android:textStyle="normal" />
+
     </LinearLayout>
 
     <LinearLayout
@@ -78,7 +80,7 @@
             android:paddingBottom="5dp"
             android:text="@string/右鍵"
             android:textColor="@color/cardview_light_background"
-            android:textSize="27sp" />
+            android:textSize="25sp" />
     </LinearLayout>
 
 

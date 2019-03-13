@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <selector
     xmlns:android="http://schemas.android.com/apk/res/android">
-    <!-- 点击之后的图标 -->
+    <!-- 點擊之後的圖標 -->
     <item
         android:state_pressed="true"
         android:drawable="@drawable/play_pause"
         />
-    <!-- 点击之前的图标 -->
+    <!-- 點擊之前的圖標 -->
     <item
         android:state_selected="false"
         android:drawable="@drawable/play_music"

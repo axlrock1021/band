@@ -22,7 +22,7 @@
             android:background="@color/colorPrimaryDark"
             android:gravity="center_horizontal"
             android:padding="2dp"
-            android:text="@string/experience"
+            android:text="@string/information"
             android:textColor="@color/cardview_light_background"
             android:textSize="25sp"
             android:textStyle="normal" />
@@ -40,9 +40,9 @@
             android:gravity="center"
             android:paddingTop="10dp"
             android:paddingBottom="5dp"
-            android:text="店家介紹"
+            android:text="活 動 訊 息"
             android:textColor="@color/cardview_light_background"
-            android:textSize="27sp"
+            android:textSize="25sp"
             android:textStyle="normal" />
 
     </RelativeLayout>
@@ -54,14 +54,38 @@
         android:layout_weight="10"
         android:orientation="vertical">
 
-        <TextView
-            android:id="@+id/textView13"
+        <Button
+            android:id="@+id/official"
+            style="@style/Widget.AppCompat.Button.Borderless.Colored"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:padding="8dp"
-            android:text="✡簡介\nRevolver 自2010年開業以來，一直是台北最受歡迎的酒吧及音樂展演空間之一。這裡的風格獨一無二，麻雀雖小但五臟俱全。\n\n在這裡你可以聽到各種類型的現場音樂表演，從龐克到重金屬、民謠到輕音樂、電子到饒舌等⋯、還有固定每週一獨有的《裸體素描》。一週七天，每晚的表演從不間斷。\n\n不管是台灣還是外國的朋友們，來到Revolver總是能被這裡悠閒輕鬆的氣氛，和超棒的現場音樂給深深吸引。最棒的是，我們擁有數十種當地和進口的精釀啤酒，還有全台北最划算的 Happy Hour！趕快來跟我們喝一杯，然後一起感受現場音樂的爆發與魅力！希望你也會和我們一樣愛上這個地方。"
-            android:textColor="@color/cardview_light_background"
-            android:textSize="18sp" />
+            android:layout_marginTop="30dp"
+            android:layout_marginBottom="10dp"
+            android:gravity="center_horizontal"
+            android:onClick="goOfficial"
+            android:padding="10dp"
+            android:text="✡ 官方 Website"
+            android:textAllCaps="false"
+            android:textColor="@drawable/textcolorchange"
+            android:textColorLink="@color/cardview_light_background"
+            android:textSize="20sp"
+            android:textStyle="normal" />
+
+        <Button
+            android:id="@+id/fb"
+            style="@style/Widget.AppCompat.Button.Borderless.Colored"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="5dp"
+            android:gravity="center_horizontal"
+            android:onClick="goFacebook"
+            android:padding="10dp"
+            android:text="✡ 官方 Facebook"
+            android:textAllCaps="false"
+            android:textColor="@drawable/textcolorchange"
+            android:textColorLink="@color/cardview_light_background"
+            android:textSize="20sp"
+            android:textStyle="normal" />
 
     </LinearLayout>
 
@@ -75,10 +99,9 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:gravity="center_horizontal"
-            android:paddingBottom="5dp"
             android:text="@string/雙向鍵"
             android:textColor="@color/cardview_light_background"
-            android:textSize="27sp" />
+            android:textSize="25sp" />
     </LinearLayout>
 
 

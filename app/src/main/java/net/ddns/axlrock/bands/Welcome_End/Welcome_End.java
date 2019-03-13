@@ -8,10 +8,20 @@ import android.support.v7.app.AlertDialog;
 import android.support.v7.app.AppCompatActivity;
 import android.view.KeyEvent;
 import android.view.View;
+import android.widget.Button;
+import android.widget.TextView;
+
+import com.google.android.gms.ads.AdRequest;
+import com.google.android.gms.ads.AdView;
+import com.google.android.gms.ads.MobileAds;
+
 import net.ddns.axlrock.bands.Home_Menu.Home;
 import net.ddns.axlrock.bands.R;
+import net.frakbot.jumpingbeans.JumpingBeans;
 
 public class Welcome_End extends AppCompatActivity {
+
+    private AdView mAdView; //廣告
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -31,9 +41,34 @@ public class Welcome_End extends AppCompatActivity {
             }
         }).start();
 
+        //調用junpButton方法
+        junpButton();
+
         //禁止螢幕翻轉
         setRequestedOrientation(ActivityInfo.SCREEN_ORIENTATION_PORTRAIT);
+
+        //建立廣告連結(應用程式ID)，XML更換成(*廣告單元ID)
+        MobileAds.initialize(this, "ca-app-pub-7259957151155157~8079584006");
+        mAdView = findViewById(R.id.adView2);
+        AdRequest adRequest = new AdRequest.Builder().build();
+        mAdView.loadAd(adRequest);
     }
+
+    //文字跳動
+    private void junpButton(){
+        //增加文字跳動的點
+        final Button button = findViewById(R.id.button);
+        JumpingBeans jumpingBeans1 = JumpingBeans.with(button)
+                .appendJumpingDots()
+                .build();
+        //從第一個字串到最後一個字串，形成波浪式循環跳動
+        JumpingBeans jumpingBeans2 = JumpingBeans.with(button)
+                .makeTextJump(0, button.getText().length())
+                .setIsWave(true)
+                .setLoopDuration(3000)
+                .build();
+    }
+
 
     @Override
     public boolean onKeyDown(int keyCode, KeyEvent event) { //返回鍵方法

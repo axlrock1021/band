@@ -22,7 +22,7 @@
             android:background="@color/colorPrimaryDark"
             android:gravity="center_horizontal"
             android:padding="2dp"
-            android:text="@string/information"
+            android:text="@string/experience"
             android:textColor="@color/cardview_light_background"
             android:textSize="25sp"
             android:textStyle="normal" />
@@ -40,9 +40,9 @@
             android:gravity="center"
             android:paddingTop="10dp"
             android:paddingBottom="5dp"
-            android:text="活動訊息"
+            android:text="店 家 介 紹"
             android:textColor="@color/cardview_light_background"
-            android:textSize="27sp"
+            android:textSize="25sp"
             android:textStyle="normal" />
 
     </RelativeLayout>
@@ -55,15 +55,12 @@
         android:orientation="vertical">
 
         <TextView
-            android:id="@+id/phone"
+            android:id="@+id/textView13"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:autoLink="web"
-            android:linksClickable="true"
             android:padding="8dp"
-            android:text="✡官方網站\nhttp://www.riverside.com.tw/index.php?option=com_cafe\n\n✡官方臉書\nhttps://www.facebook.com/Riverside.Music\n\n✡官方IG\nhttps://insta-stalker.com/profile/riversidelivehouse"
+            android:text="✡簡介\n\n完成了8000場團次以上的演出﹐每日開幹的河岸留言﹐象徵的已經不只一種意志﹐更是展現台灣底層搖滾生命力最旺盛的地方﹐因此﹐河岸留言不僅是個「夢想」而已﹐更是夢想的起跑點﹐它一直存在許多樂團種子於音樂生成的初始階段\n\n我們對於茁壯成長的樂團施以微笑的祝福﹐對於起步初期的樂團更加用心配合﹐河岸留言的定位﹐我們一直都很清楚「一個熱情者的夢想起跑點或者一個專業人的夢想守護地」是的﹐我們一直在音樂的底層文化中扮演著認真的園丁角色"
             android:textColor="@color/cardview_light_background"
-            android:textColorLink="@color/colorAccent"
             android:textSize="18sp" />
 
     </LinearLayout>
@@ -78,9 +75,10 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:gravity="center_horizontal"
+            android:paddingBottom="5dp"
             android:text="@string/雙向鍵"
             android:textColor="@color/cardview_light_background"
-            android:textSize="27sp" />
+            android:textSize="25sp" />
     </LinearLayout>
 
 

@@ -3,12 +3,15 @@ package net.ddns.axlrock.bands.Stage.EZ5_Live_House;
 import android.annotation.SuppressLint;
 import android.content.Intent;
 import android.content.pm.ActivityInfo;
+import android.net.Uri;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.view.GestureDetector;
 import android.view.GestureDetector.OnGestureListener;
 import android.view.Menu;
 import android.view.MotionEvent;
+import android.view.View;
+import android.widget.Button;
 
 import net.ddns.axlrock.bands.R;
 
@@ -16,6 +19,14 @@ public class EZ5_Live_House3 extends AppCompatActivity implements OnGestureListe
 
     //定義手勢檢測器
     GestureDetector detector;
+    //宣告物件
+    Button Official;
+    Button fb;
+    Button ig;
+    //初始化網址
+    String youtubeURL1 = "http://www.ez5.com.tw/new/about.php"; //Official
+    String youtubeURL2 = "https://www.facebook.com/EZ5LiveHouse"; //fb
+    String youtubeURL3 = "https://www.instagram.com/explore/locations/396785827/ez5-live-house"; //ig
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -24,6 +35,11 @@ public class EZ5_Live_House3 extends AppCompatActivity implements OnGestureListe
 
         //初始化手勢檢測器
         detector = new GestureDetector(this, this);
+
+        //建立關聯
+        Official = findViewById(R.id.official); //官方網站
+        fb = findViewById(R.id.fb); //官方臉書
+        ig = findViewById(R.id.ig); //官方IG
 
         //禁止螢幕翻轉
         setRequestedOrientation(ActivityInfo.SCREEN_ORIENTATION_PORTRAIT);
@@ -84,5 +100,23 @@ public class EZ5_Live_House3 extends AppCompatActivity implements OnGestureListe
     @Override
     public boolean onSingleTapUp(MotionEvent e) {
         return false;
+    }
+
+    //前往官網
+    public void goOfficial(View view){
+        Intent intent = new Intent(Intent.ACTION_VIEW, Uri.parse(youtubeURL1));
+        startActivity(intent);
+    }
+
+    //前往官方FB
+    public void goFacebook(View view){
+        Intent intent = new Intent(Intent.ACTION_VIEW, Uri.parse(youtubeURL2));
+        startActivity(intent);
+    }
+
+    //前往官方IG
+    public void goInstagram(View view){
+        Intent intent = new Intent(Intent.ACTION_VIEW, Uri.parse(youtubeURL3));
+        startActivity(intent);
     }
 }

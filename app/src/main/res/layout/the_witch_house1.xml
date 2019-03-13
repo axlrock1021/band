@@ -40,9 +40,9 @@
             android:gravity="center"
             android:paddingTop="10dp"
             android:paddingBottom="5dp"
-            android:text="女巫店"
+            android:text="女 巫 店"
             android:textColor="@color/cardview_light_background"
-            android:textSize="27sp"
+            android:textSize="25sp"
             android:textStyle="normal" />
 
     </RelativeLayout>
@@ -64,7 +64,7 @@
             android:text="✡聯絡方式\n℡ 02-2362-5494\n\n✡演出接洽\nbooking.witch@gmail.com"
             android:textColor="@color/cardview_light_background"
             android:textColorLink="@color/colorAccent"
-            android:textSize="18sp" />
+            android:textSize="20sp" />
 
         <TextView
             android:id="@+id/textView13"
@@ -73,7 +73,7 @@
             android:padding="8dp"
             android:text="✡地址\n台北市新生南路三段56巷7號\n\n✡大眾交通工具\n捷運\n公館站3號出口\n公車\n公務人力訓練中心站"
             android:textColor="@color/cardview_light_background"
-            android:textSize="18sp" />
+            android:textSize="20sp" />
 
     </LinearLayout>
 
@@ -90,7 +90,7 @@
             android:gravity="center_horizontal"
             android:text="@string/右鍵"
             android:textColor="@color/cardview_light_background"
-            android:textSize="27sp" />
+            android:textSize="25sp" />
     </LinearLayout>
 
 

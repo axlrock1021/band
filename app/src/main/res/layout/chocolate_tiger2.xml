@@ -6,7 +6,7 @@
     android:layout_height="match_parent"
     android:background="@drawable/black1"
     android:orientation="vertical"
-    tools:context=".Introduction.Chocolate_Tiger.Chocolate_Tiger2">
+    tools:context=".Introduction.Female.Chocolate_Tiger.Chocolate_Tiger2">
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -40,9 +40,9 @@
             android:gravity="center"
             android:paddingTop="10dp"
             android:paddingBottom="5dp"
-            android:text="Style\nindie pop"
+            android:text="風格\nIndie  Pop"
             android:textColor="@color/cardview_light_background"
-            android:textSize="27sp"
+            android:textSize="25sp"
             android:textStyle="normal" />
 
     </RelativeLayout>
@@ -51,19 +51,67 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:layout_weight="10"
-        android:orientation="horizontal">
+        android:orientation="vertical">
 
         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginTop="30dp"
-            android:layout_weight="1"
+            android:layout_marginTop="20dp"
             android:autoLink="web|email"
-            android:padding="8dp"
-            android:text="團員\n女主唱＆吉他手 : Enn\n貝斯手 : Celine\n鼓手　 : Ann\n\nFacebook : \nhttps://www.facebook.com/chocolate.tiger.band.tw\n\nInstagram ： \nhttps://instagram.com/chocolate_tiger_roar"
+            android:padding="10dp"
+            android:text="✡ 團員\n\n\t\t\t女主唱＆吉他手  :  Enn          \n\t\t\t貝斯手  :  Celine\n\t\t\t鼓手  :  Ann"
             android:textColor="@color/cardview_light_background"
-            android:textSize="22sp"
+            android:textSize="20sp"
             android:textStyle="normal" />
+
+        <Button
+            android:id="@+id/fb"
+            style="@style/Widget.AppCompat.Button.Borderless.Colored"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="3dp"
+            android:layout_marginBottom="5dp"
+            android:gravity="left"
+            android:onClick="goFacebook"
+            android:padding="10dp"
+            android:text="✡ 官方 Facebook"
+            android:textAllCaps="false"
+            android:textColor="@drawable/textcolorchange"
+            android:textColorLink="@color/cardview_light_background"
+            android:textSize="20sp"
+            android:textStyle="normal" />
+
+        <Button
+            android:id="@+id/ig"
+            style="@style/Widget.AppCompat.Button.Borderless.Colored"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="5dp"
+            android:gravity="left"
+            android:onClick="goInstagram"
+            android:padding="10dp"
+            android:text="✡ 官方 Instagram"
+            android:textAllCaps="false"
+            android:textColor="@drawable/textcolorchange"
+            android:textColorLink="@color/cardview_light_background"
+            android:textSize="20sp"
+            android:textStyle="normal" />
+
+        <Button
+            android:id="@+id/streetvoice"
+            style="@style/Widget.AppCompat.Button.Borderless.Colored"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="left"
+            android:onClick="goStreetvoice"
+            android:padding="10dp"
+            android:text="✡ 官方 Streetvoice"
+            android:textAllCaps="false"
+            android:textColor="@drawable/textcolorchange"
+            android:textColorLink="@color/cardview_light_background"
+            android:textSize="20sp"
+            android:textStyle="normal" />
+
     </LinearLayout>
 
     <LinearLayout
@@ -80,7 +128,7 @@
             android:paddingBottom="5dp"
             android:text="@string/雙向鍵"
             android:textColor="@color/cardview_light_background"
-            android:textSize="27sp" />
+            android:textSize="25sp" />
 
     </LinearLayout>
 

@@ -40,9 +40,9 @@
             android:gravity="center"
             android:paddingTop="10dp"
             android:paddingBottom="5dp"
-            android:text="Revolver"
+            android:text="左 輪 手 槍"
             android:textColor="@color/cardview_light_background"
-            android:textSize="27sp"
+            android:textSize="25sp"
             android:textStyle="normal" />
 
     </RelativeLayout>
@@ -64,7 +64,7 @@
             android:text="✡聯絡方式\n℡ 02-3393-1678\n\n✡演出接洽\nbookings@revolver.tw"
             android:textColor="@color/cardview_light_background"
             android:textColorLink="@color/colorAccent"
-            android:textSize="18sp" />
+            android:textSize="20sp" />
 
         <TextView
             android:id="@+id/textView13"
@@ -73,7 +73,7 @@
             android:padding="8dp"
             android:text="✡地址\n台北市中正區羅斯福路一段1-2號\n\n✡大眾交通工具\n捷運\n中正紀念堂站4號出口"
             android:textColor="@color/cardview_light_background"
-            android:textSize="18sp" />
+            android:textSize="20sp" />
 
     </LinearLayout>
 
@@ -90,7 +90,7 @@
             android:gravity="center_horizontal"
             android:text="@string/右鍵"
             android:textColor="@color/cardview_light_background"
-            android:textSize="27sp" />
+            android:textSize="25sp" />
     </LinearLayout>
 
 

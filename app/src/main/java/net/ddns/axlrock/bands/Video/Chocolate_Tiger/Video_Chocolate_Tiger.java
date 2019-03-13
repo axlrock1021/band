@@ -32,7 +32,7 @@ public class Video_Chocolate_Tiger extends AppCompatActivity {
             R.drawable.chocolate_tiger6,R.drawable.chocolate_tiger7,R.drawable.chocolate_tiger8,R.drawable.chocolate_tiger9,};
     //宣告文字陣列(每個元件)
     //影片主題
-    String[] text1 = new String[]{"不再是少年(stage)","不再是少年(MV)","別讓我孤單(MV)","給奇怪的你(MV)",
+    String[] text1 = new String[]{"不再是少年(Stage)","不再是少年(MV)","別讓我孤單(MV)","給奇怪的你(MV)",
     "永恆的夢(MV)","理由(MV)","止水之湖(MV)"};
     //影片長度標題
     String text2 = "長度";

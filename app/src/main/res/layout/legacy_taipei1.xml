@@ -22,7 +22,7 @@
             android:background="@color/colorPrimaryDark"
             android:gravity="center_horizontal"
             android:padding="2dp"
-            android:text="@string/riverside_live_house"
+            android:text="@string/legacy_taipei"
             android:textColor="@color/cardview_light_background"
             android:textSize="25sp"
             android:textStyle="normal" />
@@ -40,9 +40,9 @@
             android:gravity="center"
             android:paddingTop="10dp"
             android:paddingBottom="5dp"
-            android:text="Legacy Taipei"
+            android:text="傳 音 樂 展 演 空 間 (台 北)"
             android:textColor="@color/cardview_light_background"
-            android:textSize="27sp"
+            android:textSize="25sp"
             android:textStyle="normal" />
 
     </RelativeLayout>
@@ -64,16 +64,16 @@
             android:text="✡聯絡方式\n℡ 02-2395-6660\n\n✡演出接洽\nservice@legacy.com.tw"
             android:textColor="@color/cardview_light_background"
             android:textColorLink="@color/colorAccent"
-            android:textSize="18sp" />
+            android:textSize="20sp" />
 
         <TextView
             android:id="@+id/textView13"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:padding="8dp"
-            android:text="✡地址\n台北市中正區八德路一段一號\n(華山1914創意文化園區/中5A館)\n\n✡大眾交通工具\n捷運\n忠孝新生站1號出口、善導寺站6號出口\n公車\n忠孝國小/審計部(忠孝東路)站 202、205、212、232、262、276、299、665"
+            android:text="✡地址\n台北市中正區八德路一段一號\n(華山1914創意文化園區/中5A館)\n\n✡大眾交通工具\n捷運\n忠孝新生站1號出口、善導寺站6號出口\n公車\n忠孝國小/審計部(忠孝東路)站 202、276、299、665"
             android:textColor="@color/cardview_light_background"
-            android:textSize="18sp" />
+            android:textSize="20sp" />
 
     </LinearLayout>
 
@@ -90,7 +90,7 @@
             android:gravity="center_horizontal"
             android:text="@string/右鍵"
             android:textColor="@color/cardview_light_background"
-            android:textSize="27sp" />
+            android:textSize="25sp" />
     </LinearLayout>
 
 

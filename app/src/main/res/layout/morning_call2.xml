@@ -6,7 +6,7 @@
     android:layout_height="match_parent"
     android:background="@drawable/black1"
     android:orientation="vertical"
-    tools:context=".Introduction.Morning_Call.Morning_Call2">
+    tools:context=".Introduction.Female.Morning_Call.Morning_Call2">
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -40,7 +40,7 @@
             android:gravity="center"
             android:paddingTop="10dp"
             android:paddingBottom="5dp"
-            android:text="Style\nElectro Pop Post-rock"
+            android:text="風格\nElectro  Pop  Post-rock"
             android:textColor="@color/cardview_light_background"
             android:textSize="27sp"
             android:textStyle="normal" />
@@ -51,19 +51,68 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:layout_weight="10"
-        android:orientation="horizontal">
+        android:orientation="vertical">
 
         <TextView
+            android:id="@+id/textView22"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginTop="30dp"
-            android:layout_weight="1"
+            android:layout_marginTop="20dp"
             android:autoLink="web|email"
-            android:padding="8dp"
-            android:text="團員\n女主唱 : 隋玲          吉他手 : 以豪\n貝斯手 : 孟書          鍵盤手 : 小英\n鼓手　 : 大開\n\nFacebook : \nhttps://www.facebook.com/eelin.Morningcall\n\nInstagram ： \nhttps://www.instagram.com/morning_call_11111"
+            android:padding="10dp"
+            android:text="✡ 團員\n\n\t\t\t女主唱  :  隋玲          \n\t\t\t吉他手  :  以豪\n\t\t\t貝斯手  :  孟書\n\t\t\t鍵盤手  :  小英\n\t\t\t鼓手  :  大開"
             android:textColor="@color/cardview_light_background"
-            android:textSize="22sp"
+            android:textSize="20sp"
             android:textStyle="normal" />
+
+        <Button
+            android:id="@+id/fb"
+            style="@style/Widget.AppCompat.Button.Borderless.Colored"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="3dp"
+            android:layout_marginBottom="5dp"
+            android:gravity="left"
+            android:onClick="goFacebook"
+            android:padding="10dp"
+            android:text="✡ 官方 Facebook"
+            android:textAllCaps="false"
+            android:textColor="@drawable/textcolorchange"
+            android:textColorLink="@color/cardview_light_background"
+            android:textSize="20sp"
+            android:textStyle="normal" />
+
+        <Button
+            android:id="@+id/ig"
+            style="@style/Widget.AppCompat.Button.Borderless.Colored"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="5dp"
+            android:gravity="left"
+            android:onClick="goInstagram"
+            android:padding="10dp"
+            android:text="✡ 官方 Instagram"
+            android:textAllCaps="false"
+            android:textColor="@drawable/textcolorchange"
+            android:textColorLink="@color/cardview_light_background"
+            android:textSize="20sp"
+            android:textStyle="normal" />
+
+        <Button
+            android:id="@+id/streetvoice"
+            style="@style/Widget.AppCompat.Button.Borderless.Colored"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="left"
+            android:onClick="goStreetvoice"
+            android:padding="10dp"
+            android:text="✡ 官方 Streetvoice"
+            android:textAllCaps="false"
+            android:textColor="@drawable/textcolorchange"
+            android:textColorLink="@color/cardview_light_background"
+            android:textSize="20sp"
+            android:textStyle="normal" />
+
     </LinearLayout>
 
     <LinearLayout

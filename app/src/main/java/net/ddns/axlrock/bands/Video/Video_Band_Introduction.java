@@ -14,14 +14,16 @@ import android.widget.ListView;
 import android.widget.TextView;
 import net.ddns.axlrock.bands.R;
 import net.ddns.axlrock.bands.Video.Astro_Bunny.Video_Astro_Bunny;
+import net.ddns.axlrock.bands.Video.Cherry_Boom.Video_Cherry_Boom;
 import net.ddns.axlrock.bands.Video.Chocolate_Tiger.Video_Chocolate_Tiger;
 import net.ddns.axlrock.bands.Video.Coming_Soon.Video_Coming_Soon;
-import net.ddns.axlrock.bands.Video.Gravuty.Video_Gravity;
+import net.ddns.axlrock.bands.Video.Gravity.Video_Gravity;
 import net.ddns.axlrock.bands.Video.Mec_Band.Video_Mec_Band;
 import net.ddns.axlrock.bands.Video.Morning_Call.Video_Morning_Call;
 import net.ddns.axlrock.bands.Video.My_Kkin_Against_Your_Skin.Video_My_Skin_Against_Your_Skin;
 import net.ddns.axlrock.bands.Video.NekoJam.Video_NekoJam;
 import net.ddns.axlrock.bands.Video.Vast_Hazy.Video_Vast_Hazy;
+import net.ddns.axlrock.bands.Video.Wonfu.Video_Wonfu;
 import net.ddns.axlrock.bands.Video.Zani.Video_Zani;
 
 public class Video_Band_Introduction extends AppCompatActivity {
@@ -29,11 +31,12 @@ public class Video_Band_Introduction extends AppCompatActivity {
     //宣告圖片陣列(團照)
     int[] image = new int[]{R.drawable.gravity2,R.drawable.astro_bunny2,R.drawable.chocolate_tiger2,
             R.drawable.mec_band2,R.drawable.morning_call2,R.drawable.my_skin_against_your_skin2,
-            R.drawable.nekojam2,R.drawable.vast_hazy2,R.drawable.zani2,R.drawable.coming_soon};
+            R.drawable.nekojam2,R.drawable.vast_hazy2,R.drawable.zani2,R.drawable.wonfu2,
+            R.drawable.cherry_boom2,R.drawable.coming_soon};
 
     //宣告文字陣列(團名)
     String[] text = new String[]{"Gravity","Astro Bunny","Chocolate Tiger","MEC Band","Morning Call",
-            "My Skin Against Your Skin","NekoJam","Vast Hazy","Zani","Coming Soon..."};
+            "My Skin Against Your Skin","NekoJam","Vast Hazy","Zani","Wonfu","Cherry Boom","Coming Soon..."};
 
     private ListView myListView;
     MyAdapter adapter = null;
@@ -82,6 +85,12 @@ public class Video_Band_Introduction extends AppCompatActivity {
                         startActivity(new Intent().setClass(Video_Band_Introduction.this, Video_Zani.class));
                         break;
                     case 9 :
+                        startActivity(new Intent().setClass(Video_Band_Introduction.this, Video_Wonfu.class));
+                        break;
+                    case 10 :
+                        startActivity(new Intent().setClass(Video_Band_Introduction.this, Video_Cherry_Boom.class));
+                        break;
+                    case 11 :
                         startActivity(new Intent().setClass(Video_Band_Introduction.this, Video_Coming_Soon.class));
                         break;
 

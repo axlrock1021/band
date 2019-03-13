@@ -6,7 +6,7 @@
     android:layout_height="match_parent"
     android:background="@drawable/black1"
     android:orientation="vertical"
-    tools:context=".Introduction.My_Skin_Against_Your_Skin.My_Skin_Sgainst_Your_Skin1">
+    tools:context=".Introduction.Female.My_Skin_Against_Your_Skin.My_Skin_Sgainst_Your_Skin1">
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -42,7 +42,7 @@
             android:paddingBottom="5dp"
             android:text="激 膚 樂 團\nTaiwan"
             android:textColor="@color/cardview_light_background"
-            android:textSize="27sp"
+            android:textSize="25sp"
             android:textStyle="normal" />
 
     </RelativeLayout>
@@ -54,15 +54,17 @@
         android:orientation="horizontal">
 
         <TextView
+            android:id="@+id/textView23"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
+            android:layout_height="match_parent"
             android:layout_marginTop="30dp"
             android:layout_weight="1"
-            android:padding="8dp"
-            android:text="簡介\n成立於2010年，來自台北的創作樂團， 團員包括安卓雅（主唱、詞曲）、尤世儒（貝斯吉他、編曲、program）、Jesse(鼓手，2017年加入)。團名靈感來自於YSL的時裝秀，早期曲風為迷幻車庫搖滾。\n\n激膚樂團早期作品曲風狂放帶有迷幻感，並以超現實的故事情節作為創作靈感，描述文明人類的行為現象，以及表達自我的態度。"
+            android:padding="10dp"
+            android:text="✡ 簡介\n\n成立於2010年﹐來自台北的創作樂團﹐團員包括安卓雅﹐尤世儒、Jesse﹐團名靈感來自於YSL的時裝秀﹐早期曲風為迷幻車庫搖滾\n\n激膚樂團早期作品曲風狂放帶有迷幻感﹐並以超現實的故事情節作為創作靈感﹐描述文明人類的行為現象﹐以及表達自我的態度"
             android:textColor="@color/cardview_light_background"
-            android:textSize="22sp"
+            android:textSize="20sp"
             android:textStyle="normal" />
+
     </LinearLayout>
 
     <LinearLayout
@@ -78,7 +80,7 @@
             android:paddingBottom="5dp"
             android:text="@string/右鍵"
             android:textColor="@color/cardview_light_background"
-            android:textSize="27sp" />
+            android:textSize="25sp" />
     </LinearLayout>
 
 

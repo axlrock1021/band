@@ -21,19 +21,18 @@ public class Video_Coming_Soon extends AppCompatActivity {
     String youtubeURL1 = "";
 
     //宣告圖片陣列(影片圖示)
-    int[] image1 = new int[]{R.drawable.coming_soon,R.drawable.coming_soon,R.drawable.coming_soon,
-            R.drawable.coming_soon};
+    int[] image1 = new int[]{R.drawable.coming_soon};
     //宣告文字陣列(每個元件)
     //影片主題
-    String[] text1 = new String[]{"敬請期待!","敬請期待!","敬請期待!","敬請期待!"};
+    String[] text1 = new String[]{"敬請期待!"};
     //影片長度標題
     String text2 = "";
     //影片發佈日期標題
     String text3 = "";
     //影片長度
-    String[] text4 = new String[]{"","","",""};
+    String[] text4 = new String[]{""};
     //影片發佈日期
-    String[] text5 = new String[]{"","","",""};
+    String[] text5 = new String[]{""};
 
     private ListView myListView;
     MyAdapter adapter = null;

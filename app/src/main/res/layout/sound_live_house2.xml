@@ -22,7 +22,7 @@
             android:background="@color/colorPrimaryDark"
             android:gravity="center_horizontal"
             android:padding="2dp"
-            android:text="@string/information"
+            android:text="@string/experience"
             android:textColor="@color/cardview_light_background"
             android:textSize="25sp"
             android:textStyle="normal" />
@@ -40,9 +40,9 @@
             android:gravity="center"
             android:paddingTop="10dp"
             android:paddingBottom="5dp"
-            android:text="活動訊息"
+            android:text="店 家 介 紹"
             android:textColor="@color/cardview_light_background"
-            android:textSize="27sp"
+            android:textSize="25sp"
             android:textStyle="normal" />
 
     </RelativeLayout>
@@ -55,16 +55,13 @@
         android:orientation="vertical">
 
         <TextView
-            android:id="@+id/phone"
+            android:id="@+id/textView13"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:autoLink="web"
-            android:linksClickable="true"
             android:padding="8dp"
-            android:text="✡官方臉書\nhttps://www.facebook.com/SoundLiveHouse\n\n✡官方IG\nhttps://www.instagram.com/soundlivehouse\n\n✡官方iNDIEVOX\nhttps://www.indievox.com/soundlivehouse"
+            android:text="✡簡介\n\n迴響樂手空間是由三個玩團的好友共同成立﹐數年來他們不曾改變過信念﹐依然相信著搖滾精神﹐幾年來的慢慢累進﹐迴響樂手也獲得越來越多在地人的支持\n\n現在除了樂器教學外﹐空間內也有販售樂器與相關配件﹐並提供練團室的服務\n\n迴響樂手雖在地下一樓﹐但空間內的挑高設計﹐明亮﹐整潔的環境﹐讓人一點也感受不到地下室的壓迫感"
             android:textColor="@color/cardview_light_background"
-            android:textColorLink="@color/colorAccent"
-            android:textSize="18sp" />
+            android:textSize="20sp" />
 
     </LinearLayout>
 
@@ -78,9 +75,10 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:gravity="center_horizontal"
+            android:paddingBottom="5dp"
             android:text="@string/雙向鍵"
             android:textColor="@color/cardview_light_background"
-            android:textSize="27sp" />
+            android:textSize="25sp" />
     </LinearLayout>
 
 

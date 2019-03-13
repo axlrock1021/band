@@ -40,9 +40,9 @@
             android:gravity="center"
             android:paddingTop="10dp"
             android:paddingBottom="5dp"
-            android:text="角落音樂餐廳"
+            android:text="角 落 音 樂 餐 廳"
             android:textColor="@color/cardview_light_background"
-            android:textSize="27sp"
+            android:textSize="25sp"
             android:textStyle="normal" />
 
     </RelativeLayout>
@@ -64,16 +64,16 @@
             android:text="✡聯絡方式\n℡ 02-2504-3688\n\n✡演出接洽\nmusiccornertw@gmail.com"
             android:textColor="@color/cardview_light_background"
             android:textColorLink="@color/colorAccent"
-            android:textSize="18sp" />
+            android:textSize="20sp" />
 
         <TextView
             android:id="@+id/textView13"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:padding="8dp"
-            android:text="✡地址\n台北市建國北路一段156號\n\n✡大眾交通工具\n捷運\n松江南京站4號出口\n\n公車\n南京東路站 248、254、266、279、282、282副、288、292、306、307、46、604、605快、622、652、668、672、675、711、棕9、紅25"
+            android:text="✡地址\n台北市建國北路一段156號\n\n✡大眾交通工具\n捷運\n松江南京站4號出口\n\n公車\n南京東路站 248、605快、622、652、668、672、675、711、棕9、紅25"
             android:textColor="@color/cardview_light_background"
-            android:textSize="18sp" />
+            android:textSize="20sp" />
 
     </LinearLayout>
 
@@ -90,7 +90,7 @@
             android:gravity="center_horizontal"
             android:text="@string/右鍵"
             android:textColor="@color/cardview_light_background"
-            android:textSize="27sp" />
+            android:textSize="25sp" />
     </LinearLayout>
 
 

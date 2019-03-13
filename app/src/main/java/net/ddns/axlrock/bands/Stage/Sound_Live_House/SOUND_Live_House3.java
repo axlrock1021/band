@@ -3,12 +3,15 @@ package net.ddns.axlrock.bands.Stage.Sound_Live_House;
 import android.annotation.SuppressLint;
 import android.content.Intent;
 import android.content.pm.ActivityInfo;
+import android.net.Uri;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.view.GestureDetector;
 import android.view.GestureDetector.OnGestureListener;
 import android.view.Menu;
 import android.view.MotionEvent;
+import android.view.View;
+import android.widget.Button;
 
 import net.ddns.axlrock.bands.R;
 
@@ -16,6 +19,12 @@ public class SOUND_Live_House3 extends AppCompatActivity implements OnGestureLis
 
     //定義手勢檢測器
     GestureDetector detector;
+    //宣告物件
+    Button fb;
+    Button ig;
+    //初始化網址
+    String youtubeURL1 = "https://www.facebook.com/SoundLiveHouse"; //fb
+    String youtubeURL2 = "https://www.instagram.com/soundlivehouse"; //ig
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -24,6 +33,10 @@ public class SOUND_Live_House3 extends AppCompatActivity implements OnGestureLis
 
         //初始化手勢檢測器
         detector = new GestureDetector(this, this);
+
+        //建立關聯
+        fb = findViewById(R.id.fb); //官方fb
+        ig = findViewById(R.id.ig); //官方ig
 
         //禁止螢幕翻轉
         setRequestedOrientation(ActivityInfo.SCREEN_ORIENTATION_PORTRAIT);
@@ -84,5 +97,17 @@ public class SOUND_Live_House3 extends AppCompatActivity implements OnGestureLis
     @Override
     public boolean onSingleTapUp(MotionEvent e) {
         return false;
+    }
+
+    //前往官方臉書
+    public void goFacebook(View view){
+        Intent intent = new Intent(Intent.ACTION_VIEW, Uri.parse(youtubeURL1));
+        startActivity(intent);
+    }
+
+    //前往官方IG
+    public void goInstagram(View view){
+        Intent intent = new Intent(Intent.ACTION_VIEW, Uri.parse(youtubeURL2));
+        startActivity(intent);
     }
 }

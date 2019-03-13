@@ -18,7 +18,7 @@ public class YearViewHolder extends GroupViewHolder {
     public YearViewHolder(View itemView) {
         super(itemView);
 
-        mTextView = itemView.findViewById(R.id.textView);
+        mTextView = itemView.findViewById(R.id.andy);
         arrow = itemView.findViewById(R.id.arrow);
     }
 

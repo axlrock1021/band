@@ -1,18 +1,17 @@
 <resources>
-    <string name="welcome">歡迎</string>
-    <string name="home">主頁</string>
-    <string name="by">By 艾斯理</string>
-    <string name="home_menu">✩ 主頁選單 ✩</string>
-    <string name="introduction">✩ 介紹 ✩</string>
-    <string name="video_list">✩ 影片清單 ✩</string>
-    <string name="information">✩ 資訊 ✩</string>
-    <string name="experience">✩ 經歷 ✩</string>
-    <string name="coming_soon">✩ 敬請期待 ✩</string>
-    <string name="stage">✩ 舞台 ✩</string>
-    <string name="service_and_support">✩ 服 務 和 支 援 ✩</string>
-    <string name="my_music">✩ 我 的 音 樂 ✩</string>
+    <string name="welcome">w e l c o m e</string>
+    <string name="home">H o m e</string>
+    <string name="by">By Andy</string>
+    <string name="home_menu">✩ Home Menu ✩</string>
+    <string name="introduction">✩ Introduction ✩</string>
+    <string name="video_list">✩ Video List ✩</string>
+    <string name="information">✩ Information ✩</string>
+    <string name="experience">✩ Experience ✩</string>
+    <string name="coming_soon">✩ Coming Soon ✩</string>
+    <string name="stage">✩ stage ✩</string>
+    <string name="service_and_support">✩ Service and Support ✩</string>
+    <string name="my_music">✩ My Music ✩</string>
 
-    <string name="gravity">✩ Gravity ✩</string>
     <string name="astro_bunny">✩ Astro Bunny ✩</string>
     <string name="chocolate_tiger">✩ Chocolate Tiger ✩</string>
     <string name="men_envy_children">✩ Men Envy Children ✩</string>
@@ -21,6 +20,31 @@
     <string name="nekojam">✩ NekoJam ✩</string>
     <string name="vast_hazy">✩ Vast ＆ Hazy ✩</string>
     <string name="zani">✩ Zani ✩</string>
+    <string name="wonfu">✩ Wonfu ✩</string>
+    <string name="tizzy_bac">✩ Tizzy Bac ✩</string>
+    <string name="cherry_boom">✩ Cherry Boom ✩</string>
+    <string name="the_girl_and_the_robots">✩ The Girl And The Robots ✩</string>
+    <string name="freckles">✩ Freckles ✩</string>
+    <string name="frande">✩ Frandé ✩</string>
+    <string name="elephant_gym">✩ Elephant Gym ✩</string>
+    <string name="f_i_r">✩ F.I.R. ✩</string>
+    <string name="bearbabes">✩ 	Bearbabes ✩</string>
+    <string name="relax_one">✩ Relax-ONE ✩</string>
+    <string name="solemn">✩ Solemn ✩</string>
+    <string name="soundboss">✩ Soundboss ✩</string>
+    <string name="queensuitcase">✩ QueenSuitcase ✩</string>
+    <string name="super_obvious">✩ Super Obvious ✩</string>
+    <string name="pisco">✩ P!sco ✩</string>
+
+
+    <string name="mixer">✩ Mixer ✩</string>
+    <string name="loh_tsui_kweh_commune">✩ Loh Tsui Kweh Commune ✩</string>
+    <string name="eggplantegg">✩ EggPlantEgg ✩</string>
+    <string name="no_party_for_cao_dong">✩ No Party For Cao Dong ✩</string>
+
+
+    <string name="gravity">✩ Gravity ✩</string>
+    <string name="rangetsu">✩ Rangetsu ✩</string>
 
     <string name="riverside_music_cafe">✩ Riverside Music Cafe ✩</string>
     <string name="riverside_live_house">✩ Riverside Live House ✩</string>
@@ -43,5 +67,12 @@
     <string name="雙向鍵">\u21C4</string>
     <string name="右鍵">\u2192</string>
     <string name="左鍵">\u2190</string>
+
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+    <string name="likes">喜歡</string>
+    <string name="time">長度</string>
+    <string name="views">觀看次數</string>
+    <string name="launch_time">發佈時間</string>
 
 </resources>

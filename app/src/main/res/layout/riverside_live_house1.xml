@@ -40,9 +40,9 @@
             android:gravity="center"
             android:paddingTop="10dp"
             android:paddingBottom="5dp"
-            android:text="河岸留言(西門町)"
+            android:text="河 岸 留 言 (西 門 町)"
             android:textColor="@color/cardview_light_background"
-            android:textSize="27sp"
+            android:textSize="25sp"
             android:textStyle="normal" />
 
     </RelativeLayout>
@@ -64,16 +64,16 @@
             android:text="✡聯絡方式\n℡ 02-2370-8805\n\n✡演出接洽\n潘先生 0922-012-800\n周小姐 0958-601-621"
             android:textColor="@color/cardview_light_background"
             android:textColorLink="@color/colorAccent"
-            android:textSize="18sp" />
+            android:textSize="20sp" />
 
         <TextView
             android:id="@+id/textView13"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:padding="8dp"
-            android:text="✡地址\n台北市西寧南路177號\n\n✡大眾交通工具\n捷運\n西門站6號出口\n公車\n捷運西門站 12、202、205、206、212、218(直達)、223、231、234、242、246、249、250、253、260、262、263、265、302、307、310、49、527、601、604、624、651、652、660、662、667、701、702、703"
+            android:text="✡地址\n台北市西寧南路177號\n\n✡大眾交通工具\n捷運\n西門站6號出口\n公車\n捷運西門站 12、202、205、206、212、218(直達)、223、231、234、242、253、667、701、702、703"
             android:textColor="@color/cardview_light_background"
-            android:textSize="18sp" />
+            android:textSize="20sp" />
 
     </LinearLayout>
 
@@ -90,7 +90,7 @@
             android:gravity="center_horizontal"
             android:text="@string/右鍵"
             android:textColor="@color/cardview_light_background"
-            android:textSize="27sp" />
+            android:textSize="25sp" />
     </LinearLayout>
 
 

@@ -33,7 +33,7 @@ public class Video_Zani extends AppCompatActivity {
             R.drawable.zani7,R.drawable.zani8,R.drawable.zani9,R.drawable.zani10,};
     //宣告文字陣列(每個元件)
     //影片主題
-    String[] text1 = new String[]{"官方網站","半心(MV)","半心(stage)","可是(MV)","心碎東尼(Drum Play)",
+    String[] text1 = new String[]{"官方網站","半心(MV)","半心(Stage)","可是(MV)","心碎東尼(Drum Play)",
     "甜約翰專場(開場)","半心EP見面(The Wall)","2018添翼校園巡演開場"};
     //影片長度標題
     String text2 = "長度";

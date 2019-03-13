@@ -18,11 +18,15 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ImageView;
 import android.widget.TextView;
-import net.ddns.axlrock.bands.Introduction.Introduction;
+
+import com.google.android.gms.ads.AdRequest;
+import com.google.android.gms.ads.InterstitialAd;
+
+import net.ddns.axlrock.bands.Introduction.B.Gravity.MainActivity;
 import net.ddns.axlrock.bands.Music_Play.Music_Play;
 import net.ddns.axlrock.bands.R;
 import net.ddns.axlrock.bands.Setting;
-import net.ddns.axlrock.bands.Stage.stage;
+import net.ddns.axlrock.bands.Stage.Stage;
 import net.ddns.axlrock.bands.Video.Video_Band_Introduction;
 import java.util.ArrayList;
 import java.util.List;
@@ -36,6 +40,7 @@ public class Home extends AppCompatActivity implements EasyPermissions.Permissio
     private int soundID; //SoundPool_ID
     private SoundPool soundPool;
     private Handler aHandler;
+    private InterstitialAd interstitial; //插頁式廣告
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -61,7 +66,30 @@ public class Home extends AppCompatActivity implements EasyPermissions.Permissio
 
         //禁止螢幕翻轉
         setRequestedOrientation(ActivityInfo.SCREEN_ORIENTATION_PORTRAIT);
+
+        //建立插頁式廣告
+//        interstitial = new InterstitialAd(this);
+//        interstitial.setAdUnitId("ca-app-pub-7259957151155157/4206985274");
+//        interstitial.loadAd(new AdRequest.Builder().build());
+//        requestNewInterstitial();
+//
+//        interstitial.setAdListener(new AdListener()
+//        {
+//            @Override
+//            public void onAdLoaded()
+//            {
+//                interstitial.show();
+//            }
+//        });
     }
+
+    //當您準備好顯示插頁式廣告時，調用displayInterstitial()
+    private void requestNewInterstitial()
+    {
+        AdRequest adRequest = new AdRequest.Builder().build();
+        interstitial.loadAd(adRequest);
+    }
+
 
     @Override
     public void onRequestPermissionsResult(int requestCode, @NonNull String[] permissions, @NonNull int[] grantResults) {
@@ -70,37 +98,6 @@ public class Home extends AppCompatActivity implements EasyPermissions.Permissio
         //Android 6.0以後執行階段需取得使用者授權
         //在此將授權回應交由EasyPermissions類別處理
         EasyPermissions.onRequestPermissionsResult(requestCode, permissions, grantResults, this);
-//        switch (requestCode){
-//            case REQUEST_CONTACTS:
-//                if(grantResults.length > 0 && grantResults[0] == PackageManager.PERMISSION_GRANTED){
-//                    //取得權限，進行存取
-//                }else{
-//                    //使用者拒絕權限，顯示對話框告知
-//                    //建立AlertDialog
-//                    AlertDialog.Builder ad = new AlertDialog.Builder(Home.this); //宣告物件實例化
-//
-//                    ad.setIcon(R.drawable.cry);  //設定標題圖片
-//                    ad.setTitle("存取本機音樂權限"); //設定標題內容
-//                    ad.setMessage("\n不允許 ?!\n\n掰掰啦 ~ ~ ~"); //設定訊息內容
-//
-//                    ad.setNegativeButton("OK", new DialogInterface.OnClickListener() {
-//
-//                        public void onClick(DialogInterface dialog, int i) {
-////                            //選"OK"，退出程式
-////                            Intent home = new Intent(Intent.ACTION_MAIN);
-////                            home.addCategory(Intent.CATEGORY_HOME);
-////                            startActivity(home);
-////                            finish();
-//                        }
-//                    });
-//                    AlertDialog dialog = ad.create();
-//                    //按下空白地方時不消失
-//                    dialog.setCanceledOnTouchOutside(false);
-//                    //顯示對話框
-//                    dialog.show();
-//                }
-//                return;
-//        }
     }
 
     //實作EasyPermissions.PermissionCallbacks兩個方法
@@ -151,11 +148,11 @@ public class Home extends AppCompatActivity implements EasyPermissions.Permissio
     //利用集合儲存資料&建立RecyclerView
     protected void itemListMethod() {
         List<Home_Item> itemList = new ArrayList<>();
-        itemList.add(new Home_Item(1, R.drawable.bandintroduction, "樂團介紹"));
-        itemList.add(new Home_Item(2, R.drawable.moive, "影片欣賞"));
-        itemList.add(new Home_Item(3, R.drawable.musicplay, "音樂播放器"));
-        itemList.add(new Home_Item(4, R.drawable.live, "表演舞台"));
-        itemList.add(new Home_Item(5, R.drawable.setting, "專區"));
+        itemList.add(new Home_Item(1, R.drawable.bandintroduction, "Band Introduction"));
+        itemList.add(new Home_Item(2, R.drawable.moive, "Video Appreciation"));
+        itemList.add(new Home_Item(3, R.drawable.live, "Performance Stage"));
+        itemList.add(new Home_Item(4, R.drawable.musicplay, "Music Player"));
+        itemList.add(new Home_Item(5, R.drawable.setting, "Other"));
 
         //建立RecyclerView
         RecyclerView recyclerView = findViewById(R.id.recyclerView);
@@ -196,19 +193,19 @@ public class Home extends AppCompatActivity implements EasyPermissions.Permissio
                 public void onClick(View v) {
                     switch (position){
                         case 0: //樂團介紹
-                            startActivity(new Intent().setClass(Home.this, Introduction.class));
+                            startActivity(new Intent().setClass(Home.this, MainActivity.class));
                             soundPool.release();
                             break;
                         case 1: //影片欣賞
                             startActivity(new Intent().setClass(Home.this, Video_Band_Introduction.class));
                             soundPool.release();
                             break;
-                        case 2: //音樂播放器
-                            startActivity(new Intent().setClass(Home.this, Music_Play.class));
+                        case 2: //表演舞台
+                            startActivity(new Intent().setClass(Home.this, Stage.class));
                             soundPool.release();
                             break;
-                        case 3: //表演舞台
-                            startActivity(new Intent().setClass(Home.this, stage.class));
+                        case 3: //音樂播放器
+                            startActivity(new Intent().setClass(Home.this, Music_Play.class));
                             soundPool.release();
                             break;
                         case 4: //專區

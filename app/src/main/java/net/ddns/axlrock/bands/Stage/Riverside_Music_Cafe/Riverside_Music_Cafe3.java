@@ -3,18 +3,30 @@ package net.ddns.axlrock.bands.Stage.Riverside_Music_Cafe;
 import android.annotation.SuppressLint;
 import android.content.Intent;
 import android.content.pm.ActivityInfo;
+import android.net.Uri;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.view.GestureDetector;
 import android.view.GestureDetector.OnGestureListener;
 import android.view.Menu;
 import android.view.MotionEvent;
+import android.view.View;
+import android.widget.Button;
+
 import net.ddns.axlrock.bands.R;
 
 public class Riverside_Music_Cafe3 extends AppCompatActivity implements OnGestureListener {
 
     //定義手勢檢測器
     GestureDetector detector;
+    //宣告物件
+    Button official;
+    Button fb;
+    Button ig;
+    //初始化網址
+    String youtubeURL1 = "http://www.riverside.com.tw/index.php?option=com_cafe"; ////Official
+    String youtubeURL2 = "https://www.facebook.com/Riverside.Music"; //fb
+    String youtubeURL3 = "https://insta-stalker.com/profile/riversidelivehouse"; //ig
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -23,6 +35,11 @@ public class Riverside_Music_Cafe3 extends AppCompatActivity implements OnGestur
 
         //初始化手勢檢測器
         detector = new GestureDetector(this, this);
+
+        //建立關聯
+        official = findViewById(R.id.official); //官方網站
+        fb = findViewById(R.id.fb); //官方fb
+        ig = findViewById(R.id.ig); //官方ig
 
         //禁止螢幕翻轉
         setRequestedOrientation(ActivityInfo.SCREEN_ORIENTATION_PORTRAIT);
@@ -83,5 +100,23 @@ public class Riverside_Music_Cafe3 extends AppCompatActivity implements OnGestur
     @Override
     public boolean onSingleTapUp(MotionEvent e) {
         return false;
+    }
+
+    //前往官網
+    public void goOfficial(View view){
+        Intent intent = new Intent(Intent.ACTION_VIEW, Uri.parse(youtubeURL1));
+        startActivity(intent);
+    }
+
+    //前往官方臉書
+    public void goFacebook(View view){
+        Intent intent = new Intent(Intent.ACTION_VIEW, Uri.parse(youtubeURL2));
+        startActivity(intent);
+    }
+
+    //前往官方IG
+    public void goInstagram(View view){
+        Intent intent = new Intent(Intent.ACTION_VIEW, Uri.parse(youtubeURL3));
+        startActivity(intent);
     }
 }

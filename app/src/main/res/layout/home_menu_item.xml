@@ -38,7 +38,7 @@
             android:paddingBottom="2dp"
             android:text="@string/test"
             android:textColor="@android:color/background_light"
-            android:textSize="28sp"
+            android:textSize="25sp"
             android:textStyle="normal" />
     </RelativeLayout>
 

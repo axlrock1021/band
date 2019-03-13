@@ -14,7 +14,6 @@
     <string name="service_and_support">✩ Service and Support ✩</string>
     <string name="my_music">✩ My Music ✩</string>
 
-    <string name="gravity">✩ Gravity ✩</string>
     <string name="astro_bunny">✩ Astro Bunny ✩</string>
     <string name="chocolate_tiger">✩ Chocolate Tiger ✩</string>
     <string name="men_envy_children">✩ Men Envy Children ✩</string>
@@ -23,6 +22,31 @@
     <string name="nekojam">✩ NekoJam ✩</string>
     <string name="vast_hazy">✩ Vast ＆ Hazy ✩</string>
     <string name="zani">✩ Zani ✩</string>
+    <string name="wonfu">✩ Wonfu ✩</string>
+    <string name="tizzy_bac">✩ Tizzy Bac ✩</string>
+    <string name="cherry_boom">✩ Cherry Boom ✩</string>
+    <string name="the_girl_and_the_robots">✩ The Girl And The Robots ✩</string>
+    <string name="freckles">✩ Freckles ✩</string>
+    <string name="frande">✩ Frandé ✩</string>
+    <string name="elephant_gym">✩ Elephant Gym ✩</string>
+    <string name="f_i_r">✩ F.I.R. ✩</string>
+    <string name="bearbabes">✩ 	Bearbabes ✩</string>
+    <string name="relax_one">✩ Relax-ONE ✩</string>
+    <string name="solemn">✩ Solemn ✩</string>
+    <string name="soundboss">✩ Soundboss ✩</string>
+    <string name="queensuitcase">✩ QueenSuitcase ✩</string>
+    <string name="super_obvious">✩ Super Obvious ✩</string>
+    <string name="pisco">✩ P!sco ✩</string>
+
+    <string name="mixer">✩ Mixer ✩</string>
+    <string name="loh_tsui_kweh_commune">✩ Loh Tsui Kweh Commune ✩</string>
+    <string name="eggplantegg">✩ EggPlantEgg ✩</string>
+    <string name="no_party_for_cao_dong">✩ No Party For Cao Dong ✩</string>
+
+    <string name="gravity">✩ Gravity ✩</string>
+    <string name="rangetsu">✩ Rangetsu ✩</string>
+
+
 
     <string name="riverside_music_cafe">✩ Riverside Music Cafe ✩</string>
     <string name="riverside_live_house">✩ Riverside Live House ✩</string>
@@ -46,4 +70,11 @@
     <string name="右鍵">\u2192</string>
     <string name="左鍵">\u2190</string>
 
+
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+    <string name="likes">喜歡</string>
+    <string name="time">長度</string>
+    <string name="views">觀看次數</string>
+    <string name="launch_time">發佈時間</string>
 </resources>

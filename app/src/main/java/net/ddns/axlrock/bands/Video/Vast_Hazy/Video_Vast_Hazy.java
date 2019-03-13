@@ -43,7 +43,7 @@ public class Video_Vast_Hazy extends AppCompatActivity {
     //影片主題
     String[] text1 = new String[]{"全專輯試聽版(求救訊號)","華山Legacy - 與浪之間","與浪之間(MV)",
     "求救訊號(MV)","食人夢(MV)","歸屬(MV)","故障(MV)","下次見(MV)","yet(MV)","次等秘密最終場",
-    "與浪之間(stage)","樂人Session","我想成為你(MV)","拾起(MV)"};
+    "與浪之間(Stage)","樂人Session","我想成為你(MV)","拾起(MV)"};
     //影片長度標題
     String text2 = "長度";
     //影片發佈日期標題

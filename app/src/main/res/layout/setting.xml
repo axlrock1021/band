@@ -3,7 +3,7 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:layout_height="match_parent"
+    android:layout_height="wrap_content"
     android:background="@drawable/black1"
     android:orientation="vertical"
     tools:context=".Setting">
@@ -21,19 +21,39 @@
         android:textSize="25sp"
         android:textStyle="normal" />
 
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:gravity="center"
+            android:paddingTop="10dp"
+            android:paddingBottom="5dp"
+            android:text="專 區"
+            android:textColor="@color/cardview_light_background"
+            android:textSize="25sp"
+            android:textStyle="normal" />
+
+    </RelativeLayout>
+
     <Button
         android:id="@+id/button1"
         style="@style/Widget.AppCompat.Button.Borderless.Colored"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginTop="40dp"
+        android:layout_marginLeft="2dp"
+        android:layout_marginTop="30dp"
         android:gravity="left"
         android:onClick="goFacebook"
-        android:text="✵ 臉 書 粉 絲 團"
+        android:text="✡ 臉 書 粉 絲 團"
         android:textAllCaps="false"
-        android:textColor="@color/cardview_light_background"
+        android:textColor="@drawable/textcolorchange"
         android:textColorLink="@color/cardview_light_background"
-        android:textSize="25sp"
+        android:textSize="22sp"
         android:textStyle="normal" />
 
     <Button
@@ -41,13 +61,14 @@
         style="@style/Widget.AppCompat.Button.Borderless.Colored"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:layout_marginLeft="2dp"
         android:gravity="left"
         android:onClick="goMail"
-        android:text="✵ 給 予 建 議 / 與 我 聯 絡"
+        android:text="✡ 給 予 建 議"
         android:textAllCaps="false"
-        android:textColor="@color/cardview_light_background"
+        android:textColor="@drawable/textcolorchange"
         android:textColorLink="@color/cardview_light_background"
-        android:textSize="25sp"
+        android:textSize="22sp"
         android:textStyle="normal" />
 
     <Button
@@ -55,13 +76,14 @@
         style="@style/Widget.AppCompat.Button.Borderless.Colored"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:layout_marginLeft="2dp"
         android:gravity="left"
-        android:onClick="goGooglePlay"
-        android:text="✵ 商 店 評 分"
+        android:onClick="goShareTo"
+        android:text="✡ 分 享 好 友 "
         android:textAllCaps="false"
-        android:textColor="@color/cardview_light_background"
+        android:textColor="@drawable/textcolorchange"
         android:textColorLink="@color/cardview_light_background"
-        android:textSize="25sp"
+        android:textSize="22sp"
         android:textStyle="normal" />
 
     <Button
@@ -69,13 +91,14 @@
         style="@style/Widget.AppCompat.Button.Borderless.Colored"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:layout_marginLeft="2dp"
         android:gravity="left"
-        android:onClick="about_the_author"
-        android:text="✵ 關 於 作 者"
+        android:onClick="goGooglePlay"
+        android:text="✡ 商 店 評 分"
         android:textAllCaps="false"
-        android:textColor="@color/cardview_light_background"
+        android:textColor="@drawable/textcolorchange"
         android:textColorLink="@color/cardview_light_background"
-        android:textSize="25sp"
+        android:textSize="22sp"
         android:textStyle="normal" />
 
     <Button
@@ -83,13 +106,14 @@
         style="@style/Widget.AppCompat.Button.Borderless.Colored"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:layout_marginLeft="2dp"
         android:gravity="left"
-        android:onClick="version"
-        android:text="✵ 版 本 資 訊"
+        android:onClick="about_the_author"
+        android:text="✡ 關 於 作 者"
         android:textAllCaps="false"
-        android:textColor="@color/cardview_light_background"
+        android:textColor="@drawable/textcolorchange"
         android:textColorLink="@color/cardview_light_background"
-        android:textSize="25sp"
+        android:textSize="22sp"
         android:textStyle="normal" />
 
     <Button
@@ -97,27 +121,37 @@
         style="@style/Widget.AppCompat.Button.Borderless.Colored"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:layout_marginLeft="2dp"
         android:gravity="left"
         android:onClick="version"
-        android:text="✵ 小 額 贊 助"
+        android:text="✡ 版 本 資 訊"
         android:textAllCaps="false"
-        android:textColor="@color/cardview_light_background"
+        android:textColor="@drawable/textcolorchange"
         android:textColorLink="@color/cardview_light_background"
-        android:textSize="25sp"
+        android:textSize="22sp"
         android:textStyle="normal" />
 
-    <Button
-        android:id="@+id/button7"
-        style="@style/Widget.AppCompat.Button.Borderless.Colored"
+    <RelativeLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:gravity="left"
-        android:onClick="languageSwitch"
-        android:text="✵ 語 言 切 換"
-        android:textAllCaps="false"
-        android:textColor="@color/cardview_light_background"
-        android:textColorLink="@color/cardview_light_background"
-        android:textSize="25sp"
-        android:textStyle="normal" />
+        android:layout_margin="2dp"
+        android:orientation="horizontal">
+
+        <com.google.android.gms.ads.AdView
+            android:id="@+id/adView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginStart="2dp"
+            android:layout_marginLeft="2dp"
+            android:layout_marginTop="2dp"
+            android:layout_marginEnd="2dp"
+            android:layout_marginRight="2dp"
+            android:layout_marginBottom="2dp"
+            android:padding="2dp"
+            app:adSize="SMART_BANNER"
+            app:adUnitId="ca-app-pub-7259957151155157/3948767304"></com.google.android.gms.ads.AdView>
+    </RelativeLayout>
 
 </LinearLayout>

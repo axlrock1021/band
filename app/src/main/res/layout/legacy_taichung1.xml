@@ -40,9 +40,9 @@
             android:gravity="center"
             android:paddingTop="10dp"
             android:paddingBottom="5dp"
-            android:text="Legacy Taichung"
+            android:text="傳 音 樂 展 演 空 間 (台 中)"
             android:textColor="@color/cardview_light_background"
-            android:textSize="27sp"
+            android:textSize="25sp"
             android:textStyle="normal" />
 
     </RelativeLayout>
@@ -64,16 +64,16 @@
             android:text="✡聯絡方式\n℡ 04-2359-8780\n\n✡演出接洽\nservice@legacy.com.tw"
             android:textColor="@color/cardview_light_background"
             android:textColorLink="@color/colorAccent"
-            android:textSize="18sp" />
+            android:textSize="20sp" />
 
         <TextView
             android:id="@+id/textView13"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:padding="8dp"
-            android:text="✡地址\n台中市西屯區安和路117號\n\n✡大眾交通工具\n✡開車\n從178K(中港交流道)出口下，往西-沙鹿/東海大學方向，直行台灣大道(原 中港路)，第一個紅綠燈左轉(安和路交叉口)後300公尺，即可看見Legacy Taichung在你的右手邊。\n✡高鐵轉乘\n155路(高鐵台中站-統聯轉運站-麗寶樂園)，第三站即可在Legacy Taichung對面下車(站名：安和福玄路口)。"
+            android:text="✡地址\n台中市西屯區安和路117號\n\n✡大眾交通工具\n高鐵轉乘\n155路(高鐵台中站-統聯轉運站-麗寶樂園)"
             android:textColor="@color/cardview_light_background"
-            android:textSize="18sp" />
+            android:textSize="20sp" />
 
     </LinearLayout>
 
@@ -90,7 +90,7 @@
             android:gravity="center_horizontal"
             android:text="@string/右鍵"
             android:textColor="@color/cardview_light_background"
-            android:textSize="27sp" />
+            android:textSize="25sp" />
     </LinearLayout>
 
 

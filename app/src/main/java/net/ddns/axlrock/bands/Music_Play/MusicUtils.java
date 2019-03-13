@@ -4,7 +4,10 @@ package net.ddns.axlrock.bands.Music_Play;
 
 import android.content.Context;
 import android.database.Cursor;
+import android.os.Environment;
 import android.provider.MediaStore;
+
+import java.io.File;
 import java.util.ArrayList;
 import java.util.List;
 
@@ -17,6 +20,8 @@ public class MusicUtils {
      */
     public static List<Song> getMusicData(Context context) {
         List<Song> list = new ArrayList<Song>();
+        //讀取本機音檔
+        File file = new File(Environment.getExternalStorageDirectory().getAbsolutePath());
         // 媒體庫查詢語句（寫一個工具類別MusicUtils）
         Cursor cursor = context.getContentResolver().query(MediaStore.Audio.Media.EXTERNAL_CONTENT_URI, null, null,
                 null, MediaStore.Audio.AudioColumns.IS_MUSIC);

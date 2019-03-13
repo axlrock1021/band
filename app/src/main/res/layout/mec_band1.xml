@@ -6,7 +6,7 @@
     android:layout_height="match_parent"
     android:background="@drawable/black1"
     android:orientation="vertical"
-    tools:context=".Introduction.Mec_Band.Mec_Band1">
+    tools:context=".Introduction.Female.Mec_Band.Mec_Band1">
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -42,7 +42,7 @@
             android:paddingBottom="5dp"
             android:text="小 男 孩 樂 團\nTaiwan"
             android:textColor="@color/cardview_light_background"
-            android:textSize="27sp"
+            android:textSize="25sp"
             android:textStyle="normal" />
 
     </RelativeLayout>
@@ -54,15 +54,17 @@
         android:orientation="horizontal">
 
         <TextView
+            android:id="@+id/textView18"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
+            android:layout_height="match_parent"
             android:layout_marginTop="30dp"
             android:layout_weight="1"
-            android:padding="8dp"
-            android:text="簡介 \n小男孩樂團是一個1+1的組合，成員皆來自不同的行業，白天各自有奮鬥的事業，利用下班之餘組合的音樂團體。\n\n小男孩團名的意喻，主要是希望對於追求音樂的夢想，能像孩子般的純真、好奇、充滿想像力，讓音樂的能量能隨時隨地有1+1大於2的活力。"
+            android:padding="10dp"
+            android:text="✡ 簡介\n\n小男孩樂團是一個1+1的組合﹐成員皆來自不同的行業﹐白天各自有奮鬥的事業﹐利用下班之餘組合的音樂團體\n\n小男孩團名的意喻﹐主要是希望對於追求音樂的夢想﹐能像孩子般的純真﹐好奇﹐充滿想像力﹐讓音樂的能量能隨時隨地有1+1大於2的活力"
             android:textColor="@color/cardview_light_background"
-            android:textSize="22sp"
+            android:textSize="20sp"
             android:textStyle="normal" />
+
     </LinearLayout>
 
     <LinearLayout
@@ -78,7 +80,7 @@
             android:paddingBottom="5dp"
             android:text="@string/右鍵"
             android:textColor="@color/cardview_light_background"
-            android:textSize="27sp" />
+            android:textSize="25sp" />
     </LinearLayout>
 
 
